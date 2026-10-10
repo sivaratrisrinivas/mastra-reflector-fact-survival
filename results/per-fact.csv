@@ -1,0 +1,4 @@
+ref,level,log,fact,type,typeName,position,pass,reason,modelVersion
+main,4,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-2.5-flash
+main,4,log00,log00-f1,7,"place",middle,true,"found",gemini-2.5-flash
+main,4,log00,log00-f2,13,"stated preference",late,true,"found",gemini-2.5-flash
