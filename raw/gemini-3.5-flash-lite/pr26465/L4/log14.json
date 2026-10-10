@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 4,
+ "log": "log14",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8744,
+  "candidatesTokenCount": 669,
+  "totalTokenCount": 11316,
+  "cachedContentTokenCount": 5861,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8744
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5861
+   }
+  ],
+  "thoughtsTokenCount": 1903,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6249,
+ "at": "2026-10-10T22:45:39.910Z",
+ "rawText": "<observations>\nDate: Jul 6, 2026\n* 🔴 (09:45) User stated max guest count is 150, floral budget max is $4,500, and style preference is minimalist gold geometric centerpieces.\n* 🟡 (21:10) Agent configured RSVP automation, vegetarian brunch catering (noting cousin Thomas's peanut allergy), string quartet options, and golden hour schedule.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) User stated wedding hashtag is #ToHaveAndToHolt2026 and photographer arrives two hours before ceremony.\n* 🟡 (21:00) Agent coordinated rescue dog cocktail napkins, acoustic indie playlist, ADA-compliant shuttle transport, and sparkler permit research.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) User stated catering headcount cutoff is September 1, 2026, and seating must separate college friends from family.\n* 🟡 (20:50) Agent researched lavender centerpieces, local farm welcome bag snacks, custom mountain ring engravings, and botanical spritz bar menu.\n\nDate: Jul 15, 2026\n* 🔴 (15:20) User stated venue walkthrough is August 26, 2026, and required dietary restriction place card labels and emergency kit supplies.\n* 🟡 (21:10) Agent arranged sunrise photography, leaf confetti samples, and vintage 1965 getaway car availability.\n\nDate: Jul 19, 2026\n* 🔴 (16:30) User stated college friends sit at table 4, ring pillow must be vintage lace, and welcome bags require local craft beer and artisan chocolate.\n* 🟡 (20:15) Agent updated floral arches (white roses and eucalyptus), black catering aprons, and 45-minute sunset portrait timing.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) User stated final rehearsal dinner headcount is strictly 35 guests at The Rustic Hearth Restaurant.\n* 🔴 (16:45) User stated cake flavor is pistachio (superseding lemon raspberry).\n* 🔴 (17:00) User stated videographer final payment is due August 10, 2026.\n* 🟡 (18:15) Agent updated pure mulberry silk robes, midnight shuttle run, and custom ceramic coaster wedding favors.\n* ✅ (21:00) Gluten-free macaron tower added with Sweet Treats Bakery.\n</observations>\n\n<current-task>\n- Primary: General ongoing wedding planning and vendor coordination for the Holt wedding (#ToHaveAndToHolt2026).\n- Secondary: Awaiting next user request/task (waiting for user).\n</current-task>\n\n<suggested-response>\nThe assistant should wait for the user to provide the next wedding planning task or question.\n</suggested-response>",
+ "observations": "Date: Jul 6, 2026\n* 🔴 (09:45) User stated max guest count is 150, floral budget max is $4,500, and style preference is minimalist gold geometric centerpieces.\n* 🟡 (21:10) Agent configured RSVP automation, vegetarian brunch catering (noting cousin Thomas's peanut allergy), string quartet options, and golden hour schedule.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) User stated wedding hashtag is #ToHaveAndToHolt2026 and photographer arrives two hours before ceremony.\n* 🟡 (21:00) Agent coordinated rescue dog cocktail napkins, acoustic indie playlist, ADA-compliant shuttle transport, and sparkler permit research.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) User stated catering headcount cutoff is September 1, 2026, and seating must separate college friends from family.\n* 🟡 (20:50) Agent researched lavender centerpieces, local farm welcome bag snacks, custom mountain ring engravings, and botanical spritz bar menu.\n\nDate: Jul 15, 2026\n* 🔴 (15:20) User stated venue walkthrough is August 26, 2026, and required dietary restriction place card labels and emergency kit supplies.\n* 🟡 (21:10) Agent arranged sunrise photography, leaf confetti samples, and vintage 1965 getaway car availability.\n\nDate: Jul 19, 2026\n* 🔴 (16:30) User stated college friends sit at table 4, ring pillow must be vintage lace, and welcome bags require local craft beer and artisan chocolate.\n* 🟡 (20:15) Agent updated floral arches (white roses and eucalyptus), black catering aprons, and 45-minute sunset portrait timing.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) User stated final rehearsal dinner headcount is strictly 35 guests at The Rustic Hearth Restaurant.\n* 🔴 (16:45) User stated cake flavor is pistachio (superseding lemon raspberry).\n* 🔴 (17:00) User stated videographer final payment is due August 10, 2026.\n* 🟡 (18:15) Agent updated pure mulberry silk robes, midnight shuttle run, and custom ceramic coaster wedding favors.\n* ✅ (21:00) Gluten-free macaron tower added with Sweet Treats Bakery.",
+ "degenerate": false
+}

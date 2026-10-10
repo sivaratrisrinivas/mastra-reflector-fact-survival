@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 4,
+ "log": "log10",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 9070,
+  "candidatesTokenCount": 621,
+  "totalTokenCount": 11003,
+  "cachedContentTokenCount": 5862,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 9070
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5862
+   }
+  ],
+  "thoughtsTokenCount": 1312,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 4938,
+ "at": "2026-10-10T22:44:16.758Z",
+ "rawText": "<observations>\nDate: May 31, 2026\n* 🔴 (07:15) User planning July mountain trip and $5,000 emergency savings goal; prefers debt avalanche repayment over snowball.\n* ✅ (21:15) Finalized student loan consolidation recommendation; logged $1,200 in medical deductions and $200 charity donation.\n\nDate: Jun 3, 2026\n* 🔴 (07:10) User considering high-yield savings switch, inquired about 30% solar panel tax credit, and automated a $200 monthly transfer to Fidelity Brokerage.\n\nDate: Jun 6, 2026\n* 🔴 (07:05) User reviewing mortgage refinancing options (15 vs 30-year fixed) and managing Sunrise Card ($2,500 balance at 22.99% APR) with $300 biweekly payments; estimated mortgage interest deduction at $7,000.\n\nDate: Jun 9, 2026\n* 🔴 (07:10) User planning Asheville trip next month ($600 budget) using Horizon Travel Rewards Card, and pledged a $200 animal shelter donation.\n* 🟡 (13:40) User account summary: Ally savings $12,980 (designated emergency fund), Chase checking $3,410, Fidelity 401(k) $48,200, Marcus CD $5,000, Vanguard Roth IRA $9,870, plus other minor accounts and cards.\n\nDate: Jun 13, 2026\n* 🔴 (07:15) User scheduled a $1,200 credit card payment; medical deductions estimated at $800, with a digital 'TaxDocs' folder created for receipts.\n\nDate: Jun 17, 2026\n* 🔴 (07:05) User set up an $800 monthly transfer from checking to savings for a house down payment fund (current savings balance $12,980).\n* 🔴 (08:30) User plans to apply for a personal loan refinance on June 20 to lower car loan rate from 3.9% to 3.5% APR ($9,500 principal).\n* 🔴 (16:20) User tracks personal spending using the YNAB iOS app, version 3.12.1.\n</observations>\n\n<current-task>\n- Primary: Monitoring ongoing financial goals, upcoming car loan refinance application on June 20, and travel budgeting.\n</current-task>\n\n<suggested-response>\nThe assistant should wait for the user to provide their next financial update or question.\n</suggested-response>",
+ "observations": "Date: May 31, 2026\n* 🔴 (07:15) User planning July mountain trip and $5,000 emergency savings goal; prefers debt avalanche repayment over snowball.\n* ✅ (21:15) Finalized student loan consolidation recommendation; logged $1,200 in medical deductions and $200 charity donation.\n\nDate: Jun 3, 2026\n* 🔴 (07:10) User considering high-yield savings switch, inquired about 30% solar panel tax credit, and automated a $200 monthly transfer to Fidelity Brokerage.\n\nDate: Jun 6, 2026\n* 🔴 (07:05) User reviewing mortgage refinancing options (15 vs 30-year fixed) and managing Sunrise Card ($2,500 balance at 22.99% APR) with $300 biweekly payments; estimated mortgage interest deduction at $7,000.\n\nDate: Jun 9, 2026\n* 🔴 (07:10) User planning Asheville trip next month ($600 budget) using Horizon Travel Rewards Card, and pledged a $200 animal shelter donation.\n* 🟡 (13:40) User account summary: Ally savings $12,980 (designated emergency fund), Chase checking $3,410, Fidelity 401(k) $48,200, Marcus CD $5,000, Vanguard Roth IRA $9,870, plus other minor accounts and cards.\n\nDate: Jun 13, 2026\n* 🔴 (07:15) User scheduled a $1,200 credit card payment; medical deductions estimated at $800, with a digital 'TaxDocs' folder created for receipts.\n\nDate: Jun 17, 2026\n* 🔴 (07:05) User set up an $800 monthly transfer from checking to savings for a house down payment fund (current savings balance $12,980).\n* 🔴 (08:30) User plans to apply for a personal loan refinance on June 20 to lower car loan rate from 3.9% to 3.5% APR ($9,500 principal).\n* 🔴 (16:20) User tracks personal spending using the YNAB iOS app, version 3.12.1.",
+ "degenerate": false
+}

@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 4,
+ "log": "log14",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8568,
+  "candidatesTokenCount": 498,
+  "totalTokenCount": 10488,
+  "cachedContentTokenCount": 5685,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8568
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5685
+   }
+  ],
+  "thoughtsTokenCount": 1422,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5135,
+ "at": "2026-10-10T22:45:29.158Z",
+ "rawText": "<observations>\nDate: Jul 6, 2026\n* 🔴 User stated: max guest count is 150; floral budget max $4,500; prefers minimalist gold geometric table centerpieces.\n* 🟡 Researched vegetarian brunch options, botanical floral portfolios, and configured website RSVP automation.\n* 🟢 User mentioned: cousin Thomas has severe peanut allergies.\n\nDate: Jul 9, 2026\n* 🔴 User stated: wedding hashtag is #ToHaveAndToHolt2026; rehearsal dinner at Harbor View Restaurant; photographer arrives two hours before ceremony.\n* 🟡 Prepared acoustic indie dinner playlist, checked ADA-compliant transit, and reviewed pyrotechnics fire safety rules.\n\nDate: Jul 12, 2026\n* 🔴 User stated: catering headcount cutoff is Sept 1, 2026; morning getting-ready robes are emerald green silk; seating separates college friends from family.\n* 🟡 Researched dried lavender florals, local welcome snacks (pretzels/cider), custom mountain ring engravings, and zero-proof botanical spritz.\n\nDate: Jul 15, 2026\n* 🔴 User stated: venue walkthrough is Aug 26, 2026; dietary restriction labels must be printed directly on place cards.\n* 🟡 Checked sunrise photography rates, biodegradable leaf confetti, emergency kit items, amber uplighting, and 1965 convertible getaway car.\n\nDate: Jul 19, 2026\n* 🔴 User stated: ring bearer pillow must be vintage lace; welcome bags must include local craft beer and artisan chocolate; college friends grouped at table four.\n* 🟡 Planned white rose and eucalyptus floral arches, acoustic cocktail setlist, black aprons for catering staff, and 45-minute sunset portraits.\n\nDate: Jul 23, 2026\n* 🔴 User stated: cake flavor is pistachio; videographer final payment due Aug 10, 2026; rehearsal dinner capped strictly at 35 guests at The Rustic Hearth.\n* 🟡 Updated morning robes to pure mulberry silk, added midnight return shuttle, and ordered custom ceramic coaster favors.\n* ✅ Confirmed gluten-free macaron tower addition with Sweet Treats Bakery.\n</observations>",
+ "observations": "Date: Jul 6, 2026\n* 🔴 User stated: max guest count is 150; floral budget max $4,500; prefers minimalist gold geometric table centerpieces.\n* 🟡 Researched vegetarian brunch options, botanical floral portfolios, and configured website RSVP automation.\n* 🟢 User mentioned: cousin Thomas has severe peanut allergies.\n\nDate: Jul 9, 2026\n* 🔴 User stated: wedding hashtag is #ToHaveAndToHolt2026; rehearsal dinner at Harbor View Restaurant; photographer arrives two hours before ceremony.\n* 🟡 Prepared acoustic indie dinner playlist, checked ADA-compliant transit, and reviewed pyrotechnics fire safety rules.\n\nDate: Jul 12, 2026\n* 🔴 User stated: catering headcount cutoff is Sept 1, 2026; morning getting-ready robes are emerald green silk; seating separates college friends from family.\n* 🟡 Researched dried lavender florals, local welcome snacks (pretzels/cider), custom mountain ring engravings, and zero-proof botanical spritz.\n\nDate: Jul 15, 2026\n* 🔴 User stated: venue walkthrough is Aug 26, 2026; dietary restriction labels must be printed directly on place cards.\n* 🟡 Checked sunrise photography rates, biodegradable leaf confetti, emergency kit items, amber uplighting, and 1965 convertible getaway car.\n\nDate: Jul 19, 2026\n* 🔴 User stated: ring bearer pillow must be vintage lace; welcome bags must include local craft beer and artisan chocolate; college friends grouped at table four.\n* 🟡 Planned white rose and eucalyptus floral arches, acoustic cocktail setlist, black aprons for catering staff, and 45-minute sunset portraits.\n\nDate: Jul 23, 2026\n* 🔴 User stated: cake flavor is pistachio; videographer final payment due Aug 10, 2026; rehearsal dinner capped strictly at 35 guests at The Rustic Hearth.\n* 🟡 Updated morning robes to pure mulberry silk, added midnight return shuttle, and ordered custom ceramic coaster favors.\n* ✅ Confirmed gluten-free macaron tower addition with Sweet Treats Bakery.",
+ "degenerate": false
+}

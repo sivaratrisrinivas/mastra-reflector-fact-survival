@@ -20,6 +20,12 @@ main,4,log05,log05-f2,18,"control: transient noise (pass = absent)",late,true,"n
 main,4,log06,log06-f0,7,"place",early,true,"found",gemini-2.5-flash
 main,4,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-2.5-flash
 main,4,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-2.5-flash
+main,4,log07,log07-f0,8,"changed value: old and new both kept",early,true,"found",gemini-2.5-flash
+main,4,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-2.5-flash
+main,4,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-2.5-flash
+main,4,log08,log08-f0,9,"changed value: new marked current",early,true,"found",gemini-2.5-flash
+main,4,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-2.5-flash
+main,4,log08,log08-f2,3,"absolute date",late,true,"found",gemini-2.5-flash
 pr26465,4,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-2.5-flash
 pr26465,4,log00,log00-f1,7,"place",middle,true,"found",gemini-2.5-flash
 pr26465,4,log00,log00-f2,13,"stated preference",late,true,"found",gemini-2.5-flash
@@ -41,3 +47,6 @@ pr26465,4,log05,log05-f2,18,"control: transient noise (pass = absent)",late,fals
 pr26465,4,log06,log06-f0,7,"place",early,true,"found",gemini-2.5-flash
 pr26465,4,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-2.5-flash
 pr26465,4,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-2.5-flash
+pr26465,4,log07,log07-f0,8,"changed value: old and new both kept",early,true,"found",gemini-2.5-flash
+pr26465,4,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-2.5-flash
+pr26465,4,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-2.5-flash

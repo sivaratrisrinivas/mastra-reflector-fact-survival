@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 1,
+ "log": "log01",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8734,
+  "candidatesTokenCount": 749,
+  "totalTokenCount": 10960,
+  "cachedContentTokenCount": 5861,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8734
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5861
+   }
+  ],
+  "thoughtsTokenCount": 1477,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5836,
+ "at": "2026-10-10T22:47:21.936Z",
+ "rawText": "<observations>\nDate: Mar 11, 2026\n* 🔴 User preferences: PostgreSQL backend, TypeScript with strict linting, monthly cloud budget capped at $1,850. User has a cat named Pixel.\n* 🔴 User decided to defer recurring invoices until after beta.\n* ✅ (10:30) Agent fixed a null reference error in `src/invoice/pdfGenerator.ts` and verified tests passed.\n\nDate: Mar 14, 2026\n* 🔴 User set public launch date to April 23, 2026 and requested all env vars be prefixed with `LEDGERLY_`.\n* 🔴 User requested webhook support for payment events and scheduled a Stripe demo with marketing.\n* ✅ (16:55) Agent added Stripe webhook handler with signature validation, updated CI, refactored env vars, and merged feature/webhook-support PR.\n\nDate: Mar 17, 2026\n* 🔴 User asked about exponential backoff for failed webhook retries and requested Winston logging prefixed with `LEDGERLY_`.\n* ✅ (21:20) Agent implemented exponential backoff retry logic in `src/utils/retry.ts`, enforced 95% test coverage, and fixed a flaky mock test.\n* ✅ (22:00) Agent configured Winston logger (`LEDGERLY_LOG_LEVEL`), wrapped webhook handler with logging, and merged PR.\n\nDate: Mar 20, 2026\n* 🔴 User stated Ledgerly must support EUR and GBP alongside USD. Public launch date updated to May 10, 2026 due to payments audit.\n* 🔴 User asked whether email templates should be repo-stored or CDN-fetched.\n* ✅ (20:45) Agent added multi-currency support (`src/models/Currency.ts`), PDF rendering, SendGrid email service (`src/utils/email.ts`), and deployed a staging build.\n\nDate: Mar 24, 2026\n* 🔴 User requested OAuth login via Google and GitHub, and asked about data export formats (CSV/Excel/JSON).\n* ✅ (09:55) Agent implemented Passport OAuth middleware for Google/GitHub and merged PR.\n* ✅ (13:05) Agent scaffolded React analytics component, integrated chart.js, added CSV export endpoint (`/api/export/csv`), and set up automated nightly AWS S3 backups.\n\nDate: Mar 28, 2026\n* 🔴 Standing rule: Never push directly to `main`, always open a pull request.\n* 🔴 User asked if Stripe or PayPal should be primary payment processor, and requested a monthly revenue summary broken down by client tier.\n* 🟡 (15:40) Agent added “useStripe” feature toggle in `config/featureFlags.ts`.\n* 🟡 (18:25) Agent added tiered revenue query in `src/queries/revenueByTier.sql`.\n* ✅ (19:20) Agent refactored invoice rendering (`src/services/invoiceRenderer.ts`), added `/api/invoice/pdf` endpoint, and deployed latest build to staging instance `ledgerly-stg-01`.\n</observations>\n\n<suggested-response>\nThe assistant should wait for the user to provide the next instruction or feedback on the staging deployment and tiered revenue report.\n</suggested-response>",
+ "observations": "Date: Mar 11, 2026\n* 🔴 User preferences: PostgreSQL backend, TypeScript with strict linting, monthly cloud budget capped at $1,850. User has a cat named Pixel.\n* 🔴 User decided to defer recurring invoices until after beta.\n* ✅ (10:30) Agent fixed a null reference error in `src/invoice/pdfGenerator.ts` and verified tests passed.\n\nDate: Mar 14, 2026\n* 🔴 User set public launch date to April 23, 2026 and requested all env vars be prefixed with `LEDGERLY_`.\n* 🔴 User requested webhook support for payment events and scheduled a Stripe demo with marketing.\n* ✅ (16:55) Agent added Stripe webhook handler with signature validation, updated CI, refactored env vars, and merged feature/webhook-support PR.\n\nDate: Mar 17, 2026\n* 🔴 User asked about exponential backoff for failed webhook retries and requested Winston logging prefixed with `LEDGERLY_`.\n* ✅ (21:20) Agent implemented exponential backoff retry logic in `src/utils/retry.ts`, enforced 95% test coverage, and fixed a flaky mock test.\n* ✅ (22:00) Agent configured Winston logger (`LEDGERLY_LOG_LEVEL`), wrapped webhook handler with logging, and merged PR.\n\nDate: Mar 20, 2026\n* 🔴 User stated Ledgerly must support EUR and GBP alongside USD. Public launch date updated to May 10, 2026 due to payments audit.\n* 🔴 User asked whether email templates should be repo-stored or CDN-fetched.\n* ✅ (20:45) Agent added multi-currency support (`src/models/Currency.ts`), PDF rendering, SendGrid email service (`src/utils/email.ts`), and deployed a staging build.\n\nDate: Mar 24, 2026\n* 🔴 User requested OAuth login via Google and GitHub, and asked about data export formats (CSV/Excel/JSON).\n* ✅ (09:55) Agent implemented Passport OAuth middleware for Google/GitHub and merged PR.\n* ✅ (13:05) Agent scaffolded React analytics component, integrated chart.js, added CSV export endpoint (`/api/export/csv`), and set up automated nightly AWS S3 backups.\n\nDate: Mar 28, 2026\n* 🔴 Standing rule: Never push directly to `main`, always open a pull request.\n* 🔴 User asked if Stripe or PayPal should be primary payment processor, and requested a monthly revenue summary broken down by client tier.\n* 🟡 (15:40) Agent added “useStripe” feature toggle in `config/featureFlags.ts`.\n* 🟡 (18:25) Agent added tiered revenue query in `src/queries/revenueByTier.sql`.\n* ✅ (19:20) Agent refactored invoice rendering (`src/services/invoiceRenderer.ts`), added `/api/invoice/pdf` endpoint, and deployed latest build to staging instance `ledgerly-stg-01`.",
+ "degenerate": false
+}

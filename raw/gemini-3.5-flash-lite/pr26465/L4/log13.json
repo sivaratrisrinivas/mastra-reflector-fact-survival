@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 4,
+ "log": "log13",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8921,
+  "candidatesTokenCount": 596,
+  "totalTokenCount": 10986,
+  "cachedContentTokenCount": 5861,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8921
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5861
+   }
+  ],
+  "thoughtsTokenCount": 1469,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5045,
+ "at": "2026-10-10T22:45:19.519Z",
+ "rawText": "<observations>\nDate: Jun 27, 2026\n* 🔴 (07:15) User wants lavender/sage floral backdrop and live acoustic band for reception.\n* 🔴 (09:45) User rule: Partner Jonah must sign-off on all vendor contracts before deposits are paid.\n* 🟡 (18:00) Confirmed venue garden seating (150 capacity), added backup DJ, and resolved décor budget overage.\n\nDate: Jun 30, 2026\n* 🔴 (07:20) User wants custom silver monogram cake topper and sunset-themed cocktail playlist.\n* 🟡 (11:15) Confirmed outdoor dessert bar venue space, vegan dessert menu ($45/pp), and $1,800 tent rental backup.\n\nDate: Jul 3, 2026\n* 🔴 (07:05) User wants eucalyptus and white roses floral arch and a video recording of vows.\n* 🟡 (13:45) Booked greenhouse tent backup ($1,200), amber LED bulbs ($650), and drafted guest seating chart.\n\nDate: Jul 6, 2026\n* 🔴 (12:20) User set guest count to 140 and photographer package to $4,750.\n* 🟡 (09:30) Booked vegan chocolate mousse cake ($950), Rhythm & Beats DJ ($1,200), and 12-seat limo car ($300).\n\nDate: Jul 10, 2026\n* 🔴 (09:30) User wants live acoustic string quartet and bilingual ceremony.\n* 🟡 (09:00) Booked Global Ceremonies officiant ($1,500), Eternal Strings quartet ($2,200), and local backup florist ($650).\n\nDate: Jul 14, 2026\n* 🔴 (14:00) User requested a venue for a moonlit outdoor ceremony and updated guest count to 112.\n* 🟡 (12:45) Added dessert tasting session, Nightfall DJ options, and Aurora Transportation backup shuttle ($1,200).\n</observations>\n\n<current-task>\n- Primary: Finding a venue that can accommodate a moonlit outdoor ceremony for 112 guests.\n- Secondary: Pending review of dessert tasting and vendor selections with partner Jonah.\n</current-task>\n\n<suggested-response>\nWould you like me to start searching for venues that can accommodate a moonlit outdoor ceremony for your updated guest count of 112?\n</suggested-response>",
+ "observations": "Date: Jun 27, 2026\n* 🔴 (07:15) User wants lavender/sage floral backdrop and live acoustic band for reception.\n* 🔴 (09:45) User rule: Partner Jonah must sign-off on all vendor contracts before deposits are paid.\n* 🟡 (18:00) Confirmed venue garden seating (150 capacity), added backup DJ, and resolved décor budget overage.\n\nDate: Jun 30, 2026\n* 🔴 (07:20) User wants custom silver monogram cake topper and sunset-themed cocktail playlist.\n* 🟡 (11:15) Confirmed outdoor dessert bar venue space, vegan dessert menu ($45/pp), and $1,800 tent rental backup.\n\nDate: Jul 3, 2026\n* 🔴 (07:05) User wants eucalyptus and white roses floral arch and a video recording of vows.\n* 🟡 (13:45) Booked greenhouse tent backup ($1,200), amber LED bulbs ($650), and drafted guest seating chart.\n\nDate: Jul 6, 2026\n* 🔴 (12:20) User set guest count to 140 and photographer package to $4,750.\n* 🟡 (09:30) Booked vegan chocolate mousse cake ($950), Rhythm & Beats DJ ($1,200), and 12-seat limo car ($300).\n\nDate: Jul 10, 2026\n* 🔴 (09:30) User wants live acoustic string quartet and bilingual ceremony.\n* 🟡 (09:00) Booked Global Ceremonies officiant ($1,500), Eternal Strings quartet ($2,200), and local backup florist ($650).\n\nDate: Jul 14, 2026\n* 🔴 (14:00) User requested a venue for a moonlit outdoor ceremony and updated guest count to 112.\n* 🟡 (12:45) Added dessert tasting session, Nightfall DJ options, and Aurora Transportation backup shuttle ($1,200).",
+ "degenerate": false
+}

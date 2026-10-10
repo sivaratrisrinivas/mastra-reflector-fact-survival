@@ -1,0 +1,37 @@
+ref,level,log,fact,type,typeName,position,pass,reason,modelVersion
+main,4,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+main,4,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+main,4,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+main,4,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+main,4,log01,log01-f1,8,"changed value: old and new both kept",middle,true,"found",gemini-3.5-flash-lite
+main,4,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+main,4,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+main,4,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+main,4,log02,log02-f2,15,"who-said-what (assistant attribution)",late,false,"fact present but qualifier missing on its line: '* ✅ (18:20) Added QR code payment receipts, Redis Streams, Snyk security scans, and merged Stripe integration into main.'",gemini-3.5-flash-lite
+main,4,log03,log03-f0,4,"relative date with anchor",early,true,"found",gemini-3.5-flash-lite
+main,4,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+main,4,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+main,4,log04,log04-f0,5,"version string",early,false,"missing any of [4.9.2]",gemini-3.5-flash-lite
+main,4,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+main,4,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+main,4,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+main,4,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+main,4,log05,log05-f2,18,"control: transient noise (pass = absent)",late,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,4,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log01,log01-f1,8,"changed value: old and new both kept",middle,false,"missing any of [04/23/2026 | 2026-04-23 | 23 apr | 23 april]",gemini-3.5-flash-lite
+pr26465,4,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log02,log02-f2,15,"who-said-what (assistant attribution)",late,false,"fact present but qualifier missing on its line: '* ✅ (20:05) Deployed Stripe webhooks, QR code email receipts, Snyk security scanning, agreed on Redis Streams for background jobs, and merge'",gemini-3.5-flash-lite
+pr26465,4,log03,log03-f0,4,"relative date with anchor",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log04,log04-f0,5,"version string",early,false,"missing any of [4.9.2]",gemini-3.5-flash-lite
+pr26465,4,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+pr26465,4,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite

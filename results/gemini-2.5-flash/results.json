@@ -64,8 +64,6 @@
   "main/L3/log15",
   "main/L3/log16",
   "main/L3/log17",
-  "main/L4/log07",
-  "main/L4/log08",
   "main/L4/log09",
   "main/L4/log10",
   "main/L4/log11",
@@ -129,7 +127,6 @@
   "pr26465/L3/log15",
   "pr26465/L3/log16",
   "pr26465/L3/log17",
-  "pr26465/L4/log07",
   "pr26465/L4/log08",
   "pr26465/L4/log09",
   "pr26465/L4/log10",
@@ -175,12 +172,12 @@
   {
    "ref": "main",
    "level": 4,
-   "factsKept": 19,
-   "factsTotal": 20,
-   "logsRun": 7,
+   "factsKept": 24,
+   "factsTotal": 26,
+   "logsRun": 9,
    "noiseDropped": 1,
    "noiseTotal": 1,
-   "meanOutputToInputTokens": 0.62
+   "meanOutputToInputTokens": 0.61
   },
   {
    "ref": "pr26465",
@@ -215,12 +212,12 @@
   {
    "ref": "pr26465",
    "level": 4,
-   "factsKept": 19,
-   "factsTotal": 20,
-   "logsRun": 7,
+   "factsKept": 22,
+   "factsTotal": 23,
+   "logsRun": 8,
    "noiseDropped": 0,
    "noiseTotal": 1,
-   "meanOutputToInputTokens": 0.66
+   "meanOutputToInputTokens": 0.65
   }
  ],
  "byType": {
@@ -238,17 +235,17 @@
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "1/1",
+   "main L4": "2/2",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
-   "pr26465 L4": "1/1"
+   "pr26465 L4": "2/2"
   },
   "3. absolute date": {
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "1/1",
+   "main L4": "2/2",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
@@ -298,17 +295,17 @@
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "1/1",
+   "main L4": "2/2",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
-   "pr26465 L4": "1/1"
+   "pr26465 L4": "2/2"
   },
   "9. changed value: new marked current": {
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "1/1",
+   "main L4": "2/2",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
@@ -358,17 +355,17 @@
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "1/1",
+   "main L4": "2/2",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
-   "pr26465 L4": "1/1"
+   "pr26465 L4": "2/2"
   },
   "15. who-said-what (assistant attribution)": {
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "1/1",
+   "main L4": "1/2",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
@@ -410,31 +407,31 @@
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "6/7",
+   "main L4": "8/9",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
-   "pr26465 L4": "6/7"
+   "pr26465 L4": "7/8"
   },
   "middle": {
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "7/7",
+   "main L4": "8/9",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
-   "pr26465 L4": "7/7"
+   "pr26465 L4": "8/8"
   },
   "late": {
    "main L1": "-",
    "main L2": "-",
    "main L3": "-",
-   "main L4": "6/6",
+   "main L4": "8/8",
    "pr26465 L1": "-",
    "pr26465 L2": "-",
    "pr26465 L3": "-",
-   "pr26465 L4": "6/6"
+   "pr26465 L4": "7/7"
   }
  },
  "lost": [
@@ -444,6 +441,13 @@
    "fact": "log05-f0",
    "type": "duration",
    "reason": "missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]"
+  },
+  {
+   "ref": "main",
+   "level": 4,
+   "fact": "log08-f1",
+   "type": "who-said-what (assistant attribution)",
+   "reason": "missing any of [dishwasher]"
   },
   {
    "ref": "pr26465",

@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 4,
+ "log": "log03",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 9470,
+  "candidatesTokenCount": 744,
+  "totalTokenCount": 12584,
+  "cachedContentTokenCount": 5863,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 9470
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5863
+   }
+  ],
+  "thoughtsTokenCount": 2370,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 7029,
+ "at": "2026-10-10T22:42:08.380Z",
+ "rawText": "<observations>\nDate: Mar 29, 2026\n* 🔴 (07:12) User preferences: window seats, budget <$1200 round-trip airfare, balconies/rooftops, seafood, and guided tours. User has never been to Morocco and is nervous about the Tangier ferry day trip. Seville hotel code: QX7-4412.\n* ✅ (12:45) Booked NY-Lisbon flight NN456 with Dublin layover ($1080, ref AB9-7823) for April 3 departure.\n* ✅ (16:30) Booked Lisbon-Porto train and Hotel VistaMar (Balcony Suite, €130/nt, ref HV-5541) for April 9-12.\n\nDate: Apr 1, 2026\n* ✅ (09:45) Booked Porto-Madrid train AVE-317 (€85, ref TR-8742) for April 13.\n* ✅ (13:25) Booked Madrid hotel BoutiqueStay \"Terraza Loft\" (€150/nt, ref MD-3390) for April 13-16 with late checkout.\n\nDate: Apr 4, 2026\n* ✅ (09:45) Booked Barcelona beachfront hotel SeaWave Resort (€180/nt, ref BW-5621) for April 16-19.\n* ✅ (11:50) Booked Gothic Quarter walking tour (ref GW-874) for April 18.\n\nDate: Apr 7, 2026\n* ✅ (09:20) Booked Barcelona dinner at Mar i Sol beachfront tapas bar (ref RS-8392) for April 17.\n* ✅ (11:15) Booked Barcelona-Madrid train (refs AV-1124/1125) for April 19 and reserved a Sants station luggage locker.\n\nDate: Apr 11, 2026\n* ✅ (13:45) Booked Madrid-Lisbon flight (refs LB-5821/22) for April 20.\n* ✅ (15:40) Booked Lisbon hotel RiverSide Boutique (ref RB-7719) for April 20.\n* ✅ (17:20) Booked Alfama Heritage Walk tour for April 21 (reminder set for April 20).\n\nDate: Apr 15, 2026\n* ✅ (10:35) Booked Lisbon-Porto 1st class train (ref PT-3347) for April 22.\n* ✅ (12:30) Booked Porto dinner at Marisqueira Antiga (ref MA-8821) for April 22.\n* ✅ (14:20) Booked Douro Valley vineyards tour for April 23 (reminder set for April 22).\n</observations>\n\n<current-task>\n- Primary: Waiting for the user's next instruction regarding the travel itinerary.\n</current-task>\n\n<suggested-response>\nThe assistant should wait for the user to respond before continuing.\n</suggested-response>",
+ "observations": "Date: Mar 29, 2026\n* 🔴 (07:12) User preferences: window seats, budget <$1200 round-trip airfare, balconies/rooftops, seafood, and guided tours. User has never been to Morocco and is nervous about the Tangier ferry day trip. Seville hotel code: QX7-4412.\n* ✅ (12:45) Booked NY-Lisbon flight NN456 with Dublin layover ($1080, ref AB9-7823) for April 3 departure.\n* ✅ (16:30) Booked Lisbon-Porto train and Hotel VistaMar (Balcony Suite, €130/nt, ref HV-5541) for April 9-12.\n\nDate: Apr 1, 2026\n* ✅ (09:45) Booked Porto-Madrid train AVE-317 (€85, ref TR-8742) for April 13.\n* ✅ (13:25) Booked Madrid hotel BoutiqueStay \"Terraza Loft\" (€150/nt, ref MD-3390) for April 13-16 with late checkout.\n\nDate: Apr 4, 2026\n* ✅ (09:45) Booked Barcelona beachfront hotel SeaWave Resort (€180/nt, ref BW-5621) for April 16-19.\n* ✅ (11:50) Booked Gothic Quarter walking tour (ref GW-874) for April 18.\n\nDate: Apr 7, 2026\n* ✅ (09:20) Booked Barcelona dinner at Mar i Sol beachfront tapas bar (ref RS-8392) for April 17.\n* ✅ (11:15) Booked Barcelona-Madrid train (refs AV-1124/1125) for April 19 and reserved a Sants station luggage locker.\n\nDate: Apr 11, 2026\n* ✅ (13:45) Booked Madrid-Lisbon flight (refs LB-5821/22) for April 20.\n* ✅ (15:40) Booked Lisbon hotel RiverSide Boutique (ref RB-7719) for April 20.\n* ✅ (17:20) Booked Alfama Heritage Walk tour for April 21 (reminder set for April 20).\n\nDate: Apr 15, 2026\n* ✅ (10:35) Booked Lisbon-Porto 1st class train (ref PT-3347) for April 22.\n* ✅ (12:30) Booked Porto dinner at Marisqueira Antiga (ref MA-8821) for April 22.\n* ✅ (14:20) Booked Douro Valley vineyards tour for April 23 (reminder set for April 22).",
+ "degenerate": false
+}

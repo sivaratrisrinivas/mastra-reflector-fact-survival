@@ -70,11 +70,12 @@ for (const level of LEVELS) for (const log of logs) for (const f of log.manifest
   if (a && b && a.pass !== b.pass) disagreements.push({ level, fact: f.id, type: f.typeName, main: a.pass, pr26465: b.pass });
 }
 
-mkdirSync(join(ROOT, 'results'), { recursive: true });
+const OUTDIR = join(ROOT, 'results', provider.model.replace(/[^a-z0-9.-]/gi, '_'));
+mkdirSync(OUTDIR, { recursive: true });
 const out = { provider: provider.name, modelRequested: provider.model, modelsSeen: [...models], refs: REFS,
   complete: missing.length === 0, missing, summary, byType, byPosition, lost, disagreements };
-writeFileSync(join(ROOT, 'results', 'results.json'), JSON.stringify(out, null, 1));
-writeFileSync(join(ROOT, 'results', 'per-fact.csv'),
+writeFileSync(join(OUTDIR, 'results.json'), JSON.stringify(out, null, 1));
+writeFileSync(join(OUTDIR, 'per-fact.csv'),
   'ref,level,log,fact,type,typeName,position,pass,reason,modelVersion\n' +
   rows.map(r => [r.ref, r.level, r.log, r.fact, r.type, `"${r.typeName}"`, r.position, r.pass, `"${r.reason.replace(/"/g, "'")}"`, r.modelVersion].join(',')).join('\n') + '\n');
 
@@ -96,5 +97,5 @@ md += `\n## Facts the check marked lost\n\n` + head(['Ref', 'Level', 'Fact', 'Ty
 for (const l of lost) md += `| ${l.ref} | ${l.level} | ${l.fact} | ${l.type} | ${l.reason.replace(/\|/g, '/')} |\n`;
 md += `\n## Main vs PR disagreements (same log, same level)\n\n` + head(['Level', 'Fact', 'Type', 'main', 'PR']);
 for (const d of disagreements) md += `| ${d.level} | ${d.fact} | ${d.type} | ${d.main ? 'kept' : 'lost'} | ${d.pr26465 ? 'kept' : 'lost'} |\n`;
-writeFileSync(join(ROOT, 'results', 'results.md'), md);
+writeFileSync(join(OUTDIR, 'results.md'), md);
 console.log(md.split('## By fact type')[0]);

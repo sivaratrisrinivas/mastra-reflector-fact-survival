@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 4,
+ "log": "log05",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 9512,
+  "candidatesTokenCount": 706,
+  "totalTokenCount": 11596,
+  "cachedContentTokenCount": 5863,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 9512
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5863
+   }
+  ],
+  "thoughtsTokenCount": 1378,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5515,
+ "at": "2026-10-10T22:42:37.238Z",
+ "rawText": "<observations>\nDate: Apr 16, 2026\n* 🔴 (07:15) User preference: fly into Lisbon, depart Barcelona; enjoys boutique hotels with rooftop terraces.\n* ✅ (16:55) Booked JFK-LIS outbound flight (AZ123, $842) and Porto-Madrid business class train (TRN9X7K). Emailed details to alice@example.com.\n* ✅ (20:05) Suggested Seville boutique hotels near Plaza de España.\n\nDate: Apr 19, 2026\n* ✅ (21:07) Booked Casa del Sol in Seville (deluxe room, $145/night, HLT5Z9M). Emailed confirmation to alice@example.com.\n* ✅ (21:42) Reserved dinner at Bar El Faro (RES8Q3) and planned Córdoba day-trip train ($68).\n\nDate: Apr 22, 2026\n* ✅ (08:00) Secured private Mezquita guided tour ($45, TOUR7K) with bilingual audio for Córdoba day trip. Emailed schedule.\n* ✅ (08:42) Reserved lunch at Restaurante Salmorejo (RESL4M) and added sunset river cruise ($22) to itinerary.\n\nDate: Apr 25, 2026\n* ✅ (07:55) Booked \"Casa del Baile\" flamenco show (FLM9X, $55) with tapas and private driver transport ($40) for Seville stay.\n* 🔴 (13:25) User explicitly refused airline travel insurance and instructed not to offer it again.\n\nDate: Apr 29, 2026\n* ✅ (07:25) Booked Madrid-Porto high-speed AVE train seats (RTE5M, €78).\n* ✅ (08:25) Reserved dinner at Restaurante Casa da Ribeira (PRV9K, €120) and Port wine cellar tour (WN3LZ, €30). Emailed schedule and PDF travel guide.\n\nDate: May 3, 2026\n* ✅ (07:35) Booked Hotel Ribeira Charm in Porto (€95/night, HRC842) with late checkout (LCO7P) and free airport shuttle.\n* ✅ (13:50) Booked Porto bike rental (BDZ4M, €18) and lunch at Casa Verde (CVR5L, €45).\n* 🟡 (19:02) Encountered flight search API timeout (req_8fK2pQ).\n</observations>\n\n<current-task>\n- Primary: Resolve flight search API timeout (req_8fK2pQ).\n- Secondary: Managing ongoing travel itinerary and bookings for Alice (waiting for user).\n</current-task>\n\n<suggested-response>\n\"I've noted the flight search timeout and your complete travel itinerary across Lisbon, Seville, Madrid, and Porto. Let me know how you'd like to proceed with the flight search or any further trip details.\"\n</suggested-response>",
+ "observations": "Date: Apr 16, 2026\n* 🔴 (07:15) User preference: fly into Lisbon, depart Barcelona; enjoys boutique hotels with rooftop terraces.\n* ✅ (16:55) Booked JFK-LIS outbound flight (AZ123, $842) and Porto-Madrid business class train (TRN9X7K). Emailed details to alice@example.com.\n* ✅ (20:05) Suggested Seville boutique hotels near Plaza de España.\n\nDate: Apr 19, 2026\n* ✅ (21:07) Booked Casa del Sol in Seville (deluxe room, $145/night, HLT5Z9M). Emailed confirmation to alice@example.com.\n* ✅ (21:42) Reserved dinner at Bar El Faro (RES8Q3) and planned Córdoba day-trip train ($68).\n\nDate: Apr 22, 2026\n* ✅ (08:00) Secured private Mezquita guided tour ($45, TOUR7K) with bilingual audio for Córdoba day trip. Emailed schedule.\n* ✅ (08:42) Reserved lunch at Restaurante Salmorejo (RESL4M) and added sunset river cruise ($22) to itinerary.\n\nDate: Apr 25, 2026\n* ✅ (07:55) Booked \"Casa del Baile\" flamenco show (FLM9X, $55) with tapas and private driver transport ($40) for Seville stay.\n* 🔴 (13:25) User explicitly refused airline travel insurance and instructed not to offer it again.\n\nDate: Apr 29, 2026\n* ✅ (07:25) Booked Madrid-Porto high-speed AVE train seats (RTE5M, €78).\n* ✅ (08:25) Reserved dinner at Restaurante Casa da Ribeira (PRV9K, €120) and Port wine cellar tour (WN3LZ, €30). Emailed schedule and PDF travel guide.\n\nDate: May 3, 2026\n* ✅ (07:35) Booked Hotel Ribeira Charm in Porto (€95/night, HRC842) with late checkout (LCO7P) and free airport shuttle.\n* ✅ (13:50) Booked Porto bike rental (BDZ4M, €18) and lunch at Casa Verde (CVR5L, €45).\n* 🟡 (19:02) Encountered flight search API timeout (req_8fK2pQ).",
+ "degenerate": false
+}
