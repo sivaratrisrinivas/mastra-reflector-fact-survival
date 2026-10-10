@@ -1,0 +1,16 @@
+{"reader": "Grok Bot agent reading each output in full, blind to checker verdicts (not a human rater)",
+ "rule": "1 = the planted fact (with its qualifier: negation, refusal, current marker, who said it) is recoverable from the output; for the control, 1 = noise dropped",
+ "labels": {
+  "main|1|log10": [0, 1, 1], "main|3|log08": [1, 0, 1], "pr26465|4|log02": [1, 1, 0], "main|2|log14": [0, 1, 1],
+  "pr26465|2|log05": [0, 1, 0], "pr26465|1|log10": [0, 1, 1], "pr26465|3|log12": [1, 1, 1], "main|4|log02": [1, 1, 0],
+  "main|1|log14": [0, 1, 1], "main|1|log02": [1, 1, 0], "pr26465|2|log01": [1, 1, 1], "pr26465|3|log17": [1, 1, 1],
+  "main|2|log03": [1, 1, 1], "main|1|log12": [1, 1, 1], "pr26465|1|log09": [1, 1, 1], "main|3|log12": [1, 1, 1],
+  "main|4|log16": [1, 1, 1], "pr26465|4|log16": [1, 1, 1], "pr26465|2|log11": [1, 1, 1], "main|1|log09": [1, 1, 1]
+ },
+ "notes": {
+  "pr26465|3|log12 f0": "Output keeps 'buffet dinner' as a settled wedding detail but drops 'prefer ... over plated'. Read as kept (the choice survives).",
+  "main|3|log12 f0": "Same wording pattern as above; read as kept.",
+  "*|log02 f2": "Outputs say 'user agreed on / adopted Redis Streams'. The assistant's role in suggesting it is gone. Read as lost (attribution is the planted fact).",
+  "main|1|log02 f2": "'User agreed to use Redis Streams' keeps the decision but not who proposed it. Read as lost."
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "title": "a 7h40 layover disappears",
+ "level": 4,
+ "ref": "main",
+ "planted": "* 🟡 (11:05) User stated the layover in Istanbul on the return flight is 7 hours 40 minutes.",
+ "context": [
+  "Date: Apr 16, 2026",
+  "* 🔴 (07:15) User prefers flying into Lisbon, departing from Barcelona, staying in boutique hotels with rooftop terr...",
+  "* 🔴 (13:25) User refused airline travel insurance and instructed not to offer it again.",
+  "* ✅ (16:55) Booked outbound flight JFK-LIS (AZ123, $842 with 23kg bag) and Porto-Madrid business class train (TRN9X..."
+ ],
+ "caption": "The same fact was lost on PR #26465 too, at every level, and on gemini-2.5-flash at level 4. The refusal next to it survived."
+}

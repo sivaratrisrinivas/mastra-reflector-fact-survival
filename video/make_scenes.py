@@ -49,10 +49,10 @@ scenes = [
         <li>Survival counted by code only (token and same-line rules). No LLM judge</li></ul>'''),
  (13, f'''<div class="h">Planted facts kept (out of 51)</div>
         <table><tr><th></th><th>main</th><th>PR #26465</th><th>output / input size</th></tr>{table}</table>
-        <div class="note">Model: {E(R["modelsSeen"][0].split(":")[1])}, all 144 calls. Default Reflector model gemini-2.5-flash hit its free cap (20/day): level 4, {d4a["logsRun"]} logs: main {d4a["factsKept"]}/{d4a["factsTotal"]}, PR {d4b["factsKept"]}/{d4b["factsTotal"]}.</div>'''),
+        <div class="note">Model: {E(R["modelsSeen"][0].split(":")[1])}, all 144 calls. Default Reflector model gemini-2.5-flash hit its free cap (20/day): level 4 only, first {d4a["logsRun"]} logs ({d4b["logsRun"]} on PR): main {d4a["factsKept"]}/{d4a["factsTotal"]}, PR {d4b["factsKept"]}/{d4b["factsTotal"]}.</div>'''),
  (8, f'''<div class="h">Is the code check right?</div>
-        <div class="big2">{hc["outputs"]} outputs, {hc["judgments"]} facts read by hand</div>
-        <div class="sub2">False misses (check said lost, fact was there): <b>{hc["falseMisses"]}</b><br>False hits (check said kept, fact was gone or wrong): <b>{hc["falseHits"]}</b><br>Agreement: <b>{hc["agreementPct"]}%</b></div>'''),
+        <div class="big2">{hc["outputs"]} outputs, {hc["judgments"]} facts read in full, blind to the check</div>
+        <div class="note">Read by the agent that built this, not an independent human rater.</div><div class="sub2">False misses (check said lost, fact was there): <b>{hc["falseMisses"]}</b><br>False hits (check said kept, fact was gone or wrong): <b>{hc["falseHits"]}</b><br>Agreement: <b>{hc["agreementPct"]}%</b></div>'''),
  (9, f'''<div class="h">Limits</div><ul>
         <li>Small logs (about 2.5k tokens), one seed, fact counts of 3 per type</li>
         <li>A measurement to help the level-1 follow-up, not a verdict on either ref</li></ul>

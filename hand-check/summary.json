@@ -1,0 +1,18 @@
+{
+ "model": "gemini-3.5-flash-lite",
+ "outputs": 20,
+ "judgments": 60,
+ "falseMisses": 1,
+ "falseHits": 0,
+ "agreementPct": 98.3,
+ "disagreements": [
+  {
+   "output": "pr26465|3|log12",
+   "fact": "log12-f0",
+   "type": "stated preference",
+   "hand": "kept",
+   "code": "lost",
+   "reason": "fact present but qualifier missing on its line: \"* 🔴 Wedding planning details established: Outdoors hilltop ceremony (sunset view, garden pavilion, 14:00 start), vintage reception decor, b\""
+  }
+ ]
+}
