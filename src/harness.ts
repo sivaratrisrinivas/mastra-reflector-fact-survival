@@ -65,6 +65,7 @@ async function callGoogle(model: string, system: string, user: string): Promise<
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY ?? '' },
     body: JSON.stringify(body),
+    signal: AbortSignal.timeout(240_000),
   });
   const json: any = await res.json();
   if (res.status === 429) {
@@ -93,6 +94,7 @@ async function callGroq(model: string, system: string, user: string): Promise<Ca
         { role: 'user', content: user },
       ],
     }),
+    signal: AbortSignal.timeout(240_000),
   });
   const json: any = await res.json();
   if (res.status === 429) {
