@@ -1,0 +1,23 @@
+{
+  "name": "mastra-reflector-fact-survival",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build:refs": "bash scripts/build-refs.sh",
+    "test": "vitest run src/fact-check.test.ts",
+    "eval": "RUN_REFLECTOR_EVAL=1 vitest run src/reflector-fact-survival.eval.test.ts",
+    "report": "tsx src/report.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "esbuild": "^0.24.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^3.2.7"
+  },
+  "dependencies": {
+    "tokenx": "^1.6.0",
+    "zod": "^4.6.5"
+  }
+}
