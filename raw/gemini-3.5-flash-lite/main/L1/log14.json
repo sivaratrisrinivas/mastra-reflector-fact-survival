@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 1,
+ "log": "log14",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8461,
+  "candidatesTokenCount": 1001,
+  "totalTokenCount": 10979,
+  "cachedContentTokenCount": 5685,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8461
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5685
+   }
+  ],
+  "thoughtsTokenCount": 1517,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6172,
+ "at": "2026-10-10T22:57:24.135Z",
+ "rawText": "<observations>\nDate: Jul 6, 2026\n* 🔴 (09:45) User stated maximum guest count is strictly 150; floral budget max $4,500; minimalist gold geometric centerpieces preferred.\n* 🟢 (11:05) User mentioned cousin Thomas has severe peanut allergies.\n* 🟡 (07:30-21:10) Agent researched vegetarian brunch, floral portfolios, and decor rental vendors; updated master spreadsheet and RSVP automation; emailed caterer regarding allergen separation.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) User stated finalized hashtag is #ToHaveAndToHolt2026; rehearsal dinner venue is Harbor View Restaurant; photographer arrives 2 hours pre-ceremony.\n* 🟢 (11:20) User preferred acoustic indie dinner playlist; asked about wheelchair transport and sparklers.\n* 🟡 (07:45-21:00) Agent updated website banner, compiled Spotify acoustic tracks, drafted Harbor View inquiry, checked transit ADA availability, adjusted timeline, and reviewed fire codes for sparklers.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) User stated seating chart must separate college friends from family; catering cutoff is Sept 1, 2026; morning-of robes must be emerald green silk.\n* 🟢 (11:15) User requested locally sourced pretzel/cider welcome snacks, custom mountain range engraving on bands, and botanical spritz.\n* 🟡 (07:35-20:50) Agent checked lavender availability, updated floor plan, researched artisanal snack farms, set calendar reminder for headcount, messaged jeweler, browsed silk robes, and added spritz to bar menu.\n\nDate: Jul 15, 2026\n* 🔴 (09:15) User stated rehearsal dinner cap is 40; venue walkthrough on Aug 26, 2026; dietary restriction labels printed on place cards; emergency kit needs safety pins/tape.\n* 🟢 (11:10) User stated cake flavor is lemon raspberry, requested biodegradable confetti, amber dinner lighting, and vintage 1965 convertible getaway car.\n* 🟡 (07:45-21:10) Agent confirmed sunrise photography rates, updated spreadsheet, ordered EcoCelebrations confetti samples, added emergency supplies, messaged lighting designer, formatted place card templates, and checked vintage car rental.\n\nDate: Jul 19, 2026\n* 🔴 (09:00) User stated college friends sit at table four; ring bearer pillow must be vintage lace; welcome bags must include local craft beer and artisan chocolate.\n* 🟢 (07:30) User requested white roses/eucalyptus floral arches, acoustic indie cocktail music, black catering aprons, and 45-min sunset portrait session.\n* 🟡 (08:15-20:15) Agent updated Bloom & Petal Co. brief, mapped table four, compiled acoustic setlist, searched Etsy for lace pillows, emailed caterer about staff attire, contacted City Brewery/Cocoa Bean Co., and adjusted evening timeline.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) User stated final rehearsal dinner headcount is strictly 35 guests; cake flavor is now pistachio (updated from lemon raspberry); videographer final payment due Aug 10, 2026.\n* 🟢 (07:35) User requested pure mulberry silk getting-ready robes, midnight return shuttle, personalized ceramic coasters as favors, pre-ceremony coffee candid photos, and gluten-free macaron towers.\n* 🟡 (08:20-19:30) Agent updated robe notes, finalized Rustic Hearth reservation, added midnight shuttle, ordered 100 custom ceramic coasters from Kiln & Clay Studio, added pre-ceremony photo addendum, and set videographer payment reminder.\n  * ✅ (21:00) Agent confirmed the gluten-free macaron tower addition with Sweet Treats Bakery.\n</observations>\n\n<current-task>\n- Primary: Wedding planning coordination and vendor management (latest task completed: confirmed gluten-free macaron towers).\n- Secondary: Awaiting next user request or task.\n</current-task>\n\n<suggested-response>\n\"I've confirmed the gluten-free macaron towers with Sweet Treats Bakery. What would you like to tackle next for the wedding planning?\"\n</suggested-response>",
+ "observations": "Date: Jul 6, 2026\n* 🔴 (09:45) User stated maximum guest count is strictly 150; floral budget max $4,500; minimalist gold geometric centerpieces preferred.\n* 🟢 (11:05) User mentioned cousin Thomas has severe peanut allergies.\n* 🟡 (07:30-21:10) Agent researched vegetarian brunch, floral portfolios, and decor rental vendors; updated master spreadsheet and RSVP automation; emailed caterer regarding allergen separation.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) User stated finalized hashtag is #ToHaveAndToHolt2026; rehearsal dinner venue is Harbor View Restaurant; photographer arrives 2 hours pre-ceremony.\n* 🟢 (11:20) User preferred acoustic indie dinner playlist; asked about wheelchair transport and sparklers.\n* 🟡 (07:45-21:00) Agent updated website banner, compiled Spotify acoustic tracks, drafted Harbor View inquiry, checked transit ADA availability, adjusted timeline, and reviewed fire codes for sparklers.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) User stated seating chart must separate college friends from family; catering cutoff is Sept 1, 2026; morning-of robes must be emerald green silk.\n* 🟢 (11:15) User requested locally sourced pretzel/cider welcome snacks, custom mountain range engraving on bands, and botanical spritz.\n* 🟡 (07:35-20:50) Agent checked lavender availability, updated floor plan, researched artisanal snack farms, set calendar reminder for headcount, messaged jeweler, browsed silk robes, and added spritz to bar menu.\n\nDate: Jul 15, 2026\n* 🔴 (09:15) User stated rehearsal dinner cap is 40; venue walkthrough on Aug 26, 2026; dietary restriction labels printed on place cards; emergency kit needs safety pins/tape.\n* 🟢 (11:10) User stated cake flavor is lemon raspberry, requested biodegradable confetti, amber dinner lighting, and vintage 1965 convertible getaway car.\n* 🟡 (07:45-21:10) Agent confirmed sunrise photography rates, updated spreadsheet, ordered EcoCelebrations confetti samples, added emergency supplies, messaged lighting designer, formatted place card templates, and checked vintage car rental.\n\nDate: Jul 19, 2026\n* 🔴 (09:00) User stated college friends sit at table four; ring bearer pillow must be vintage lace; welcome bags must include local craft beer and artisan chocolate.\n* 🟢 (07:30) User requested white roses/eucalyptus floral arches, acoustic indie cocktail music, black catering aprons, and 45-min sunset portrait session.\n* 🟡 (08:15-20:15) Agent updated Bloom & Petal Co. brief, mapped table four, compiled acoustic setlist, searched Etsy for lace pillows, emailed caterer about staff attire, contacted City Brewery/Cocoa Bean Co., and adjusted evening timeline.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) User stated final rehearsal dinner headcount is strictly 35 guests; cake flavor is now pistachio (updated from lemon raspberry); videographer final payment due Aug 10, 2026.\n* 🟢 (07:35) User requested pure mulberry silk getting-ready robes, midnight return shuttle, personalized ceramic coasters as favors, pre-ceremony coffee candid photos, and gluten-free macaron towers.\n* 🟡 (08:20-19:30) Agent updated robe notes, finalized Rustic Hearth reservation, added midnight shuttle, ordered 100 custom ceramic coasters from Kiln & Clay Studio, added pre-ceremony photo addendum, and set videographer payment reminder.\n  * ✅ (21:00) Agent confirmed the gluten-free macaron tower addition with Sweet Treats Bakery.",
+ "degenerate": false
+}

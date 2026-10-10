@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 1,
+ "log": "log16",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8606,
+  "candidatesTokenCount": 939,
+  "totalTokenCount": 11074,
+  "cachedContentTokenCount": 5685,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8606
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5685
+   }
+  ],
+  "thoughtsTokenCount": 1529,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6603,
+ "at": "2026-10-10T22:58:12.181Z",
+ "rawText": "<observations>\nDate: Jul 24, 2026\n* 🔴 (07:15) User stated they prefer black coffee before morning training.\n* 🔴 (08:30) User stated they bought a new pair of Nike Vaporfly 3 running shoes for race day.\n* 🟡 (08:30) Garmin export analyzed: 28 activities, longest 14.2 km, resting HR 54, VO2 max 47, sleep 71, HRV 62ms, weekly mileage 31 km (physio cap 40 km pending knee check-up).\n* 🟡 (09:45) Agent calculated October half marathon tapering schedule and Seattle nutrition stores.\n* 🟢 (11:05) User asked about electrolyte needs for runs under 10 km.\n* 🔴 (13:14) User stated they work a desk job with a standing workstation.\n* 🔴 (16:40) User stated they are allergic to artificial strawberry flavoring in energy gels.\n* 🟢 (20:45) User stated they plan to sleep by 22:00 for recovery.\n\nDate: Jul 27, 2026\n* 🔴 (09:20) User stated they prefer true crime podcasts for long runs.\n* 🔴 (13:50) User stated they prefer oatmeal with almond butter pre-run.\n* 🔴 (16:10) User plans to visit farmers market for fresh blueberries; weekend forecast noted at 28°C.\n* 🟡 (19:30) Agent suggested a 30-minute stationary bike session instead of easy jog due to hill repeat soreness.\n* 🟢 (20:15) User stated they read before sleeping by 21:45.\n\nDate: Jul 30, 2026\n* 🔴 (09:25) User stated they bought HydratePro electrolyte powder at downtown running boutique.\n* 🔴 (13:55) User stated they prefer shaded tree canopy running routes.\n* 🔴 (16:15) User stated they need seamless running socks to prevent blisters.\n* 🟡 (12:50) Agent outlined sweat loss formula (1 kg = 1 liter deficit).\n\nDate: Aug 2, 2026\n* 🔴 (09:15) User stated they registered for the Oakridge Community Half Marathon in September.\n* 🟢 (13:00) User mentioned Garmin Forerunner 965 is on firmware 21.19.\n* 🔴 (13:10) User stated they booked a sports massage at Metro Physical Therapy for Thursday.\n* 🔴 (16:30) User stated they added chia seeds to morning oatmeal.\n\nDate: Aug 6, 2026\n* 🔴 (09:20) User stated they purchased a handheld water flask from Peak Athletic Gear.\n* 🔴 (13:40) User stated they completed their sports massage at Metro Physical Therapy.\n* 🔴 (16:55) User stated they bought a ceramic foam roller from the local sporting goods shop.\n\nDate: Aug 10, 2026\n* 🔴 (09:20) User stated they registered for the Skyline Half Marathon in early September.\n* 🔴 (13:40) User stated they ordered running shoe replacement insoles from SoleCare Technologies.\n* 🔴 (16:55) User stated they cleared their work schedule for the physical therapy knee evaluation.\n* 🟡 (17:35) User stated they do not know their max heart rate.\n* 🟡 (19:15) Agent outlined a standard race-week taper featuring two complete rest days.\n</observations>\n\n<current-task>\n- Primary: Preparing user for September half marathons (Oakridge and Skyline), tracking weekly mileage under the 40 km physio cap, and preparing for the upcoming knee evaluation.\n</current-task>\n\n<suggested-response>\nHow are your legs feeling following your recent runs, and would you like to review your training adjustments leading up to the knee evaluation?\n</suggested-response>",
+ "observations": "Date: Jul 24, 2026\n* 🔴 (07:15) User stated they prefer black coffee before morning training.\n* 🔴 (08:30) User stated they bought a new pair of Nike Vaporfly 3 running shoes for race day.\n* 🟡 (08:30) Garmin export analyzed: 28 activities, longest 14.2 km, resting HR 54, VO2 max 47, sleep 71, HRV 62ms, weekly mileage 31 km (physio cap 40 km pending knee check-up).\n* 🟡 (09:45) Agent calculated October half marathon tapering schedule and Seattle nutrition stores.\n* 🟢 (11:05) User asked about electrolyte needs for runs under 10 km.\n* 🔴 (13:14) User stated they work a desk job with a standing workstation.\n* 🔴 (16:40) User stated they are allergic to artificial strawberry flavoring in energy gels.\n* 🟢 (20:45) User stated they plan to sleep by 22:00 for recovery.\n\nDate: Jul 27, 2026\n* 🔴 (09:20) User stated they prefer true crime podcasts for long runs.\n* 🔴 (13:50) User stated they prefer oatmeal with almond butter pre-run.\n* 🔴 (16:10) User plans to visit farmers market for fresh blueberries; weekend forecast noted at 28°C.\n* 🟡 (19:30) Agent suggested a 30-minute stationary bike session instead of easy jog due to hill repeat soreness.\n* 🟢 (20:15) User stated they read before sleeping by 21:45.\n\nDate: Jul 30, 2026\n* 🔴 (09:25) User stated they bought HydratePro electrolyte powder at downtown running boutique.\n* 🔴 (13:55) User stated they prefer shaded tree canopy running routes.\n* 🔴 (16:15) User stated they need seamless running socks to prevent blisters.\n* 🟡 (12:50) Agent outlined sweat loss formula (1 kg = 1 liter deficit).\n\nDate: Aug 2, 2026\n* 🔴 (09:15) User stated they registered for the Oakridge Community Half Marathon in September.\n* 🟢 (13:00) User mentioned Garmin Forerunner 965 is on firmware 21.19.\n* 🔴 (13:10) User stated they booked a sports massage at Metro Physical Therapy for Thursday.\n* 🔴 (16:30) User stated they added chia seeds to morning oatmeal.\n\nDate: Aug 6, 2026\n* 🔴 (09:20) User stated they purchased a handheld water flask from Peak Athletic Gear.\n* 🔴 (13:40) User stated they completed their sports massage at Metro Physical Therapy.\n* 🔴 (16:55) User stated they bought a ceramic foam roller from the local sporting goods shop.\n\nDate: Aug 10, 2026\n* 🔴 (09:20) User stated they registered for the Skyline Half Marathon in early September.\n* 🔴 (13:40) User stated they ordered running shoe replacement insoles from SoleCare Technologies.\n* 🔴 (16:55) User stated they cleared their work schedule for the physical therapy knee evaluation.\n* 🟡 (17:35) User stated they do not know their max heart rate.\n* 🟡 (19:15) Agent outlined a standard race-week taper featuring two complete rest days.",
+ "degenerate": false
+}

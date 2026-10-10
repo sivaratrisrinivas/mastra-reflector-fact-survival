@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 1,
+ "log": "log10",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8963,
+  "candidatesTokenCount": 919,
+  "totalTokenCount": 11562,
+  "cachedContentTokenCount": 5861,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8963
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5861
+   }
+  ],
+  "thoughtsTokenCount": 1680,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6681,
+ "at": "2026-10-10T22:56:14.071Z",
+ "rawText": "<observations>\nDate: May 31, 2026\n* 🔴 (07:15) User planning July mountain trip; set $5k emergency savings goal.\n* 🔴 (12:30) User wanted to donate $200 to a local charity this month.\n* ✅ (21:15) Loan consolidation recommendation finalized for the user.\n\nDate: Jun 3, 2026\n* 🔴 (07:10) User considering switching HYSA providers.\n* 🟡 (18:10) Agent recommended Fidelity Brokerage and set up automated $200/mo transfer from savings.\n* 🟡 (20:30) Agent recommended debt avalanche repayment method over snowball.\n\nDate: Jun 6, 2026\n* 🔴 (07:05) User considering mortgage refinance; CreditUnion 3.00% 30-year identified as lowest APR vs 15-year option.\n* 🔴 (11:15) User reported $2,500 credit card balance on Sunrise Card (22.99% APR); agent scheduled $300 biweekly payments.\n* 🟡 (15:00) Estimated mortgage interest deduction at $7,000 for current tax year.\n\nDate: Jun 9, 2026\n* 🔴 (07:10) User planning short trip to Asheville next month ($600 travel budget, $350 round-trip airfare).\n* 🔴 (10:05) User confirmed holding Horizon Travel Rewards Card (5% hotel cashback) for the trip.\n* 🔴 (13:00) User stated intent to donate $200 to local animal shelter after trip (estimated $50 tax credit).\n* 🟡 (13:40) Accounts export: Chase checking $3,410; Ally savings $12,980 (emergency fund); Fidelity 401(k) $48,200; Amex Gold $1,126 due 21st; Discover It $0; Vanguard Roth IRA $9,870; Capital One Quicksilver $412; Marcus CD $5,000 (matures March); PayPal $86; Venmo $40; HSA $2,215.\n\nDate: Jun 13, 2026\n* 🔴 (07:15) User scheduled credit card payment; confirmed paying $1,200 on June 12 (balance was $2,350).\n* 🔴 (13:15) User stated they will keep receipts in 'TaxDocs' cloud folder; estimated medical expense deduction at $800 (7.5% AGI threshold). Tax deadline: April 15, 2027.\n\nDate: Jun 17, 2026\n* 🔴 (07:05) User reviewed house down payment savings goal ($12,980 current balance; goal reached in 2 years, 4 months).\n* 🟡 (08:00) Agent set up $800/mo recurring transfer from checking to savings on the 1st of each month.\n* 🔴 (08:30) User plans to refinance car loan next quarter ($9,500 balance at 3.9% APR); personal loan found at 3.5% APR drops payment from $240 to $220.\n* 🔴 (10:00) User confirmed applying for the new personal loan on June 20.\n* 🟢 (16:20) User stated they track spending in YNAB iOS app, version 3.12.1.\n</observations>\n\n<current-task>\n- Primary: Awaiting further user input regarding scheduled financial tasks and upcoming June 20 car loan refinance application.\n- Secondary: Pending travel planning details for Asheville (next month) and upcoming tax reminders.\n</current-task>\n\n<suggested-response>\nThe assistant should wait for the user to respond before continuing.\n</suggested-response>",
+ "observations": "Date: May 31, 2026\n* 🔴 (07:15) User planning July mountain trip; set $5k emergency savings goal.\n* 🔴 (12:30) User wanted to donate $200 to a local charity this month.\n* ✅ (21:15) Loan consolidation recommendation finalized for the user.\n\nDate: Jun 3, 2026\n* 🔴 (07:10) User considering switching HYSA providers.\n* 🟡 (18:10) Agent recommended Fidelity Brokerage and set up automated $200/mo transfer from savings.\n* 🟡 (20:30) Agent recommended debt avalanche repayment method over snowball.\n\nDate: Jun 6, 2026\n* 🔴 (07:05) User considering mortgage refinance; CreditUnion 3.00% 30-year identified as lowest APR vs 15-year option.\n* 🔴 (11:15) User reported $2,500 credit card balance on Sunrise Card (22.99% APR); agent scheduled $300 biweekly payments.\n* 🟡 (15:00) Estimated mortgage interest deduction at $7,000 for current tax year.\n\nDate: Jun 9, 2026\n* 🔴 (07:10) User planning short trip to Asheville next month ($600 travel budget, $350 round-trip airfare).\n* 🔴 (10:05) User confirmed holding Horizon Travel Rewards Card (5% hotel cashback) for the trip.\n* 🔴 (13:00) User stated intent to donate $200 to local animal shelter after trip (estimated $50 tax credit).\n* 🟡 (13:40) Accounts export: Chase checking $3,410; Ally savings $12,980 (emergency fund); Fidelity 401(k) $48,200; Amex Gold $1,126 due 21st; Discover It $0; Vanguard Roth IRA $9,870; Capital One Quicksilver $412; Marcus CD $5,000 (matures March); PayPal $86; Venmo $40; HSA $2,215.\n\nDate: Jun 13, 2026\n* 🔴 (07:15) User scheduled credit card payment; confirmed paying $1,200 on June 12 (balance was $2,350).\n* 🔴 (13:15) User stated they will keep receipts in 'TaxDocs' cloud folder; estimated medical expense deduction at $800 (7.5% AGI threshold). Tax deadline: April 15, 2027.\n\nDate: Jun 17, 2026\n* 🔴 (07:05) User reviewed house down payment savings goal ($12,980 current balance; goal reached in 2 years, 4 months).\n* 🟡 (08:00) Agent set up $800/mo recurring transfer from checking to savings on the 1st of each month.\n* 🔴 (08:30) User plans to refinance car loan next quarter ($9,500 balance at 3.9% APR); personal loan found at 3.5% APR drops payment from $240 to $220.\n* 🔴 (10:00) User confirmed applying for the new personal loan on June 20.\n* 🟢 (16:20) User stated they track spending in YNAB iOS app, version 3.12.1.",
+ "degenerate": false
+}

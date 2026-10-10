@@ -1,4 +1,166 @@
 ref,level,log,fact,type,typeName,position,pass,reason,modelVersion
+main,1,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+main,1,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+main,1,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+main,1,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+main,1,log01,log01-f1,8,"changed value: old and new both kept",middle,true,"found",gemini-3.5-flash-lite
+main,1,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+main,1,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+main,1,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+main,1,log02,log02-f2,15,"who-said-what (assistant attribution)",late,false,"fact present but qualifier missing on its line: '* 🟡 (16:30) User agreed to use Redis Streams for the background job queue.'",gemini-3.5-flash-lite
+main,1,log03,log03-f0,4,"relative date with anchor",early,true,"found",gemini-3.5-flash-lite
+main,1,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+main,1,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+main,1,log04,log04-f0,5,"version string",early,true,"found",gemini-3.5-flash-lite
+main,1,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+main,1,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+main,1,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+main,1,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+main,1,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite
+main,1,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+main,1,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+main,1,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+main,1,log07,log07-f0,8,"changed value: old and new both kept",early,true,"found",gemini-3.5-flash-lite
+main,1,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+main,1,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+main,1,log08,log08-f0,9,"changed value: new marked current",early,true,"found",gemini-3.5-flash-lite
+main,1,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+main,1,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+main,1,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+main,1,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+main,1,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+main,1,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+main,1,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+main,1,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+main,1,log11,log11-f0,12,"refused action",early,false,"missing any of [credential | login | password]",gemini-3.5-flash-lite
+main,1,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+main,1,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+main,1,log12,log12-f0,13,"stated preference",early,true,"found",gemini-3.5-flash-lite
+main,1,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+main,1,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+main,1,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+main,1,log13,log13-f1,2,"dollar amount",middle,false,"missing any of [4750 | 4.75k]",gemini-3.5-flash-lite
+main,1,log13,log13-f2,8,"changed value: old and new both kept",late,false,"missing any of [140]",gemini-3.5-flash-lite
+main,1,log14,log14-f0,15,"who-said-what (assistant attribution)",early,false,"missing any of [quartet]",gemini-3.5-flash-lite
+main,1,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+main,1,log14,log14-f2,9,"changed value: new marked current",late,true,"found",gemini-3.5-flash-lite
+main,1,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+main,1,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+main,1,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+main,1,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+main,1,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+main,1,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+main,1,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+main,1,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+main,1,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite
+main,2,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+main,2,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+main,2,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+main,2,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+main,2,log01,log01-f1,8,"changed value: old and new both kept",middle,false,"missing any of [04/23/2026 | 2026-04-23 | 23 apr | 23 april]",gemini-3.5-flash-lite
+main,2,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+main,2,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+main,2,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+main,2,log02,log02-f2,15,"who-said-what (assistant attribution)",late,false,"fact present but qualifier missing on its line: '* 🟡 (15:40) Added nightly DB cleanup cron job and adopted Redis Streams for background job queue (user agreed).'",gemini-3.5-flash-lite
+main,2,log03,log03-f0,4,"relative date with anchor",early,true,"found",gemini-3.5-flash-lite
+main,2,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+main,2,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+main,2,log04,log04-f0,5,"version string",early,false,"missing any of [4.9.2]",gemini-3.5-flash-lite
+main,2,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+main,2,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+main,2,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+main,2,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+main,2,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite
+main,2,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+main,2,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+main,2,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+main,2,log07,log07-f0,8,"changed value: old and new both kept",early,false,"missing any of [18400 | 18.4k]",gemini-3.5-flash-lite
+main,2,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+main,2,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+main,2,log08,log08-f0,9,"changed value: new marked current",early,false,"old and new both present, new not marked current",gemini-3.5-flash-lite
+main,2,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+main,2,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+main,2,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+main,2,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+main,2,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+main,2,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+main,2,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+main,2,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+main,2,log11,log11-f0,12,"refused action",early,true,"found",gemini-3.5-flash-lite
+main,2,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+main,2,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+main,2,log12,log12-f0,13,"stated preference",early,true,"found",gemini-3.5-flash-lite
+main,2,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+main,2,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+main,2,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+main,2,log13,log13-f1,2,"dollar amount",middle,true,"found",gemini-3.5-flash-lite
+main,2,log13,log13-f2,8,"changed value: old and new both kept",late,true,"found",gemini-3.5-flash-lite
+main,2,log14,log14-f0,15,"who-said-what (assistant attribution)",early,false,"missing any of [quartet]",gemini-3.5-flash-lite
+main,2,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+main,2,log14,log14-f2,9,"changed value: new marked current",late,true,"found",gemini-3.5-flash-lite
+main,2,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+main,2,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+main,2,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+main,2,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+main,2,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+main,2,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+main,2,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+main,2,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+main,2,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite
+main,3,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+main,3,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+main,3,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+main,3,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+main,3,log01,log01-f1,8,"changed value: old and new both kept",middle,false,"missing any of [04/23/2026 | 2026-04-23 | 23 apr | 23 april]",gemini-3.5-flash-lite
+main,3,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+main,3,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+main,3,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+main,3,log02,log02-f2,15,"who-said-what (assistant attribution)",late,false,"fact present but qualifier missing on its line: '* 🟡 Added nightly DB cleanup script, Snyk security scanning in CI, and evaluated Redis Streams for background jobs.'",gemini-3.5-flash-lite
+main,3,log03,log03-f0,4,"relative date with anchor",early,false,"missing any of [04/03/2026 | 2026-04-03 | 3 apr | 3 april]",gemini-3.5-flash-lite
+main,3,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+main,3,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+main,3,log04,log04-f0,5,"version string",early,false,"missing any of [4.9.2]",gemini-3.5-flash-lite
+main,3,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+main,3,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+main,3,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+main,3,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+main,3,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite
+main,3,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+main,3,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+main,3,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+main,3,log07,log07-f0,8,"changed value: old and new both kept",early,false,"missing any of [18400 | 18.4k]",gemini-3.5-flash-lite
+main,3,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+main,3,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+main,3,log08,log08-f0,9,"changed value: new marked current",early,true,"found",gemini-3.5-flash-lite
+main,3,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+main,3,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+main,3,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+main,3,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+main,3,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+main,3,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+main,3,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+main,3,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+main,3,log11,log11-f0,12,"refused action",early,true,"found",gemini-3.5-flash-lite
+main,3,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+main,3,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+main,3,log12,log12-f0,13,"stated preference",early,true,"found",gemini-3.5-flash-lite
+main,3,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+main,3,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+main,3,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+main,3,log13,log13-f1,2,"dollar amount",middle,true,"found",gemini-3.5-flash-lite
+main,3,log13,log13-f2,8,"changed value: old and new both kept",late,true,"found",gemini-3.5-flash-lite
+main,3,log14,log14-f0,15,"who-said-what (assistant attribution)",early,false,"missing any of [quartet]",gemini-3.5-flash-lite
+main,3,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+main,3,log14,log14-f2,9,"changed value: new marked current",late,true,"found",gemini-3.5-flash-lite
+main,3,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+main,3,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+main,3,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+main,3,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+main,3,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+main,3,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+main,3,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+main,3,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+main,3,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite
 main,4,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
 main,4,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
 main,4,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
@@ -17,6 +179,204 @@ main,4,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"fou
 main,4,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
 main,4,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
 main,4,log05,log05-f2,18,"control: transient noise (pass = absent)",late,true,"noise dropped",gemini-3.5-flash-lite
+main,4,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+main,4,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+main,4,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+main,4,log07,log07-f0,8,"changed value: old and new both kept",early,true,"found",gemini-3.5-flash-lite
+main,4,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+main,4,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+main,4,log08,log08-f0,9,"changed value: new marked current",early,false,"old and new both present, new not marked current",gemini-3.5-flash-lite
+main,4,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+main,4,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+main,4,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+main,4,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+main,4,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+main,4,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+main,4,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+main,4,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+main,4,log11,log11-f0,12,"refused action",early,true,"found",gemini-3.5-flash-lite
+main,4,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+main,4,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+main,4,log12,log12-f0,13,"stated preference",early,true,"found",gemini-3.5-flash-lite
+main,4,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+main,4,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+main,4,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+main,4,log13,log13-f1,2,"dollar amount",middle,true,"found",gemini-3.5-flash-lite
+main,4,log13,log13-f2,8,"changed value: old and new both kept",late,true,"found",gemini-3.5-flash-lite
+main,4,log14,log14-f0,15,"who-said-what (assistant attribution)",early,false,"missing any of [quartet]",gemini-3.5-flash-lite
+main,4,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+main,4,log14,log14-f2,9,"changed value: new marked current",late,true,"found",gemini-3.5-flash-lite
+main,4,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+main,4,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+main,4,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+main,4,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+main,4,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+main,4,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+main,4,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+main,4,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+main,4,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log01,log01-f1,8,"changed value: old and new both kept",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log02,log02-f2,15,"who-said-what (assistant attribution)",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log03,log03-f0,4,"relative date with anchor",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log04,log04-f0,5,"version string",early,false,"missing any of [4.9.2]",gemini-3.5-flash-lite
+pr26465,1,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+pr26465,1,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite
+pr26465,1,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log07,log07-f0,8,"changed value: old and new both kept",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log08,log08-f0,9,"changed value: new marked current",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+pr26465,1,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+pr26465,1,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log11,log11-f0,12,"refused action",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,1,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log12,log12-f0,13,"stated preference",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log13,log13-f1,2,"dollar amount",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log13,log13-f2,8,"changed value: old and new both kept",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log14,log14-f0,15,"who-said-what (assistant attribution)",early,false,"missing any of [quartet]",gemini-3.5-flash-lite
+pr26465,1,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log14,log14-f2,9,"changed value: new marked current",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+pr26465,1,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+pr26465,1,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,1,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+pr26465,1,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log01,log01-f1,8,"changed value: old and new both kept",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log02,log02-f2,15,"who-said-what (assistant attribution)",late,false,"fact present but qualifier missing on its line: '* 🟡 (15:40) Added nightly DB cleanup cron, Redis Streams for background jobs, and Snyk security scans in CI.'",gemini-3.5-flash-lite
+pr26465,2,log03,log03-f0,4,"relative date with anchor",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log04,log04-f0,5,"version string",early,false,"missing any of [4.9.2]",gemini-3.5-flash-lite
+pr26465,2,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+pr26465,2,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite
+pr26465,2,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log07,log07-f0,8,"changed value: old and new both kept",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log08,log08-f0,9,"changed value: new marked current",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+pr26465,2,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+pr26465,2,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log11,log11-f0,12,"refused action",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,2,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log12,log12-f0,13,"stated preference",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log13,log13-f1,2,"dollar amount",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log13,log13-f2,8,"changed value: old and new both kept",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log14,log14-f0,15,"who-said-what (assistant attribution)",early,false,"missing any of [quartet]",gemini-3.5-flash-lite
+pr26465,2,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log14,log14-f2,9,"changed value: new marked current",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+pr26465,2,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+pr26465,2,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,2,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+pr26465,2,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log01,log01-f0,2,"dollar amount",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log01,log01-f1,8,"changed value: old and new both kept",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log01,log01-f2,14,"standing instruction / rule",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log02,log02-f0,3,"absolute date",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log02,log02-f1,9,"changed value: new marked current",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log02,log02-f2,15,"who-said-what (assistant attribution)",late,false,"fact present but qualifier missing on its line: '* 🟡 (16:30) Adopted Redis Streams for background job queues and added Snyk security scanning to CI.'",gemini-3.5-flash-lite
+pr26465,3,log03,log03-f0,4,"relative date with anchor",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log03,log03-f1,10,"stated negative (never)",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log03,log03-f2,16,"fact repeated 3 times",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log04,log04-f0,5,"version string",early,false,"missing any of [4.9.2]",gemini-3.5-flash-lite
+pr26465,3,log04,log04-f1,11,"doesn't know X",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
+pr26465,3,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite
+pr26465,3,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log07,log07-f0,8,"changed value: old and new both kept",early,false,"missing any of [18400 | 18.4k]",gemini-3.5-flash-lite
+pr26465,3,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log08,log08-f0,9,"changed value: new marked current",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+pr26465,3,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+pr26465,3,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log11,log11-f0,12,"refused action",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,3,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log12,log12-f0,13,"stated preference",early,false,"fact present but qualifier missing on its line: '* 🔴 Wedding planning details established: Outdoors hilltop ceremony (sunset view, garden pavilion, 14:00 start), vintage reception decor, b'",gemini-3.5-flash-lite
+pr26465,3,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log13,log13-f1,2,"dollar amount",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log13,log13-f2,8,"changed value: old and new both kept",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log14,log14-f0,15,"who-said-what (assistant attribution)",early,false,"missing any of [quartet]",gemini-3.5-flash-lite
+pr26465,3,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log14,log14-f2,9,"changed value: new marked current",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+pr26465,3,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+pr26465,3,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,3,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+pr26465,3,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite
 pr26465,4,log00,log00-f0,1,"person name in a low-priority line",early,true,"found",gemini-3.5-flash-lite
 pr26465,4,log00,log00-f1,7,"place",middle,true,"found",gemini-3.5-flash-lite
 pr26465,4,log00,log00-f2,13,"stated preference",late,true,"found",gemini-3.5-flash-lite
@@ -35,3 +395,39 @@ pr26465,4,log04,log04-f2,17,"fact buried in a long tool-result line",late,true,"
 pr26465,4,log05,log05-f0,6,"duration",early,false,"missing any of [7 hours 40 | 7h40 | 7h 40 | 7 hr 40]",gemini-3.5-flash-lite
 pr26465,4,log05,log05-f1,12,"refused action",middle,true,"found",gemini-3.5-flash-lite
 pr26465,4,log05,log05-f2,18,"control: transient noise (pass = absent)",late,false,"noise kept: 'req_8fk2pq'",gemini-3.5-flash-lite
+pr26465,4,log06,log06-f0,7,"place",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log06,log06-f1,13,"stated preference",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log06,log06-f2,1,"person name in a low-priority line",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log07,log07-f0,8,"changed value: old and new both kept",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log07,log07-f1,14,"standing instruction / rule",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log07,log07-f2,2,"dollar amount",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log08,log08-f0,9,"changed value: new marked current",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log08,log08-f1,15,"who-said-what (assistant attribution)",middle,false,"missing any of [dishwasher]",gemini-3.5-flash-lite
+pr26465,4,log08,log08-f2,3,"absolute date",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log09,log09-f0,10,"stated negative (never)",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log09,log09-f1,16,"fact repeated 3 times",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log09,log09-f2,4,"relative date with anchor",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log10,log10-f0,11,"doesn't know X",early,false,"missing any of [credit score]",gemini-3.5-flash-lite
+pr26465,4,log10,log10-f1,17,"fact buried in a long tool-result line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log10,log10-f2,5,"version string",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log11,log11-f0,12,"refused action",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log11,log11-f1,18,"control: transient noise (pass = absent)",middle,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,4,log11,log11-f2,6,"duration",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log12,log12-f0,13,"stated preference",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log12,log12-f1,1,"person name in a low-priority line",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log12,log12-f2,7,"place",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log13,log13-f0,14,"standing instruction / rule",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log13,log13-f1,2,"dollar amount",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log13,log13-f2,8,"changed value: old and new both kept",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log14,log14-f0,15,"who-said-what (assistant attribution)",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log14,log14-f1,3,"absolute date",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log14,log14-f2,9,"changed value: new marked current",late,false,"old and new both present, new not marked current",gemini-3.5-flash-lite
+pr26465,4,log15,log15-f0,16,"fact repeated 3 times",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log15,log15-f1,4,"relative date with anchor",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log15,log15-f2,10,"stated negative (never)",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log16,log16-f0,17,"fact buried in a long tool-result line",early,true,"found",gemini-3.5-flash-lite
+pr26465,4,log16,log16-f1,5,"version string",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log16,log16-f2,11,"doesn't know X",late,true,"found",gemini-3.5-flash-lite
+pr26465,4,log17,log17-f0,18,"control: transient noise (pass = absent)",early,true,"noise dropped",gemini-3.5-flash-lite
+pr26465,4,log17,log17-f1,6,"duration",middle,true,"found",gemini-3.5-flash-lite
+pr26465,4,log17,log17-f2,12,"refused action",late,true,"found",gemini-3.5-flash-lite

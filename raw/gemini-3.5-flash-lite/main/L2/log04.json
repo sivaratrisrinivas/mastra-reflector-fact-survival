@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 2,
+ "log": "log04",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 9103,
+  "candidatesTokenCount": 811,
+  "totalTokenCount": 11940,
+  "cachedContentTokenCount": 5686,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 9103
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5686
+   }
+  ],
+  "thoughtsTokenCount": 2026,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6750,
+ "at": "2026-10-10T23:06:25.305Z",
+ "rawText": "<observations>\nDate: Apr 7, 2026\n* 🔴 User preferences: morning flights (<10:00), vegan meals, boutique hotels. Uses OsmAnd v4.9.2.\n* ✅ (08:25) Booked London→Porto flight (SkyFly 08:05, Sep 15, €165).\n* ✅ (10:35) Booked Porto→Vigo train seat 4A (Sep 18, €27).\n* ✅ (12:30) Booked Hotel Miramar in Barcelona (Sep 20–23, €225/night).\n\nDate: Apr 10, 2026\n* ✅ (08:15) Reserved SeaGreen Terrace (vegan beachfront dinner, Barcelona, Sep 21).\n* ✅ (09:55) Booked Porto→Barcelona flight (FlyNova 13:20, Sep 19, €95).\n* ✅ (11:30) Booked Urban Loft in Madrid (Sep 24, €150).\n\nDate: Apr 13, 2026\n* ✅ (08:20) Reserved SunRide car rental at Seville airport (Sep 25, €28/day).\n* ✅ (09:55) Booked Seville→Granada train (14:30 AVE, Sep 26, €52).\n* ✅ (11:30) Booked Casa del Sol hotel in Granada (Sep 26–27, €105/night).\n\nDate: Apr 16, 2026\n* ✅ (08:30) Booked Madrid→Porto flight (Iberia 11:00, Sep 22, €78).\n* ✅ (10:05) Booked Porto→Coimbra train (Intercidades 10:15, Sep 24).\n* ✅ (11:40) Booked Casa da Fonte boutique hotel in Coimbra (Sep 24–26, €140/night).\n* 🟡 (14:40) User unsure if rail pass covers Porto–Lisbon Alfa Pendular train.\n\nDate: Apr 20, 2026\n* ✅ (08:20) Booked Faro→Seville flight (SunAir 13:20, Oct 3, €115).\n* ✅ (10:10) Booked automatic Sedan VW car rental in Seville (Oct 3–5, €68/day).\n* ✅ (12:00) Reserved table for two at \"El Rincón Dorado\" in Seville (Oct 3, 20:30).\n\nDate: Apr 24, 2026\n* ✅ (08:10) Booked Seville→Córdoba train (Avant 09:20, Oct 4, €38).\n* ✅ (09:55) Booked Patio del Río boutique hotel in Córdoba (Oct 4–6, breakfast included, €95/night).\n* ✅ (11:50) Reserved table for two at Mesón de la Alcázar in Córdoba (Oct 4, 13:30).\n* ✅ (14:00) Booked Córdoba→Granada day trip package (08:10 train + Alhambra ticket, Oct 5).\n* ✅ (18:12) Booked Casa do Principe hotel in Lisbon (Sep 15–18, €176/night).\n</observations>",
+ "observations": "Date: Apr 7, 2026\n* 🔴 User preferences: morning flights (<10:00), vegan meals, boutique hotels. Uses OsmAnd v4.9.2.\n* ✅ (08:25) Booked London→Porto flight (SkyFly 08:05, Sep 15, €165).\n* ✅ (10:35) Booked Porto→Vigo train seat 4A (Sep 18, €27).\n* ✅ (12:30) Booked Hotel Miramar in Barcelona (Sep 20–23, €225/night).\n\nDate: Apr 10, 2026\n* ✅ (08:15) Reserved SeaGreen Terrace (vegan beachfront dinner, Barcelona, Sep 21).\n* ✅ (09:55) Booked Porto→Barcelona flight (FlyNova 13:20, Sep 19, €95).\n* ✅ (11:30) Booked Urban Loft in Madrid (Sep 24, €150).\n\nDate: Apr 13, 2026\n* ✅ (08:20) Reserved SunRide car rental at Seville airport (Sep 25, €28/day).\n* ✅ (09:55) Booked Seville→Granada train (14:30 AVE, Sep 26, €52).\n* ✅ (11:30) Booked Casa del Sol hotel in Granada (Sep 26–27, €105/night).\n\nDate: Apr 16, 2026\n* ✅ (08:30) Booked Madrid→Porto flight (Iberia 11:00, Sep 22, €78).\n* ✅ (10:05) Booked Porto→Coimbra train (Intercidades 10:15, Sep 24).\n* ✅ (11:40) Booked Casa da Fonte boutique hotel in Coimbra (Sep 24–26, €140/night).\n* 🟡 (14:40) User unsure if rail pass covers Porto–Lisbon Alfa Pendular train.\n\nDate: Apr 20, 2026\n* ✅ (08:20) Booked Faro→Seville flight (SunAir 13:20, Oct 3, €115).\n* ✅ (10:10) Booked automatic Sedan VW car rental in Seville (Oct 3–5, €68/day).\n* ✅ (12:00) Reserved table for two at \"El Rincón Dorado\" in Seville (Oct 3, 20:30).\n\nDate: Apr 24, 2026\n* ✅ (08:10) Booked Seville→Córdoba train (Avant 09:20, Oct 4, €38).\n* ✅ (09:55) Booked Patio del Río boutique hotel in Córdoba (Oct 4–6, breakfast included, €95/night).\n* ✅ (11:50) Reserved table for two at Mesón de la Alcázar in Córdoba (Oct 4, 13:30).\n* ✅ (14:00) Booked Córdoba→Granada day trip package (08:10 train + Alhambra ticket, Oct 5).\n* ✅ (18:12) Booked Casa do Principe hotel in Lisbon (Sep 15–18, €176/night).",
+ "degenerate": false
+}

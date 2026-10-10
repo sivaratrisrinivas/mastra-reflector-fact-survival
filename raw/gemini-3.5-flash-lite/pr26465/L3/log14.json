@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 3,
+ "log": "log14",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8693,
+  "candidatesTokenCount": 684,
+  "totalTokenCount": 11432,
+  "cachedContentTokenCount": 6595,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8693
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6595
+   }
+  ],
+  "thoughtsTokenCount": 2055,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6780,
+ "at": "2026-10-10T23:03:52.158Z",
+ "rawText": "<observations>\nDate: Jul 6, 2026\n* 🔴 (09:45) User stated reception guest limit is strictly 150 people.\n* 🔴 (13:10) User stated floral budget cannot exceed $4,500.\n* 🔴 (17:22) User prefers minimalist gold geometric table centerpieces.\n* 🟡 (11:05) Cousin Thomas has severe peanut allergies; catering briefed on allergen protocols.\n* 🟡 (21:10) RSVP automation rules configured on wedding website.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) Finalized wedding hashtag is #ToHaveAndToHolt2026.\n* 🔴 (17:50) Photographer arrival set for two hours before ceremony (bridal suite at noon).\n* 🟡 (12:10) Acoustic indie Spotify dinner playlist compiled.\n* 🟡 (16:35) Checked ADA-compliant coach availability with Metro Luxury Transit.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) Seating chart must separate college friends from immediate family tables.\n* 🔴 (13:30) Catering final headcount cutoff date is September 1st, 2026.\n* 🟡 (12:00) Researched regional artisanal welcome bag snacks (local pretzels and cider).\n\nDate: Jul 15, 2026\n* 🔴 (15:20) Venue walkthrough scheduled for August 26, 2026.\n* 🟡 (12:05) Ordered leaf-based biodegradable confetti sample packs from EcoCelebrations.\n\nDate: Jul 19, 2026\n* 🔴 (12:45) Ring bearer pillow must be handmade from vintage lace.\n* 🔴 (16:30) Welcome bags must include local craft beer and artisan chocolate.\n* 🟡 (08:15) Floral design brief updated for white rose and eucalyptus arches.\n* 🟡 (20:15) Evening timeline adjusted for 45-minute sunset portrait session.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) Final rehearsal dinner capped at 35 guests at The Rustic Hearth Restaurant.\n* 🔴 (16:45) Cake flavor updated to pistachio (replacing previous lemon raspberry choice).\n* 🔴 (17:00) Videographer final payment due August 10, 2026.\n* 🔴 (13:10) Ordered 100 personalized ceramic coasters from Kiln & Clay Studio as favors.\n* 🟡 (08:20) Morning getting-ready robes updated to pure mulberry silk.\n* ✅ (21:00) Gluten-free macaron tower addition confirmed with Sweet Treats Bakery.\n</observations>\n\n<suggested-response>\nThe assistant should wait for the user to provide the next wedding planning task or question.\n</suggested-response>",
+ "observations": "Date: Jul 6, 2026\n* 🔴 (09:45) User stated reception guest limit is strictly 150 people.\n* 🔴 (13:10) User stated floral budget cannot exceed $4,500.\n* 🔴 (17:22) User prefers minimalist gold geometric table centerpieces.\n* 🟡 (11:05) Cousin Thomas has severe peanut allergies; catering briefed on allergen protocols.\n* 🟡 (21:10) RSVP automation rules configured on wedding website.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) Finalized wedding hashtag is #ToHaveAndToHolt2026.\n* 🔴 (17:50) Photographer arrival set for two hours before ceremony (bridal suite at noon).\n* 🟡 (12:10) Acoustic indie Spotify dinner playlist compiled.\n* 🟡 (16:35) Checked ADA-compliant coach availability with Metro Luxury Transit.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) Seating chart must separate college friends from immediate family tables.\n* 🔴 (13:30) Catering final headcount cutoff date is September 1st, 2026.\n* 🟡 (12:00) Researched regional artisanal welcome bag snacks (local pretzels and cider).\n\nDate: Jul 15, 2026\n* 🔴 (15:20) Venue walkthrough scheduled for August 26, 2026.\n* 🟡 (12:05) Ordered leaf-based biodegradable confetti sample packs from EcoCelebrations.\n\nDate: Jul 19, 2026\n* 🔴 (12:45) Ring bearer pillow must be handmade from vintage lace.\n* 🔴 (16:30) Welcome bags must include local craft beer and artisan chocolate.\n* 🟡 (08:15) Floral design brief updated for white rose and eucalyptus arches.\n* 🟡 (20:15) Evening timeline adjusted for 45-minute sunset portrait session.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) Final rehearsal dinner capped at 35 guests at The Rustic Hearth Restaurant.\n* 🔴 (16:45) Cake flavor updated to pistachio (replacing previous lemon raspberry choice).\n* 🔴 (17:00) Videographer final payment due August 10, 2026.\n* 🔴 (13:10) Ordered 100 personalized ceramic coasters from Kiln & Clay Studio as favors.\n* 🟡 (08:20) Morning getting-ready robes updated to pure mulberry silk.\n* ✅ (21:00) Gluten-free macaron tower addition confirmed with Sweet Treats Bakery.",
+ "degenerate": false
+}

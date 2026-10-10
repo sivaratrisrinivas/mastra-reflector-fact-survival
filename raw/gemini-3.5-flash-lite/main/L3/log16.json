@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 3,
+ "log": "log16",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8662,
+  "candidatesTokenCount": 560,
+  "totalTokenCount": 10229,
+  "cachedContentTokenCount": 5685,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8662
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5685
+   }
+  ],
+  "thoughtsTokenCount": 1007,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 4492,
+ "at": "2026-10-10T23:04:23.143Z",
+ "rawText": "<observations>\nDate: Jul 24, 2026\n* 🔴 User prefers black coffee pre-run; works a desk job with a standing workstation; allergic to artificial strawberry flavoring.\n* 🔴 User purchased Nike Vaporfly 3 running shoes; previous shoes logged at 512 km.\n* 🟡 Garmin stats: 28 activities, 14.2 km max run, resting HR 54, VO2 max 47, weekly mileage 31 km. Physio set a 40 km weekly mileage cap pending knee check-up.\n* 🟡 Agent calculated half marathon tapering schedule and researched maple-based endurance fuels.\n\nDate: Jul 27, 2026\n* 🔴 User prefers true crime podcasts, eating oatmeal with almond butter pre-run, and visiting farmers markets.\n* 🟡 Agent provided advice on dynamic warm-ups, humidity pacing, technical fabric care, and injury management.\n\nDate: Jul 30, 2026\n* 🔴 User purchased \"HydratePro\" electrolyte powder; prefers shaded running routes; needs seamless socks.\n* 🟡 Agent reviewed electrolyte ingredients, sweat loss formulas, and core/hip mobility routines.\n\nDate: Aug 2, 2026\n* 🔴 User registered for the Oakridge Community Half Marathon (September); booked sports massage at Metro Physical Therapy; added chia seeds to oatmeal.\n* 🟡 Agent tracked Garmin Forerunner 965 (firmware 21.19), high humidity metrics (84%), and anti-friction glide strategies.\n\nDate: Aug 6, 2026\n* 🔴 User purchased a Peak Athletic Gear handheld flask and a ceramic foam roller; completed scheduled sports massage.\n* 🟡 Agent calculated hourly hydration needs (500 ml/hr), asphalt impact safety, and gear maintenance.\n\nDate: Aug 10, 2026\n* 🔴 User registered for the Skyline Half Marathon (early September); ordered SoleCare replacement insoles; cleared work schedule for knee evaluation; max heart rate unknown.\n* 🟡 Agent advised on pre-run fueling (banana + almonds), cadence spikes, fabric softener effects, and taper rest days.\n</observations>\n\n<current-task>\n- Primary: Monitoring training load, tapering, and nutrition leading up to the September half marathon while respecting the physio's 40 km weekly mileage cap and upcoming knee evaluation.\n</current-task>\n\n<suggested-response>\nThe assistant should wait for the user's next input or training update before continuing.\n</suggested-response>",
+ "observations": "Date: Jul 24, 2026\n* 🔴 User prefers black coffee pre-run; works a desk job with a standing workstation; allergic to artificial strawberry flavoring.\n* 🔴 User purchased Nike Vaporfly 3 running shoes; previous shoes logged at 512 km.\n* 🟡 Garmin stats: 28 activities, 14.2 km max run, resting HR 54, VO2 max 47, weekly mileage 31 km. Physio set a 40 km weekly mileage cap pending knee check-up.\n* 🟡 Agent calculated half marathon tapering schedule and researched maple-based endurance fuels.\n\nDate: Jul 27, 2026\n* 🔴 User prefers true crime podcasts, eating oatmeal with almond butter pre-run, and visiting farmers markets.\n* 🟡 Agent provided advice on dynamic warm-ups, humidity pacing, technical fabric care, and injury management.\n\nDate: Jul 30, 2026\n* 🔴 User purchased \"HydratePro\" electrolyte powder; prefers shaded running routes; needs seamless socks.\n* 🟡 Agent reviewed electrolyte ingredients, sweat loss formulas, and core/hip mobility routines.\n\nDate: Aug 2, 2026\n* 🔴 User registered for the Oakridge Community Half Marathon (September); booked sports massage at Metro Physical Therapy; added chia seeds to oatmeal.\n* 🟡 Agent tracked Garmin Forerunner 965 (firmware 21.19), high humidity metrics (84%), and anti-friction glide strategies.\n\nDate: Aug 6, 2026\n* 🔴 User purchased a Peak Athletic Gear handheld flask and a ceramic foam roller; completed scheduled sports massage.\n* 🟡 Agent calculated hourly hydration needs (500 ml/hr), asphalt impact safety, and gear maintenance.\n\nDate: Aug 10, 2026\n* 🔴 User registered for the Skyline Half Marathon (early September); ordered SoleCare replacement insoles; cleared work schedule for knee evaluation; max heart rate unknown.\n* 🟡 Agent advised on pre-run fueling (banana + almonds), cadence spikes, fabric softener effects, and taper rest days.",
+ "degenerate": false
+}

@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 2,
+ "log": "log13",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8846,
+  "candidatesTokenCount": 760,
+  "totalTokenCount": 10935,
+  "cachedContentTokenCount": 6772,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8846
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6772
+   }
+  ],
+  "thoughtsTokenCount": 1329,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5603,
+ "at": "2026-10-10T23:13:28.863Z",
+ "rawText": "<observations>\nDate: Jun 27, 2026\n* 🔴 (07:15) User wants lavender and sage floral ceremony backdrop and live acoustic band.\n* 🟡 (09:00) Venue confirmed to accommodate tiered lawn seating (150 guest capacity).\n* 🔴 (09:45) **Rule**: Every vendor contract must go to partner Jonah for sign-off before any deposit is paid.\n* 🟡 (18:00) Budget décor overage of $300 resolved by user adjusting floral budget.\n\nDate: Jun 30, 2026\n* 🔴 (07:20) User requested custom monogram cake topper and sunset-themed cocktail playlist.\n* 🟡 (10:00) Outdoor dessert bar planned with vegan menu ($45/pp) and $1,800 tent rental backup.\n\nDate: Jul 3, 2026\n* 🔴 (07:05) User requested eucalyptus and white rose floral arch with portable greenhouse backup ($1,200).\n* 🟡 (13:45) Amber LED lighting booked via \"Luminous Events\" ($650); videographer highlight reel planned.\n\nDate: Jul 6, 2026\n* 🔴 (12:20) Guest count noted as 140 (photographer package: $4,750).\n* 🟡 (08:45) Vegan chocolate mousse cake booked (\"Sweet Symphony Bakery\", $950).\n* 🟡 (11:00) Backup DJ contracted (\"Rhythm & Beats DJ\", $1,200).\n* 🟡 (14:00) 12-seat limo booked (\"City Shuttle\", $300).\n* ✅ (20:45) RSVP reminder email sent to mailing list.\n\nDate: Jul 10, 2026\n* 🔴 (08:00) Bilingual officiant booked (\"Global Ceremonies\", $1,500).\n* 🔴 (09:30) Live string quartet booked (\"Eternal Strings\", $2,200) with custom playlist interlude.\n* 🔴 (12:30) Backup local-sourced florist secured (\"Bloom & Grow Florist\", $650).\n\nDate: Jul 14, 2026\n* 🔴 (07:15) Dessert tasting scheduled for 4 PM on wedding day (Sweet Horizon / Savor Catering).\n* 🔴 (10:45) DJ preference shifted to \"Nightfall DJ Collective\" ($2,800) for pop/vinyl mix.\n* 🔴 (12:15) Backup transport shuttle secured (\"Aurora Transportation\", $1,200).\n* 🔴 (14:00) User requested a venue accommodating a moonlit outdoor ceremony.\n* 🔴 (15:50) User stated guest count is now updated to 112.\n</observations>\n\n<current-task>\nPrimary: Research and evaluate venue options that can accommodate a moonlit outdoor ceremony for the revised guest count of 112.\nSecondary: Await Jonah's sign-off on pending vendor contracts.\n</current-task>\n\n<suggested-response>\nAcknowledge the updated guest count of 112 and discuss how to evaluate venues for a moonlit outdoor ceremony.\n</suggested-response>",
+ "observations": "Date: Jun 27, 2026\n* 🔴 (07:15) User wants lavender and sage floral ceremony backdrop and live acoustic band.\n* 🟡 (09:00) Venue confirmed to accommodate tiered lawn seating (150 guest capacity).\n* 🔴 (09:45) **Rule**: Every vendor contract must go to partner Jonah for sign-off before any deposit is paid.\n* 🟡 (18:00) Budget décor overage of $300 resolved by user adjusting floral budget.\n\nDate: Jun 30, 2026\n* 🔴 (07:20) User requested custom monogram cake topper and sunset-themed cocktail playlist.\n* 🟡 (10:00) Outdoor dessert bar planned with vegan menu ($45/pp) and $1,800 tent rental backup.\n\nDate: Jul 3, 2026\n* 🔴 (07:05) User requested eucalyptus and white rose floral arch with portable greenhouse backup ($1,200).\n* 🟡 (13:45) Amber LED lighting booked via \"Luminous Events\" ($650); videographer highlight reel planned.\n\nDate: Jul 6, 2026\n* 🔴 (12:20) Guest count noted as 140 (photographer package: $4,750).\n* 🟡 (08:45) Vegan chocolate mousse cake booked (\"Sweet Symphony Bakery\", $950).\n* 🟡 (11:00) Backup DJ contracted (\"Rhythm & Beats DJ\", $1,200).\n* 🟡 (14:00) 12-seat limo booked (\"City Shuttle\", $300).\n* ✅ (20:45) RSVP reminder email sent to mailing list.\n\nDate: Jul 10, 2026\n* 🔴 (08:00) Bilingual officiant booked (\"Global Ceremonies\", $1,500).\n* 🔴 (09:30) Live string quartet booked (\"Eternal Strings\", $2,200) with custom playlist interlude.\n* 🔴 (12:30) Backup local-sourced florist secured (\"Bloom & Grow Florist\", $650).\n\nDate: Jul 14, 2026\n* 🔴 (07:15) Dessert tasting scheduled for 4 PM on wedding day (Sweet Horizon / Savor Catering).\n* 🔴 (10:45) DJ preference shifted to \"Nightfall DJ Collective\" ($2,800) for pop/vinyl mix.\n* 🔴 (12:15) Backup transport shuttle secured (\"Aurora Transportation\", $1,200).\n* 🔴 (14:00) User requested a venue accommodating a moonlit outdoor ceremony.\n* 🔴 (15:50) User stated guest count is now updated to 112.",
+ "degenerate": false
+}

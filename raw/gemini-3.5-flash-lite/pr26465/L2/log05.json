@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 2,
+ "log": "log05",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 9437,
+  "candidatesTokenCount": 692,
+  "totalTokenCount": 12092,
+  "cachedContentTokenCount": 7363,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 9437
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 7363
+   }
+  ],
+  "thoughtsTokenCount": 1963,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6533,
+ "at": "2026-10-10T23:06:59.653Z",
+ "rawText": "<observations>\nDate: Apr 16, 2026\n* 🔴 User Alice (alice@example.com) prefers Lisbon inbound / Barcelona outbound 2-week itinerary, boutique hotels with rooftops/pools, business class trains, tapas, and vegetarian options.\n* 🔴 User explicitly refused airline travel insurance add-on — do not offer again.\n* ✅ (04-16) Booked outbound flight JFK-LIS (AZ123, $842, 23kg bag) and Porto-Madrid business class train (TRN9X7K). Emailed summary to alice@example.com.\n* ✅ (04-19) Booked Seville hotel Casa del Sol (deluxe double, 2026-05-11 to 05-15, HLT5Z9M, $145/nt) with breakfast and rooftop pool.\n* ✅ (04-19) Booked Seville activities: Bar El Faro dinner (RES8Q3); Córdoba AVE day-trip train ($68), Mezquita private tour (TOUR7K, $45), and Restaurante Salmorejo lunch (RESL4M).\n* ✅ (04-22) Booked Seville flamenco show \"Casa del Baile\" (FLM9X, $55), late tapas, moonlit Barrio Santa Cruz walk with private driver (DVR4K, $40), and Sol Yoga session ($25).\n\nDate: Apr 29, 2026\n* ✅ (04-29) Booked Madrid-Porto AVE train (2026-05-18, RTE5M, €78, window seats), Ribeira district dinner at Restaurante Casa da Ribeira (PRV9K, €120), and Port wine cellar tour (WN3LZ, €30). Recommended Café Majestic for breakfast and generated PDF travel guide.\n\nDate: May 3, 2026\n* ✅ (07:35) Booked Porto boutique hotel Hotel Ribeira Charm (2026-05-18, HRC842, €95/nt) with complimentary airport shuttle at 07:30 on 05-19 and late checkout at 14:00 (LCO7P).\n* ✅ (10:10) Booked Porto city bike rental from PortoBike (€18, BDZ4M) and vegetarian-friendly lunch at Casa Verde (CVR5L, €45).\n* 🟡 (19:02) Retried flight search API 3 times after a timeout for the Porto-to-Barcelona flight (request id req_8fK2pQ).\n</observations>\n\n<current-task>\n- Primary: Finalize the flight search from Porto to Barcelona on 2026-05-19 following the API timeout recovery.\n</current-task>\n\n<suggested-response>\n\"I've successfully reconnected to the flight search system after the timeout. Let me present the options for your flight from Porto to Barcelona on May 19...\"\n</suggested-response>",
+ "observations": "Date: Apr 16, 2026\n* 🔴 User Alice (alice@example.com) prefers Lisbon inbound / Barcelona outbound 2-week itinerary, boutique hotels with rooftops/pools, business class trains, tapas, and vegetarian options.\n* 🔴 User explicitly refused airline travel insurance add-on — do not offer again.\n* ✅ (04-16) Booked outbound flight JFK-LIS (AZ123, $842, 23kg bag) and Porto-Madrid business class train (TRN9X7K). Emailed summary to alice@example.com.\n* ✅ (04-19) Booked Seville hotel Casa del Sol (deluxe double, 2026-05-11 to 05-15, HLT5Z9M, $145/nt) with breakfast and rooftop pool.\n* ✅ (04-19) Booked Seville activities: Bar El Faro dinner (RES8Q3); Córdoba AVE day-trip train ($68), Mezquita private tour (TOUR7K, $45), and Restaurante Salmorejo lunch (RESL4M).\n* ✅ (04-22) Booked Seville flamenco show \"Casa del Baile\" (FLM9X, $55), late tapas, moonlit Barrio Santa Cruz walk with private driver (DVR4K, $40), and Sol Yoga session ($25).\n\nDate: Apr 29, 2026\n* ✅ (04-29) Booked Madrid-Porto AVE train (2026-05-18, RTE5M, €78, window seats), Ribeira district dinner at Restaurante Casa da Ribeira (PRV9K, €120), and Port wine cellar tour (WN3LZ, €30). Recommended Café Majestic for breakfast and generated PDF travel guide.\n\nDate: May 3, 2026\n* ✅ (07:35) Booked Porto boutique hotel Hotel Ribeira Charm (2026-05-18, HRC842, €95/nt) with complimentary airport shuttle at 07:30 on 05-19 and late checkout at 14:00 (LCO7P).\n* ✅ (10:10) Booked Porto city bike rental from PortoBike (€18, BDZ4M) and vegetarian-friendly lunch at Casa Verde (CVR5L, €45).\n* 🟡 (19:02) Retried flight search API 3 times after a timeout for the Porto-to-Barcelona flight (request id req_8fK2pQ).",
+ "degenerate": false
+}

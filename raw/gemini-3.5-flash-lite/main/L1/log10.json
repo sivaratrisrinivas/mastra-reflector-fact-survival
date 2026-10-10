@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 1,
+ "log": "log10",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8787,
+  "candidatesTokenCount": 842,
+  "totalTokenCount": 11419,
+  "cachedContentTokenCount": 5686,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8787
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5686
+   }
+  ],
+  "thoughtsTokenCount": 1790,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6630,
+ "at": "2026-10-10T22:56:02.887Z",
+ "rawText": "<observations>\nDate: May 31, 2026\n* 🔴 (07:15) User stated planning a July mountain trip with a vacation fund; wants to donate $200 locally.\n* 🟡 (09:30) Financial updates: set $5,000 emergency savings goal, identified $1,200 in medical tax deductions, and explored 30-year fixed refinance rates (3.25%).\n* ✅ (21:15) Student loan consolidation recommendation finalized.\n\nDate: Jun 3, 2026\n* 🔴 (07:10) User considering high-yield savings account switch and inquiring about 30% federal solar panel tax credits.\n* 🟡 (18:10) Recommended Fidelity Brokerage for automated monthly $200 savings transfers; recommended debt avalanche repayment strategy.\n* 🟡 (12:25) Set reminder for June 8 at 14:00 to schedule tax advisor consultation.\n\nDate: Jun 6, 2026\n* 🔴 (07:05) User exploring mortgage refinance options (CreditUnion 3.00% 30-year vs. 15-year term at $1,800/mo).\n* 🟡 (12:00) Prioritized Sunrise Card payoff ($2,500 at 22.99% APR); scheduled $300 biweekly payments.\n* 🟡 (15:00) Estimated $7,000 mortgage interest deduction; set reminder for Thursday at 10:00 to call mortgage broker.\n\nDate: Jun 9, 2026\n* 🔴 (07:10) User planning July Asheville trip ($600 budget, $350 airfare); confirmed using Horizon Travel Rewards Card (5% hotel cashback).\n* 🟡 (13:40) Parsed accounts export: Ally savings ($12,980) designated for emergency fund; total assets include Fidelity 401(k) ($48,200), Marcus CD ($5,000), and others.\n* 🟡 (13:45) Scheduled $200 donation transfer to animal shelter post-trip; estimated $50 tax credit.\n\nDate: Jun 13, 2026\n* 🔴 (07:15) Scheduled $1,200 credit card payment transfer.\n* 🟡 (11:50) Estimated $800 medical tax deduction based on 7.5% AGI threshold; created cloud storage folder 'TaxDocs' for receipts.\n* 🟢 (15:30) Logged reminder to submit tax documents by April 15, 2027.\n\nDate: Jun 17, 2026\n* 🔴 (07:05) User reviewed house down payment savings ($12,980 current balance; projected goal reached in 2 years 4 months).\n* 🟡 (08:00) Set up monthly $800 recurring transfer from checking to \"Home Savings\".\n* 🔴 (08:30) Car loan refinance planned: current balance $9,500 at 3.9% APR; user confirmed applying for a 3.5% personal loan on June 20.\n* 🟢 (16:20) User stated they track spending in the YNAB iOS app, version 3.12.1.\n</observations>\n\n<current-task>\n- Primary: Awaiting user input regarding financial goals or upcoming car loan refinance application scheduled for June 20.\n</current-task>\n\n<suggested-response>\nThe assistant should wait for the user to respond before continuing.\n</suggested-response>",
+ "observations": "Date: May 31, 2026\n* 🔴 (07:15) User stated planning a July mountain trip with a vacation fund; wants to donate $200 locally.\n* 🟡 (09:30) Financial updates: set $5,000 emergency savings goal, identified $1,200 in medical tax deductions, and explored 30-year fixed refinance rates (3.25%).\n* ✅ (21:15) Student loan consolidation recommendation finalized.\n\nDate: Jun 3, 2026\n* 🔴 (07:10) User considering high-yield savings account switch and inquiring about 30% federal solar panel tax credits.\n* 🟡 (18:10) Recommended Fidelity Brokerage for automated monthly $200 savings transfers; recommended debt avalanche repayment strategy.\n* 🟡 (12:25) Set reminder for June 8 at 14:00 to schedule tax advisor consultation.\n\nDate: Jun 6, 2026\n* 🔴 (07:05) User exploring mortgage refinance options (CreditUnion 3.00% 30-year vs. 15-year term at $1,800/mo).\n* 🟡 (12:00) Prioritized Sunrise Card payoff ($2,500 at 22.99% APR); scheduled $300 biweekly payments.\n* 🟡 (15:00) Estimated $7,000 mortgage interest deduction; set reminder for Thursday at 10:00 to call mortgage broker.\n\nDate: Jun 9, 2026\n* 🔴 (07:10) User planning July Asheville trip ($600 budget, $350 airfare); confirmed using Horizon Travel Rewards Card (5% hotel cashback).\n* 🟡 (13:40) Parsed accounts export: Ally savings ($12,980) designated for emergency fund; total assets include Fidelity 401(k) ($48,200), Marcus CD ($5,000), and others.\n* 🟡 (13:45) Scheduled $200 donation transfer to animal shelter post-trip; estimated $50 tax credit.\n\nDate: Jun 13, 2026\n* 🔴 (07:15) Scheduled $1,200 credit card payment transfer.\n* 🟡 (11:50) Estimated $800 medical tax deduction based on 7.5% AGI threshold; created cloud storage folder 'TaxDocs' for receipts.\n* 🟢 (15:30) Logged reminder to submit tax documents by April 15, 2027.\n\nDate: Jun 17, 2026\n* 🔴 (07:05) User reviewed house down payment savings ($12,980 current balance; projected goal reached in 2 years 4 months).\n* 🟡 (08:00) Set up monthly $800 recurring transfer from checking to \"Home Savings\".\n* 🔴 (08:30) Car loan refinance planned: current balance $9,500 at 3.9% APR; user confirmed applying for a 3.5% personal loan on June 20.\n* 🟢 (16:20) User stated they track spending in the YNAB iOS app, version 3.12.1.",
+ "degenerate": false
+}

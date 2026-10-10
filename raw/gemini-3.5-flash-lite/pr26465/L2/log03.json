@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 2,
+ "log": "log03",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 9395,
+  "candidatesTokenCount": 1055,
+  "totalTokenCount": 12418,
+  "cachedContentTokenCount": 7321,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 9395
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 7321
+   }
+  ],
+  "thoughtsTokenCount": 1968,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 7071,
+ "at": "2026-10-10T23:06:14.051Z",
+ "rawText": "<observations>\nDate: Mar 29, 2026\n* 🔴 (07:12) User preferences: window seats, round-trip budget under $1200, wants a two-week Lisbon, Porto, Madrid, and Barcelona itinerary starting April 3, 2026.\n* 🔴 (12:00) User booked NY-Lisbon flight via Dublin (Flight NN456, April 3, $1080, confirmation `AB9-7823`). ✅\n* 🔴 (16:30) User booked Lisbon-Porto train (April 9, Train CR210) and Porto hotel (Hotel VistaMar Balcony Suite, April 9-12, ref `HV-5541`). ✅\n\nDate: Apr 1, 2026\n* 🔴 (09:30) User booked Porto-Madrid AVE-317 train (April 13, 2 tickets, window/quiet carriage, ref `TR-8742`). ✅\n* 🔴 (13:00) User booked Madrid hotel (BoutiqueStay Terraza Loft, April 13-16, confirmation `MD-3390`, late check-out at 14:00). ✅\n* 🟡 (09:05) User shared Seville hotel confirmation code `QX7-4412`.\n\nDate: Apr 4, 2026\n* 🔴 (09:20) User booked Barcelona beachfront hotel (SeaWave Resort, Barceloneta, April 16-19, 2 rooms, confirmation `BW-5621`). ✅\n* 🔴 (11:25) User booked Gothic Quarter guided tour in Barcelona (WalkExplore \"Historic Walk\", April 18, ref `GW-874`). ✅\n* 🟡 (10:35) Agent noted Sagrada Família transit via Metro Line 4 (€2.40) and hotel late check-out on April 19 (€25).\n\nDate: Apr 7, 2026\n* 🔴 (09:02) User booked Mar i Sol beachfront tapas dinner in Barcelona (April 17 at 20:00, confirmation `RS-8392`). ✅\n* 🔴 (10:58) User booked Barcelona-Madrid high-speed train (April 19, 09:30 departure, codes `AV-1124`, `AV-1125`). ✅\n* 🟡 (12:05) Agent reserved a medium luggage locker at Barcelona Sants station for April 19 (€6).\n* 🔴 (12:00) User stated they have never been to Morocco and are nervous about the Tangier ferry day trip.\n* 🟡 (18:40) User reiterated Seville hotel confirmation code `QX7-4412`.\n\nDate: Apr 11, 2026\n* 🔴 (13:30) User booked Madrid-Lisbon flight (Air Iberia 07:45, April 20, 2 economy seats, IDs `LB-5821`, `LB-5822`). ✅\n* 🔴 (15:25) User booked Lisbon hotel (RiverSide Boutique Baixa, king room, April 20, confirmation `RB-7719`, late checkout 13:00). ✅\n* 🔴 (17:00) User booked Alfama Heritage Walk tour in Lisbon (April 21, 10:00, guide Maria Santos, reminder set for April 20 at 18:00). ✅\n\nDate: Apr 15, 2026\n* 🟡 (08:30) User provided Seville hotel confirmation code `QX7-4412` again.\n* 🔴 (10:20) User booked Lisbon-Porto train (April 22, 12:30 Alfa Pendular, 1st class window, reservation `PT-3347`). ✅\n* 🔴 (12:15) User booked Porto seafood dinner (Marisqueira Antiga, April 22 at 19:30, window table, confirmation `MA-8821`). ✅\n* 🔴 (14:00) User booked Douro Valley vineyards tour from Porto (April 23, 09:00, 5 hours, reminder set for April 22 at 18:30). ✅\n</observations>\n\n<suggested-response>\nThe assistant should wait for the user to provide further instructions or ask questions about the next segments of the trip.\n</suggested-response>",
+ "observations": "Date: Mar 29, 2026\n* 🔴 (07:12) User preferences: window seats, round-trip budget under $1200, wants a two-week Lisbon, Porto, Madrid, and Barcelona itinerary starting April 3, 2026.\n* 🔴 (12:00) User booked NY-Lisbon flight via Dublin (Flight NN456, April 3, $1080, confirmation `AB9-7823`). ✅\n* 🔴 (16:30) User booked Lisbon-Porto train (April 9, Train CR210) and Porto hotel (Hotel VistaMar Balcony Suite, April 9-12, ref `HV-5541`). ✅\n\nDate: Apr 1, 2026\n* 🔴 (09:30) User booked Porto-Madrid AVE-317 train (April 13, 2 tickets, window/quiet carriage, ref `TR-8742`). ✅\n* 🔴 (13:00) User booked Madrid hotel (BoutiqueStay Terraza Loft, April 13-16, confirmation `MD-3390`, late check-out at 14:00). ✅\n* 🟡 (09:05) User shared Seville hotel confirmation code `QX7-4412`.\n\nDate: Apr 4, 2026\n* 🔴 (09:20) User booked Barcelona beachfront hotel (SeaWave Resort, Barceloneta, April 16-19, 2 rooms, confirmation `BW-5621`). ✅\n* 🔴 (11:25) User booked Gothic Quarter guided tour in Barcelona (WalkExplore \"Historic Walk\", April 18, ref `GW-874`). ✅\n* 🟡 (10:35) Agent noted Sagrada Família transit via Metro Line 4 (€2.40) and hotel late check-out on April 19 (€25).\n\nDate: Apr 7, 2026\n* 🔴 (09:02) User booked Mar i Sol beachfront tapas dinner in Barcelona (April 17 at 20:00, confirmation `RS-8392`). ✅\n* 🔴 (10:58) User booked Barcelona-Madrid high-speed train (April 19, 09:30 departure, codes `AV-1124`, `AV-1125`). ✅\n* 🟡 (12:05) Agent reserved a medium luggage locker at Barcelona Sants station for April 19 (€6).\n* 🔴 (12:00) User stated they have never been to Morocco and are nervous about the Tangier ferry day trip.\n* 🟡 (18:40) User reiterated Seville hotel confirmation code `QX7-4412`.\n\nDate: Apr 11, 2026\n* 🔴 (13:30) User booked Madrid-Lisbon flight (Air Iberia 07:45, April 20, 2 economy seats, IDs `LB-5821`, `LB-5822`). ✅\n* 🔴 (15:25) User booked Lisbon hotel (RiverSide Boutique Baixa, king room, April 20, confirmation `RB-7719`, late checkout 13:00). ✅\n* 🔴 (17:00) User booked Alfama Heritage Walk tour in Lisbon (April 21, 10:00, guide Maria Santos, reminder set for April 20 at 18:00). ✅\n\nDate: Apr 15, 2026\n* 🟡 (08:30) User provided Seville hotel confirmation code `QX7-4412` again.\n* 🔴 (10:20) User booked Lisbon-Porto train (April 22, 12:30 Alfa Pendular, 1st class window, reservation `PT-3347`). ✅\n* 🔴 (12:15) User booked Porto seafood dinner (Marisqueira Antiga, April 22 at 19:30, window table, confirmation `MA-8821`). ✅\n* 🔴 (14:00) User booked Douro Valley vineyards tour from Porto (April 23, 09:00, 5 hours, reminder set for April 22 at 18:30). ✅",
+ "degenerate": false
+}

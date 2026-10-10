@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 3,
+ "log": "log02",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8798,
+  "candidatesTokenCount": 557,
+  "totalTokenCount": 10658,
+  "cachedContentTokenCount": 6700,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8798
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6700
+   }
+  ],
+  "thoughtsTokenCount": 1303,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5048,
+ "at": "2026-10-10T22:59:38.641Z",
+ "rawText": "<observations>\nDate: Mar 20 - Mar 29, 2026\n* 🔴 User decisions & architecture: Enforced strict null checks and repo-wide TypeScript strict mode; switched production database from SQLite to PostgreSQL; adopted semantic commit messages; SOC 2 audit fieldwork starts May 19, 2026; public API rate limit raised to 500 requests/min.\n* 🟡 Key feature milestones & tooling:\n  * CI pipeline optimized with `node_modules` caching and Percy visual regression tests.\n  * Enforced 85% Jest test coverage.\n  * Implemented LaunchDarkly feature flags, ConfigCat \"recurringPause\" toggle, and nodemailer overdue invoice notifications.\n  * Integrated pdf-lib for invoices, SheetJS for bulk `.xlsx` invoice uploads, and pino for JSON logging.\n  * Completed PR merges: PR #42 (reviewed by @sara), PR #58 locale-aware dates (merged after approval from @mike), and dark mode UI deployment to staging.\n\nDate: Apr 2, 2026\n* 🔴 (11:40) User asked whether PDF invoices could include a company logo watermark.\n* 🟡 (15:05) Added BullMQ background job to process asynchronous PDF generation after staging CPU spike.\n* ✅ (17:45) Merged branch feature/recurring-invoices into develop after approval from @kim (includes recurring invoice templates table, API endpoints, and pdfmake dynamic watermarks deployed to staging).\n\nDate: Apr 6, 2026\n* 🔴 (07:15) User decided to integrate Stripe for subscription payments in Ledgerly.\n* 🟡 (07:50) Created `stripeService.ts` and webhook endpoint `/api/v1/payments/stripe/webhook` handling `charge.succeeded` and `invoice.payment_failed`.\n* 🔴 (11:35) User asked whether payment receipt emails could include a QR code linking to the invoice.\n* ✅ (13:00) Deployed Stripe integration and qrcode-generated email attachments to development for review.\n* 🟡 (15:40) Added nightly cron database cleanup script to prune orphaned payment records (local dev DB reached 3.2 GB).\n* 🟡 (16:30) Adopted Redis Streams for background job queues and added Snyk security scanning to CI.\n* ✅ (18:20) Merged branch feature/stripe-integration into main after approval from @alex.\n</observations>",
+ "observations": "Date: Mar 20 - Mar 29, 2026\n* 🔴 User decisions & architecture: Enforced strict null checks and repo-wide TypeScript strict mode; switched production database from SQLite to PostgreSQL; adopted semantic commit messages; SOC 2 audit fieldwork starts May 19, 2026; public API rate limit raised to 500 requests/min.\n* 🟡 Key feature milestones & tooling:\n  * CI pipeline optimized with `node_modules` caching and Percy visual regression tests.\n  * Enforced 85% Jest test coverage.\n  * Implemented LaunchDarkly feature flags, ConfigCat \"recurringPause\" toggle, and nodemailer overdue invoice notifications.\n  * Integrated pdf-lib for invoices, SheetJS for bulk `.xlsx` invoice uploads, and pino for JSON logging.\n  * Completed PR merges: PR #42 (reviewed by @sara), PR #58 locale-aware dates (merged after approval from @mike), and dark mode UI deployment to staging.\n\nDate: Apr 2, 2026\n* 🔴 (11:40) User asked whether PDF invoices could include a company logo watermark.\n* 🟡 (15:05) Added BullMQ background job to process asynchronous PDF generation after staging CPU spike.\n* ✅ (17:45) Merged branch feature/recurring-invoices into develop after approval from @kim (includes recurring invoice templates table, API endpoints, and pdfmake dynamic watermarks deployed to staging).\n\nDate: Apr 6, 2026\n* 🔴 (07:15) User decided to integrate Stripe for subscription payments in Ledgerly.\n* 🟡 (07:50) Created `stripeService.ts` and webhook endpoint `/api/v1/payments/stripe/webhook` handling `charge.succeeded` and `invoice.payment_failed`.\n* 🔴 (11:35) User asked whether payment receipt emails could include a QR code linking to the invoice.\n* ✅ (13:00) Deployed Stripe integration and qrcode-generated email attachments to development for review.\n* 🟡 (15:40) Added nightly cron database cleanup script to prune orphaned payment records (local dev DB reached 3.2 GB).\n* 🟡 (16:30) Adopted Redis Streams for background job queues and added Snyk security scanning to CI.\n* ✅ (18:20) Merged branch feature/stripe-integration into main after approval from @alex.",
+ "degenerate": false
+}

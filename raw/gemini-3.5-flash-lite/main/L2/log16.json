@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 2,
+ "log": "log16",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8638,
+  "candidatesTokenCount": 652,
+  "totalTokenCount": 10702,
+  "cachedContentTokenCount": 5685,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8638
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5685
+   }
+  ],
+  "thoughtsTokenCount": 1412,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6508,
+ "at": "2026-10-10T23:14:24.727Z",
+ "rawText": "<observations>\nDate: Jul 24, 2026\n* 🔴 (07:15) User prefers black coffee pre-training, works at a standing desk, and is allergic to artificial strawberry flavoring.\n* 🔴 (08:30) User purchased Nike Vaporfly 3 running shoes (logged at 512 km).\n* 🟡 (08:30) Garmin metrics: 28 activities, 14.2 km max run, 31 km weekly mileage (physio cap 40 km pending knee check-up). Tapering schedule calculated for October half marathon.\n\nDate: Jul 27, 2026\n* 🔴 (09:20) User listens to true crime podcasts on long runs and eats oatmeal with almond butter pre-run.\n* 🟡 (08:05) Discussed dynamic stretching superiority, humidity pace impact (-4.5%), technical fabric care (vinegar/cold water), and substituting easy jogs with stationary bike sessions for sore legs.\n\nDate: Jul 30, 2026\n* 🔴 (09:25) User prefers shaded canopy routes and purchased \"HydratePro\" electrolyte powder.\n* 🟡 (08:10) Discussed pre-run carbohydrates, sweat loss formulas (1kg = 1L fluid deficit), core planks, and replacement socks for blisters.\n\nDate: Aug 2, 2026\n* 🔴 (09:15) User registered for the Oakridge Community Half Marathon (September) and booked a sports massage at Metro Physical Therapy.\n* 🟡 (13:00) Garmin Forerunner 965 on firmware 21.19. Discussed walking aid hydration, anti-friction glide, and chia seed nutrition.\n\nDate: Aug 6, 2026\n* 🔴 (09:20) User purchased a Peak Athletic Gear handheld flask, completed sports massage, and bought a ceramic foam roller.\n* 🟡 (08:05) Discussed fluid intake (500ml/hr in humidity), asphalt shock absorption, and post-run mobility flows.\n\nDate: Aug 10, 2026\n* 🔴 (09:20) User registered for the Skyline Half Marathon (early September), cleared schedule for a physical therapy knee evaluation, and stated they do not know their max heart rate.\n* 🟡 (13:40) User ordered replacement insoles from SoleCare Technologies. Discussed pre-run banana/almonds, fabric softener wicking impact, race cadence spikes, and tapering rest days.\n</observations>\n\n<current-task>\n- Primary: User is training for the Skyline Half Marathon in early September, monitoring a 40 km physio weekly mileage cap, and preparing for an upcoming knee evaluation.\n</current-task>\n\n<suggested-response>\nThe assistant should wait for the user to respond before continuing.\n</suggested-response>",
+ "observations": "Date: Jul 24, 2026\n* 🔴 (07:15) User prefers black coffee pre-training, works at a standing desk, and is allergic to artificial strawberry flavoring.\n* 🔴 (08:30) User purchased Nike Vaporfly 3 running shoes (logged at 512 km).\n* 🟡 (08:30) Garmin metrics: 28 activities, 14.2 km max run, 31 km weekly mileage (physio cap 40 km pending knee check-up). Tapering schedule calculated for October half marathon.\n\nDate: Jul 27, 2026\n* 🔴 (09:20) User listens to true crime podcasts on long runs and eats oatmeal with almond butter pre-run.\n* 🟡 (08:05) Discussed dynamic stretching superiority, humidity pace impact (-4.5%), technical fabric care (vinegar/cold water), and substituting easy jogs with stationary bike sessions for sore legs.\n\nDate: Jul 30, 2026\n* 🔴 (09:25) User prefers shaded canopy routes and purchased \"HydratePro\" electrolyte powder.\n* 🟡 (08:10) Discussed pre-run carbohydrates, sweat loss formulas (1kg = 1L fluid deficit), core planks, and replacement socks for blisters.\n\nDate: Aug 2, 2026\n* 🔴 (09:15) User registered for the Oakridge Community Half Marathon (September) and booked a sports massage at Metro Physical Therapy.\n* 🟡 (13:00) Garmin Forerunner 965 on firmware 21.19. Discussed walking aid hydration, anti-friction glide, and chia seed nutrition.\n\nDate: Aug 6, 2026\n* 🔴 (09:20) User purchased a Peak Athletic Gear handheld flask, completed sports massage, and bought a ceramic foam roller.\n* 🟡 (08:05) Discussed fluid intake (500ml/hr in humidity), asphalt shock absorption, and post-run mobility flows.\n\nDate: Aug 10, 2026\n* 🔴 (09:20) User registered for the Skyline Half Marathon (early September), cleared schedule for a physical therapy knee evaluation, and stated they do not know their max heart rate.\n* 🟡 (13:40) User ordered replacement insoles from SoleCare Technologies. Discussed pre-run banana/almonds, fabric softener wicking impact, race cadence spikes, and tapering rest days.",
+ "degenerate": false
+}

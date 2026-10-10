@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 2,
+ "log": "log03",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 9219,
+  "candidatesTokenCount": 850,
+  "totalTokenCount": 11595,
+  "cachedContentTokenCount": 5687,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 9219
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5687
+   }
+  ],
+  "thoughtsTokenCount": 1526,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5748,
+ "at": "2026-10-10T23:06:02.477Z",
+ "rawText": "<observations>\nDate: Mar 29, 2026\n* 🔴 (07:12) User stated they want a two-week itinerary covering Lisbon, Porto, Madrid, and Barcelona, starting Apr 3, 2026; prefers window seats and budget <$1200.\n* ✅ (12:00) Booked New York-Lisbon flight (NN456 via Dublin, conf AB9-7823, $1080).\n* ✅ (16:30) Booked Lisbon-Porto train (Apr 9, CR210) & Hotel VistaMar in Porto (Apr 9–12, conf HV-5541).\n\nDate: Apr 1, 2026\n* ✅ (09:30) Booked Porto-Madrid high-speed train (Apr 13, AVE-317, ref TR-8742).\n* ✅ (13:00) Booked Terraza Loft hotel in Madrid (Apr 13–16, conf MD-3390 with late checkout).\n* 🔴 (09:05) User shared Seville hotel confirmation code QX7-4412.\n\nDate: Apr 4, 2026\n* ✅ (09:20) Booked SeaWave Resort in Barcelona (Apr 16–19, conf BW-5621) with breakfast/balcony.\n* ✅ (11:25) Booked Gothic Quarter walking tour (WalkExplore GW-874, Apr 18).\n* 🟡 (10:35) Noted transport options (Metro Line 4 to Sagrada Família) and late checkout details.\n\nDate: Apr 7, 2026\n* ✅ (09:02) Booked Mar i Sol tapas bar dinner in Barcelona (Apr 17, conf RS-8392).\n* ✅ (10:58) Booked Barcelona-Madrid train (Apr 19, 09:30, tickets AV-1124/5).\n* 🔴 (12:00) User stated they have never been to Morocco and are nervous about the Tangier ferry day trip; agent reserved a Barcelona Sants luggage locker (€6/day).\n* 🟡 (18:40) User repeated Seville hotel confirmation code QX7-4412.\n\nDate: Apr 11, 2026\n* ✅ (13:30) Booked Madrid-Lisbon flight (Apr 20, Air Iberia 07:45, IDs LB-5821/2).\n* ✅ (15:25) Booked RiverSide Boutique hotel in Lisbon (Apr 20, conf RB-7719).\n* ✅ (17:20) Booked Alfama Heritage Walk tour (Apr 21, guide Maria Santos, €45/pp) and set reminder.\n\nDate: Apr 15, 2026\n* 🔴 (08:30) User again provided Seville hotel confirmation code QX7-4412.\n* ✅ (10:20) Booked Lisbon-Porto train (Apr 22, 12:30 Alfa Pendular, ref PT-3347).\n* ✅ (12:15) Booked Marisqueira Antiga restaurant in Porto (Apr 22, conf MA-8821).\n* ✅ (14:20) Booked Douro Valley vineyards tour (Apr 23, €70/pp) and set calendar reminder.\n</observations>\n\n<suggested-response>\nThe assistant should wait for the user to provide the next travel request or question.\n</suggested-response>",
+ "observations": "Date: Mar 29, 2026\n* 🔴 (07:12) User stated they want a two-week itinerary covering Lisbon, Porto, Madrid, and Barcelona, starting Apr 3, 2026; prefers window seats and budget <$1200.\n* ✅ (12:00) Booked New York-Lisbon flight (NN456 via Dublin, conf AB9-7823, $1080).\n* ✅ (16:30) Booked Lisbon-Porto train (Apr 9, CR210) & Hotel VistaMar in Porto (Apr 9–12, conf HV-5541).\n\nDate: Apr 1, 2026\n* ✅ (09:30) Booked Porto-Madrid high-speed train (Apr 13, AVE-317, ref TR-8742).\n* ✅ (13:00) Booked Terraza Loft hotel in Madrid (Apr 13–16, conf MD-3390 with late checkout).\n* 🔴 (09:05) User shared Seville hotel confirmation code QX7-4412.\n\nDate: Apr 4, 2026\n* ✅ (09:20) Booked SeaWave Resort in Barcelona (Apr 16–19, conf BW-5621) with breakfast/balcony.\n* ✅ (11:25) Booked Gothic Quarter walking tour (WalkExplore GW-874, Apr 18).\n* 🟡 (10:35) Noted transport options (Metro Line 4 to Sagrada Família) and late checkout details.\n\nDate: Apr 7, 2026\n* ✅ (09:02) Booked Mar i Sol tapas bar dinner in Barcelona (Apr 17, conf RS-8392).\n* ✅ (10:58) Booked Barcelona-Madrid train (Apr 19, 09:30, tickets AV-1124/5).\n* 🔴 (12:00) User stated they have never been to Morocco and are nervous about the Tangier ferry day trip; agent reserved a Barcelona Sants luggage locker (€6/day).\n* 🟡 (18:40) User repeated Seville hotel confirmation code QX7-4412.\n\nDate: Apr 11, 2026\n* ✅ (13:30) Booked Madrid-Lisbon flight (Apr 20, Air Iberia 07:45, IDs LB-5821/2).\n* ✅ (15:25) Booked RiverSide Boutique hotel in Lisbon (Apr 20, conf RB-7719).\n* ✅ (17:20) Booked Alfama Heritage Walk tour (Apr 21, guide Maria Santos, €45/pp) and set reminder.\n\nDate: Apr 15, 2026\n* 🔴 (08:30) User again provided Seville hotel confirmation code QX7-4412.\n* ✅ (10:20) Booked Lisbon-Porto train (Apr 22, 12:30 Alfa Pendular, ref PT-3347).\n* ✅ (12:15) Booked Marisqueira Antiga restaurant in Porto (Apr 22, conf MA-8821).\n* ✅ (14:20) Booked Douro Valley vineyards tour (Apr 23, €70/pp) and set calendar reminder.",
+ "degenerate": false
+}

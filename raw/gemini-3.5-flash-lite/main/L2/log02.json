@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 2,
+ "log": "log02",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8598,
+  "candidatesTokenCount": 467,
+  "totalTokenCount": 10809,
+  "cachedContentTokenCount": 5685,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8598
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 5685
+   }
+  ],
+  "thoughtsTokenCount": 1744,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 6268,
+ "at": "2026-10-10T23:05:42.215Z",
+ "rawText": "<observations>\nDate: Mar 20 - Mar 29, 2026\n* 🔴 User profile & preferences: Prefers coffee from downtown café, listens to jazz/espresso while coding; office cat Luna, office plants (Fern).\n* 🔴 Ledgerly project specs: Uses PostgreSQL (switched from SQLite), TypeScript strict mode, semantic commits, LaunchDarkly & ConfigCat feature flags. Public API rate limit: 500 req/min. SOC 2 audit starts May 19, 2026.\n* ✅ Completed infrastructure & features: CI/CD caching & Percy visual regression tests, Jest 85% coverage threshold, discount codes (PR #42 @sara), locale date formatting (PR #58 @mike), dark mode UI deployed to staging, bulk Excel (.xlsx) invoice upload via SheetJS.\n\nDate: Apr 2, 2026\n* 🟡 (07:10) Created `recurring_invoices` database table and API endpoint `/api/v1/invoices/recurring`.\n* 🟡 (11:40) Integrated pdfmake for dynamic PDF watermarks; added BullMQ async processing for PDFs to handle staging CPU spikes.\n* ✅ (17:45) Merged branch `feature/recurring-invoices` into develop after approval from @kim.\n\nDate: Apr 6, 2026\n* 🔴 (07:15) User decided to integrate Stripe for subscription payments in Ledgerly.\n* 🟡 (07:50) Created `stripeService.ts` and webhook endpoint `/api/v1/payments/stripe/webhook`.\n* 🟡 (11:35) Integrated qrcode library to attach QR code links to payment receipt emails.\n* 🟡 (15:40) Added nightly DB cleanup cron job and adopted Redis Streams for background job queue (user agreed).\n* 🟡 (16:55) Updated CI pipeline to include Snyk security scanning for dependencies.\n* ✅ (18:20) Merged branch `feature/stripe-integration` into main after approval from @alex.\n</observations>",
+ "observations": "Date: Mar 20 - Mar 29, 2026\n* 🔴 User profile & preferences: Prefers coffee from downtown café, listens to jazz/espresso while coding; office cat Luna, office plants (Fern).\n* 🔴 Ledgerly project specs: Uses PostgreSQL (switched from SQLite), TypeScript strict mode, semantic commits, LaunchDarkly & ConfigCat feature flags. Public API rate limit: 500 req/min. SOC 2 audit starts May 19, 2026.\n* ✅ Completed infrastructure & features: CI/CD caching & Percy visual regression tests, Jest 85% coverage threshold, discount codes (PR #42 @sara), locale date formatting (PR #58 @mike), dark mode UI deployed to staging, bulk Excel (.xlsx) invoice upload via SheetJS.\n\nDate: Apr 2, 2026\n* 🟡 (07:10) Created `recurring_invoices` database table and API endpoint `/api/v1/invoices/recurring`.\n* 🟡 (11:40) Integrated pdfmake for dynamic PDF watermarks; added BullMQ async processing for PDFs to handle staging CPU spikes.\n* ✅ (17:45) Merged branch `feature/recurring-invoices` into develop after approval from @kim.\n\nDate: Apr 6, 2026\n* 🔴 (07:15) User decided to integrate Stripe for subscription payments in Ledgerly.\n* 🟡 (07:50) Created `stripeService.ts` and webhook endpoint `/api/v1/payments/stripe/webhook`.\n* 🟡 (11:35) Integrated qrcode library to attach QR code links to payment receipt emails.\n* 🟡 (15:40) Added nightly DB cleanup cron job and adopted Redis Streams for background job queue (user agreed).\n* 🟡 (16:55) Updated CI pipeline to include Snyk security scanning for dependencies.\n* ✅ (18:20) Merged branch `feature/stripe-integration` into main after approval from @alex.",
+ "degenerate": false
+}

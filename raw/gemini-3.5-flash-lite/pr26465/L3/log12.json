@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 3,
+ "log": "log12",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8856,
+  "candidatesTokenCount": 551,
+  "totalTokenCount": 10948,
+  "cachedContentTokenCount": 6758,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8856
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6758
+   }
+  ],
+  "thoughtsTokenCount": 1541,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5877,
+ "at": "2026-10-10T23:03:09.659Z",
+ "rawText": "<observations>\nDate: Jun 18 - Jun 27, 2026\n* 🔴 Wedding planning details established: Outdoors hilltop ceremony (sunset view, garden pavilion, 14:00 start), vintage reception decor, buffet dinner, 350-guest capacity venue.\n* 🔴 Music & Vendors: Live string quartet (Quartet Harmony) booked with custom wedding march request; DJ booked for 80s playlist; Florist is Marisol Etxeberria (20-ft centerpiece added); Mountain Meadow Catering booked (vegan desserts, gluten-free options, vegan cheese platter from GreenBite Bakery $120, 20-ft cooler). Photo booth with custom backdrop booked.\n* 🟡 Logistics & Budget: Backup generator and AV secured (backup mics, projector on western balcony, $450 total AV cost). Seating includes pet-friendly zone, late-arrival tables, and bridal party shuttle timings set. Budget tracking under target.\n* ✅ (June 18 - 27) Vendor contracts, seating charts, budget sheets, and schedules updated and shared with user across multiple syncs.\n\nDate: Jul 1 - Jul 5, 2026\n* 🔴 Guest list stands at 150 guests with 18 plus-ones requiring separate seating.\n* 🔴 User requested backup bouquet for the bride and backup freelance photographers.\n* 🔴 (Jul 5, 17:00) User stated the rehearsal dinner will be at a winery in Paso Robles (7:00 PM schedule).\n* 🟢 Decor/Venue updates: Muted gold signage palette, navy blue table labels, and venue contract amended for pre-ceremony outdoor terrace photos.\n* 🟡 Entertainment additions: AeroShots drone shoot ($350) and Harmony Strings acoustic band for cocktail hour ($1,200; total entertainment budget $13,600).\n* ✅ (Jul 1 - 5) Latest budget spreadsheets, vendor timelines, and status reports emailed to user.\n</observations>\n\n<current-task>\n- Primary: Acknowledge user's update that the rehearsal dinner is at a winery in Paso Robles.\n- Secondary: Follow up on pending tasks (sourcing backup bouquet options and backup freelance photographers).\n</current-task>\n\n<suggested-response>\nNoted that the rehearsal dinner will be at a winery in Paso Robles! Would you like me to finalize any details for that, or should we review the backup photographer and backup bouquet options I pulled together?\n</suggested-response>",
+ "observations": "Date: Jun 18 - Jun 27, 2026\n* 🔴 Wedding planning details established: Outdoors hilltop ceremony (sunset view, garden pavilion, 14:00 start), vintage reception decor, buffet dinner, 350-guest capacity venue.\n* 🔴 Music & Vendors: Live string quartet (Quartet Harmony) booked with custom wedding march request; DJ booked for 80s playlist; Florist is Marisol Etxeberria (20-ft centerpiece added); Mountain Meadow Catering booked (vegan desserts, gluten-free options, vegan cheese platter from GreenBite Bakery $120, 20-ft cooler). Photo booth with custom backdrop booked.\n* 🟡 Logistics & Budget: Backup generator and AV secured (backup mics, projector on western balcony, $450 total AV cost). Seating includes pet-friendly zone, late-arrival tables, and bridal party shuttle timings set. Budget tracking under target.\n* ✅ (June 18 - 27) Vendor contracts, seating charts, budget sheets, and schedules updated and shared with user across multiple syncs.\n\nDate: Jul 1 - Jul 5, 2026\n* 🔴 Guest list stands at 150 guests with 18 plus-ones requiring separate seating.\n* 🔴 User requested backup bouquet for the bride and backup freelance photographers.\n* 🔴 (Jul 5, 17:00) User stated the rehearsal dinner will be at a winery in Paso Robles (7:00 PM schedule).\n* 🟢 Decor/Venue updates: Muted gold signage palette, navy blue table labels, and venue contract amended for pre-ceremony outdoor terrace photos.\n* 🟡 Entertainment additions: AeroShots drone shoot ($350) and Harmony Strings acoustic band for cocktail hour ($1,200; total entertainment budget $13,600).\n* ✅ (Jul 1 - 5) Latest budget spreadsheets, vendor timelines, and status reports emailed to user.",
+ "degenerate": false
+}

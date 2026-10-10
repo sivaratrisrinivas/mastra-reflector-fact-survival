@@ -1,0 +1,40 @@
+{
+ "ref": "main",
+ "refSha": "faf79ea0d1aa7b2265b070f5323339fa275ebb49",
+ "level": 3,
+ "log": "log01",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8614,
+  "candidatesTokenCount": 536,
+  "totalTokenCount": 10952,
+  "cachedContentTokenCount": 6517,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8614
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6517
+   }
+  ],
+  "thoughtsTokenCount": 1802,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5882,
+ "at": "2026-10-10T22:59:11.087Z",
+ "rawText": "<observations>\nDate: Mar 11, 2026\n* 🔴 User stated preferences: PostgreSQL backend, TypeScript with strict linting, and a monthly cloud budget capped at $1,850. User has a cat named Pixel.\n* 🔴 User decided to defer recurring invoice implementation until after beta.\n* ✅ Fixed null reference error in `pdfGenerator.ts`.\n\nDate: Mar 14, 2026\n* 🔴 User requested all environment variables be prefixed with `LEDGERLY_`.\n* ✅ Implemented Stripe webhook support with signature validation, Winston logging (`LEDGERLY_LOG_LEVEL`), and passing unit tests.\n\nDate: Mar 17, 2026\n* ✅ Added exponential backoff retry strategy for webhooks (2s, 5s, 10s delays) and enforced a 95% test coverage threshold.\n\nDate: Mar 20, 2026\n* 🔴 User updated public launch date to May 10, 2026 (delayed due to payments audit) and stated Ledgerly must support EUR, GBP, and USD currencies.\n* ✅ Deployed staging build featuring multi-currency invoicing, SendGrid email integration, and PDF attachments.\n\nDate: Mar 24, 2026\n* 🟡 Added Google and GitHub OAuth authentication via Passport.\n* 🟡 Created analytics dashboard with Chart.js and CSV export endpoint at `/api/export/csv`.\n* ✅ Configured automated nightly backup job storing snapshots in AWS S3.\n\nDate: Mar 28, 2026\n* 🔴 User established a standing rule: never push directly to main, always use pull requests.\n* 🔴 User requested a summary of monthly revenue broken down by client tier.\n* ✅ Refactored invoice rendering (`/api/invoice/pdf`), added `useStripe` feature toggle, and deployed staging build to EC2 instance `ledgerly-stg-01`.\n</observations>\n\n<current-task>\n- Primary: Provide a summary of monthly revenue broken down by client tier (using the newly added query in `src/queries/revenueByTier.sql`).\n- Secondary: Await further user instructions regarding upcoming features or pre-launch auditing.\n</current-task>\n\n<suggested-response>\nI can pull that monthly revenue breakdown by client tier for you now using our analytics queries. Would you like me to generate that report?\n</suggested-response>",
+ "observations": "Date: Mar 11, 2026\n* 🔴 User stated preferences: PostgreSQL backend, TypeScript with strict linting, and a monthly cloud budget capped at $1,850. User has a cat named Pixel.\n* 🔴 User decided to defer recurring invoice implementation until after beta.\n* ✅ Fixed null reference error in `pdfGenerator.ts`.\n\nDate: Mar 14, 2026\n* 🔴 User requested all environment variables be prefixed with `LEDGERLY_`.\n* ✅ Implemented Stripe webhook support with signature validation, Winston logging (`LEDGERLY_LOG_LEVEL`), and passing unit tests.\n\nDate: Mar 17, 2026\n* ✅ Added exponential backoff retry strategy for webhooks (2s, 5s, 10s delays) and enforced a 95% test coverage threshold.\n\nDate: Mar 20, 2026\n* 🔴 User updated public launch date to May 10, 2026 (delayed due to payments audit) and stated Ledgerly must support EUR, GBP, and USD currencies.\n* ✅ Deployed staging build featuring multi-currency invoicing, SendGrid email integration, and PDF attachments.\n\nDate: Mar 24, 2026\n* 🟡 Added Google and GitHub OAuth authentication via Passport.\n* 🟡 Created analytics dashboard with Chart.js and CSV export endpoint at `/api/export/csv`.\n* ✅ Configured automated nightly backup job storing snapshots in AWS S3.\n\nDate: Mar 28, 2026\n* 🔴 User established a standing rule: never push directly to main, always use pull requests.\n* 🔴 User requested a summary of monthly revenue broken down by client tier.\n* ✅ Refactored invoice rendering (`/api/invoice/pdf`), added `useStripe` feature toggle, and deployed staging build to EC2 instance `ledgerly-stg-01`.",
+ "degenerate": false
+}

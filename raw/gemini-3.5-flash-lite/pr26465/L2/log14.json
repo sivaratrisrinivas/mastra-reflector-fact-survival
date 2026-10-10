@@ -1,0 +1,40 @@
+{
+ "ref": "pr26465",
+ "refSha": "3781dc946a8545cd3548887496d54beb0f64c67d",
+ "level": 2,
+ "log": "log14",
+ "provider": "google",
+ "modelRequested": "gemini-3.5-flash-lite",
+ "modelVersion": "gemini-3.5-flash-lite",
+ "settings": {
+  "temperature": 0,
+  "thinkingBudget": 1024,
+  "maxOutputTokens": 65536
+ },
+ "finishReason": "STOP",
+ "usage": {
+  "promptTokenCount": 8669,
+  "candidatesTokenCount": 842,
+  "totalTokenCount": 10990,
+  "cachedContentTokenCount": 6595,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 8669
+   }
+  ],
+  "cacheTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 6595
+   }
+  ],
+  "thoughtsTokenCount": 1479,
+  "serviceTier": "standard"
+ },
+ "latencyMs": 5850,
+ "at": "2026-10-10T23:13:52.731Z",
+ "rawText": "<observations>\nDate: Jul 6, 2026\n* 🔴 (09:45) User stated max guest count is 150.\n* 🟢 (11:05) User noted cousin Thomas has severe peanut allergies.\n* 🔴 (13:10) User stated floral budget max is $4,500; prefers minimalist gold geometric table centerpieces.\n* 🟡 (Day summary) Agent reviewed vegetarian brunch catering, updated master guest count spreadsheet, emailed caterer regarding allergen protocols, reviewed Seattle floral portfolios, and configured RSVP automation.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) User stated wedding hashtag is #ToHaveAndToHolt2026; rehearsal dinner venue is Harbor View Restaurant.\n* 🔴 (17:50) User stated photographer arrival should be two hours before the ceremony.\n* 🟡 (Day summary) Agent updated website banner, compiled acoustic indie Spotify playlist, drafted Harbor View reservation for 22, contacted Metro Luxury Transit for ADA shuttles, and checked pyrotechnic fire safety codes.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) User stated seating chart must separate college friends from family; catering headcount cutoff is Sept 1, 2026.\n* 🔴 (17:50) User stated morning getting-ready robes must be emerald green silk.\n* 🟡 (Day summary) Agent checked Velvet Petals for lavender centerpieces, researched regional snack welcome bags, checked custom ring engraving with Silver Lining Jewelers, and added a zero-proof botanical spritz to the bar menu draft.\n\nDate: Jul 15, 2026\n* 🔴 (09:15) User stated rehearsal dinner headcount cap is 40.\n* 🔴 (15:20) User stated venue walkthrough is Aug 26, 2026.\n* 🔴 (18:00) User stated dietary restriction labels must be printed on place cards.\n* 🟡 (Day summary) Agent checked sunrise photography rates, ordered leaf-based confetti samples, added emergency kit supplies, checked amber uplighting packages, and checked 1965 vintage convertible availability.\n\nDate: Jul 19, 2026\n* 🔴 (09:00) User stated college friends must be grouped at table four.\n* 🔴 (12:45) User stated ring bearer pillow must be handmade from vintage lace.\n* 🔴 (16:30) User stated welcome bags must include local craft beer and artisan chocolate.\n* 🟡 (Day summary) Agent updated floral design brief with white roses and eucalyptus, compiled 20-song acoustic indie setlist, searched Etsy for vintage lace pillows, and adjusted evening timeline for 45-minute sunset portraits.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) User stated final rehearsal dinner headcount is strictly 35 guests at The Rustic Hearth.\n* 🔴 (13:10) User stated wedding favors must be personalized ceramic coasters (ordered via Kiln & Clay Studio).\n* 🔴 (16:45) User stated cake flavor is pistachio (replacing lemon raspberry).\n* 🔴 (17:00) User stated final videographer payment is due Aug 10, 2026.\n* 🟡 (Day summary) Updated getting-ready robes to pure mulberry silk, added a midnight return shuttle run, and added pre-ceremony candid coffee photography coverage.\n* ✅ (21:00) Agent confirmed gluten-free macaron tower addition with Sweet Treats Bakery.\n</observations>\n\n<suggested-response>\nThe assistant should wait for the user to provide the next wedding planning request.\n</suggested-response>",
+ "observations": "Date: Jul 6, 2026\n* 🔴 (09:45) User stated max guest count is 150.\n* 🟢 (11:05) User noted cousin Thomas has severe peanut allergies.\n* 🔴 (13:10) User stated floral budget max is $4,500; prefers minimalist gold geometric table centerpieces.\n* 🟡 (Day summary) Agent reviewed vegetarian brunch catering, updated master guest count spreadsheet, emailed caterer regarding allergen protocols, reviewed Seattle floral portfolios, and configured RSVP automation.\n\nDate: Jul 9, 2026\n* 🔴 (09:15) User stated wedding hashtag is #ToHaveAndToHolt2026; rehearsal dinner venue is Harbor View Restaurant.\n* 🔴 (17:50) User stated photographer arrival should be two hours before the ceremony.\n* 🟡 (Day summary) Agent updated website banner, compiled acoustic indie Spotify playlist, drafted Harbor View reservation for 22, contacted Metro Luxury Transit for ADA shuttles, and checked pyrotechnic fire safety codes.\n\nDate: Jul 12, 2026\n* 🔴 (09:10) User stated seating chart must separate college friends from family; catering headcount cutoff is Sept 1, 2026.\n* 🔴 (17:50) User stated morning getting-ready robes must be emerald green silk.\n* 🟡 (Day summary) Agent checked Velvet Petals for lavender centerpieces, researched regional snack welcome bags, checked custom ring engraving with Silver Lining Jewelers, and added a zero-proof botanical spritz to the bar menu draft.\n\nDate: Jul 15, 2026\n* 🔴 (09:15) User stated rehearsal dinner headcount cap is 40.\n* 🔴 (15:20) User stated venue walkthrough is Aug 26, 2026.\n* 🔴 (18:00) User stated dietary restriction labels must be printed on place cards.\n* 🟡 (Day summary) Agent checked sunrise photography rates, ordered leaf-based confetti samples, added emergency kit supplies, checked amber uplighting packages, and checked 1965 vintage convertible availability.\n\nDate: Jul 19, 2026\n* 🔴 (09:00) User stated college friends must be grouped at table four.\n* 🔴 (12:45) User stated ring bearer pillow must be handmade from vintage lace.\n* 🔴 (16:30) User stated welcome bags must include local craft beer and artisan chocolate.\n* 🟡 (Day summary) Agent updated floral design brief with white roses and eucalyptus, compiled 20-song acoustic indie setlist, searched Etsy for vintage lace pillows, and adjusted evening timeline for 45-minute sunset portraits.\n\nDate: Jul 23, 2026\n* 🔴 (09:15) User stated final rehearsal dinner headcount is strictly 35 guests at The Rustic Hearth.\n* 🔴 (13:10) User stated wedding favors must be personalized ceramic coasters (ordered via Kiln & Clay Studio).\n* 🔴 (16:45) User stated cake flavor is pistachio (replacing lemon raspberry).\n* 🔴 (17:00) User stated final videographer payment is due Aug 10, 2026.\n* 🟡 (Day summary) Updated getting-ready robes to pure mulberry silk, added a midnight return shuttle run, and added pre-ceremony candid coffee photography coverage.\n* ✅ (21:00) Agent confirmed gluten-free macaron tower addition with Sweet Treats Bakery.",
+ "degenerate": false
+}
