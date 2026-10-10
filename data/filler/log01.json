@@ -110,6 +110,28 @@
      "✅ (13:05) Agent added automated nightly backup job to CI, storing snapshots in AWS S3."
     ]
    }
+  },
+  {
+   "prompt": "We are generating synthetic memory logs for testing an AI assistant's memory compression.\nThe assistant serves a solo developer building 'Ledgerly', a TypeScript invoicing SaaS, with a coding agent that reads files, runs tests and edits code.\nAn observer agent watches each conversation and writes dated observation lines. Write the filler\nobservations for one date: Mar 28, 2026. The dates of the whole log are Mar 11, 2026, Mar 14, 2026, Mar 17, 2026, Mar 20, 2026, Mar 24, 2026, Mar 28, 2026; this is date 6 of 6.\nObservations from the previous date (for continuity, do not repeat them):\n🔴 (07:15) User stated that Ledgerly should support OAuth login via Google and GitHub.\n🟡 (07:45) Agent created a new feature branch “feature/oauth-login”.\n🟡 (08:10) Agent installed passport, passport-google-oauth20, and passport-github packages.\n🟡 (08:35) Agent configured authentication middleware in src/middleware/auth.ts.\n🟢 (09:00) Unit tests for OAuth flow ran, with 12 passing assertions.\n🟡 (09:30) Agent added environment variable placeholders for GOOGLE_CLIENT_ID, GITHUB_CLIENT_ID, etc.\n✅ (09:55) Agent merged the OAuth branch after review from lead dev Alex.\n🟡 (10:20) Agent began work on a new reporting dashboard for invoice analytics.\n🟡 (10:50) Agent scaffolded a React component library in frontend/src/components/Analytics.\n🟢 (11:15) Minor UI tweak: adjusted chart colors to #4A90E2 for consistency.\n🟡 (11:45) Agent integrated chart.js library and displayed total revenue chart.\n🔴 (12:10) User asked whether data export should be CSV, Excel, or JSON.\n🟡 (12:40) Agent implemented CSV export endpoint at /api/export/csv.\n✅ (13:05) Agent added automated nightly backup job to CI, storing snapshots in AWS S3.\n\nFormat rules for every line:\n- Start with a priority emoji: 🔴 for facts the user stated about themselves or firm decisions,\n  🟡 for task progress, tool calls and assistant actions, 🟢 for minor or passing details.\n- Then a 24h time in parentheses, then one sentence, e.g. \"🟡 (14:05) Agent compared three quotes and found the cheapest was the local supplier.\"\n- Mix: things the user stated (\"User stated ...\"), questions the user asked (\"User asked ...\"),\n  assistant actions and tool calls (\"Agent searched ...\", \"Agent ran ...\"), and completed work (\"✅ ...\").\n- Use specific but invented details (names, numbers, places) so the log feels real.\n- Exactly 14 lines, times ascending, between 07:00 and 22:00. Move the story forward from earlier dates.\n\nThe log already contains these lines (written elsewhere). Do NOT repeat, rephrase, contradict, or mention\ntheir subjects, people, numbers, places, or dates at all:\n- User stated the monthly cloud budget for Ledgerly is capped at $1,850.\n- User stated the public launch date is April 23, 2026.\n- User stated the public launch date is now May 10, 2026 because of the payments audit.\n- User set a standing rule: never push directly to the main branch, always open a pull request.\n\nReturn JSON: {\"date\": \"Mar 28, 2026\", \"lines\": [\"...\"]}",
+   "response": {
+    "date": "Mar 28, 2026",
+    "lines": [
+     "🟡 (13:30) Agent refactored the invoice rendering service into src/services/invoiceRenderer.ts for better modularity.",
+     "🟢 (13:55) Unit tests for the new renderer executed, all 18 assertions passed.",
+     "🟡 (14:20) Agent added PDF generation using pdfkit, creating a new endpoint /api/invoice/pdf.",
+     "🟢 (14:45) Quick manual test produced a correctly formatted PDF for invoice #8421.",
+     "🔴 (15:10) User asked if Stripe or PayPal should be the primary payment processor.",
+     "🟡 (15:40) Agent set up a feature toggle in config/featureFlags.ts for “useStripe”.",
+     "🟡 (16:05) Agent wrote integration tests for the Stripe webhook handler, simulating a successful payment event.",
+     "✅ (16:35) Agent merged the payment-feature branch after code review by senior dev Maya.",
+     "🟡 (17:00) Agent updated API documentation in docs/api/v2.md to include the new PDF endpoint and payment toggle.",
+     "🟢 (17:30) Linter run reported zero warnings across the updated codebase.",
+     "🔴 (18:00) User requested a summary of monthly revenue broken down by client tier.",
+     "🟡 (18:25) Agent added a new analytics query in src/queries/revenueByTier.sql returning tier, total, and count.",
+     "🟢 (18:55) Preliminary dashboard widget displayed tiered revenue chart with mock data.",
+     "✅ (19:20) Agent deployed the latest build to staging environment on EC2 instance “ledgerly-stg-01”."
+    ]
+   }
   }
  ]
 }

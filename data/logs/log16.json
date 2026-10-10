@@ -1,0 +1,94 @@
+{
+ "id": "log16",
+ "domain": "fitness",
+ "dates": [
+  "2026-07-24",
+  "2026-07-27",
+  "2026-07-30",
+  "2026-08-02",
+  "2026-08-06",
+  "2026-08-10"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log16-f0",
+   "type": 17,
+   "typeName": "fact buried in a long tool-result line",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🟡 Agent imported the Garmin export: 28 activities; longest run 14.2 km on day 3; average resting HR 54; VO2 max 47; sleep score average 71; HRV 62 ms; weekly mileage 31 km; 3 sessions missing GPS; 2 treadmill runs; note in export: user's physio set a weekly cap of 40 km until the knee check-up; shoes logged at 512 km."
+   ],
+   "check": {
+    "all": [
+     [
+      "40 km",
+      "40km",
+      "40 kilomet"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log16-f1",
+   "type": 5,
+   "typeName": "version string",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🟢 User mentioned their Garmin Forerunner 965 is on firmware 21.19."
+   ],
+   "check": {
+    "all": [
+     [
+      "21.19"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log16-f2",
+   "type": 11,
+   "typeName": "doesn't know X",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🟡 User stated they do not know their max heart rate."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "max heart rate",
+      "maximum heart rate",
+      "max hr",
+      "hrmax"
+     ],
+     [
+      "not know",
+      "doesn't know",
+      "does not know",
+      "don't know",
+      "unsure",
+      "not sure",
+      "unknown",
+      "uncertain",
+      "unclear",
+      "no idea",
+      "not aware",
+      "hasn't checked",
+      "has not checked"
+     ]
+    ]
+   }
+  }
+ ]
+}

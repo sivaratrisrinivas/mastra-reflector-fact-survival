@@ -1,0 +1,115 @@
+{
+ "id": "log08",
+ "domain": "home",
+ "dates": [
+  "2026-05-13",
+  "2026-05-16",
+  "2026-05-19",
+  "2026-05-22",
+  "2026-05-26",
+  "2026-05-30"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log08-f0",
+   "type": 9,
+   "typeName": "changed value: new marked current",
+   "position": "early",
+   "groups": [
+    0,
+    1
+   ],
+   "plantedLines": [
+    "🟡 User picked the backsplash tile color Fog Gray.",
+    "🔴 User stated the backsplash tile is now Sea Glass."
+   ],
+   "check": {
+    "current": {
+     "new": [
+      "sea glass"
+     ],
+     "old": [
+      "fog gray",
+      "fog grey"
+     ],
+     "markers": [
+      "now",
+      "current",
+      "switched",
+      "changed",
+      "updated",
+      "raised",
+      "increased",
+      "lowered",
+      "reduced",
+      "instead",
+      "replac",
+      "revised",
+      "latest",
+      "no longer",
+      "->",
+      "→",
+      "moved",
+      "new ",
+      "final"
+     ]
+    }
+   }
+  },
+  {
+   "id": "log08-f1",
+   "type": 15,
+   "typeName": "who-said-what (assistant attribution)",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🟡 Assistant suggested moving the dishwasher to the left of the sink; user has not decided."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "dishwasher"
+     ],
+     [
+      "assistant",
+      "agent",
+      "ai suggested",
+      "ai recommended",
+      "ai proposed"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log08-f2",
+   "type": 3,
+   "typeName": "absolute date",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🔴 User stated the cabinet delivery is scheduled for July 2, 2026."
+   ],
+   "check": {
+    "all": [
+     [
+      "07/02/2026",
+      "2 jul",
+      "2 july",
+      "2026-07-02",
+      "7/2/2026",
+      "jul 2",
+      "jul. 2",
+      "july 2"
+     ]
+    ]
+   }
+  }
+ ]
+}

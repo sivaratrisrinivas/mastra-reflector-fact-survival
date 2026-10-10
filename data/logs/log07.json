@@ -1,0 +1,86 @@
+{
+ "id": "log07",
+ "domain": "home",
+ "dates": [
+  "2026-05-04",
+  "2026-05-07",
+  "2026-05-10",
+  "2026-05-13",
+  "2026-05-17",
+  "2026-05-21"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log07-f0",
+   "type": 8,
+   "typeName": "changed value: old and new both kept",
+   "position": "early",
+   "groups": [
+    0,
+    1
+   ],
+   "plantedLines": [
+    "🔴 User stated the general contractor quoted $18,400 for the remodel.",
+    "🔴 User stated the revised contractor quote is $21,250."
+   ],
+   "check": {
+    "all": [
+     [
+      "18400",
+      "18.4k"
+     ],
+     [
+      "21250",
+      "21.25k"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log07-f1",
+   "type": 14,
+   "typeName": "standing instruction / rule",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User set a rule: always send them photos before any wall is opened up."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "photo"
+     ],
+     [
+      "before",
+      "prior to"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log07-f2",
+   "type": 2,
+   "typeName": "dollar amount",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🔴 User stated the appliance allowance is $6,300."
+   ],
+   "check": {
+    "all": [
+     [
+      "6300",
+      "6.3k"
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "log06",
+ "domain": "home",
+ "dates": [
+  "2026-04-25",
+  "2026-04-28",
+  "2026-05-01",
+  "2026-05-04",
+  "2026-05-08",
+  "2026-05-12"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log06-f0",
+   "type": 7,
+   "typeName": "place",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🟡 User stated the house being remodeled is in Asheville, North Carolina."
+   ],
+   "check": {
+    "all": [
+     [
+      "asheville"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log06-f1",
+   "type": 13,
+   "typeName": "stated preference",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User stated they prefer matte black cabinet hardware over brushed brass."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "matte black"
+     ],
+     [
+      "prefer",
+      "preference",
+      "want",
+      "chose",
+      "choice",
+      "favor",
+      "favour",
+      "rather",
+      "like",
+      "always",
+      "use"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log06-f2",
+   "type": 1,
+   "typeName": "person name in a low-priority line",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🟢 User mentioned the electrician's name is Dale Okonkwo."
+   ],
+   "check": {
+    "all": [
+     [
+      "okonkwo"
+     ]
+    ]
+   }
+  }
+ ]
+}

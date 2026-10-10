@@ -1,0 +1,99 @@
+{
+ "id": "log04",
+ "domain": "travel",
+ "dates": [
+  "2026-04-07",
+  "2026-04-10",
+  "2026-04-13",
+  "2026-04-16",
+  "2026-04-20",
+  "2026-04-24"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 83,
+ "droppedFiller": [
+  [
+   "token",
+   "🟢 (09:45) Agent found Intercidades at 10:15 €22 and Alfa Pendular at 12:00 €30."
+  ]
+ ],
+ "facts": [
+  {
+   "id": "log04-f0",
+   "type": 5,
+   "typeName": "version string",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🟢 User mentioned their offline maps app is OsmAnd version 4.9.2."
+   ],
+   "check": {
+    "all": [
+     [
+      "4.9.2"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log04-f1",
+   "type": 11,
+   "typeName": "doesn't know X",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🟡 User stated they do not know whether their rail pass covers the Porto to Lisbon Alfa Pendular train."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "alfa pendular",
+      "rail pass",
+      "railpass"
+     ],
+     [
+      "not know",
+      "doesn't know",
+      "does not know",
+      "don't know",
+      "unsure",
+      "not sure",
+      "unknown",
+      "uncertain",
+      "unclear",
+      "no idea",
+      "not aware",
+      "hasn't checked",
+      "has not checked",
+      "check",
+      "unconfirmed",
+      "whether"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log04-f2",
+   "type": 17,
+   "typeName": "fact buried in a long tool-result line",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🟡 Agent ran hotel_search for Lisbon Sep 15-18 and got 9 results: Hotel Avenida Palace €212/night no vacancy; Pestana Palace €340 waitlist; Memmo Alfama €189 two rooms left; Lumiares €205 available; Hotel Lisboa Plaza €158 sold out; Palacio Belmonte €610 available; Browns Central €171 available; Hotel Britania €199 one room; Casa do Principe €176 one room; user booked Casa do Principe from the list."
+   ],
+   "check": {
+    "all": [
+     [
+      "casa do principe"
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "id": "log15",
+ "domain": "fitness",
+ "dates": [
+  "2026-07-15",
+  "2026-07-18",
+  "2026-07-21",
+  "2026-07-24",
+  "2026-07-28",
+  "2026-08-01"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log15-f0",
+   "type": 16,
+   "typeName": "fact repeated 3 times",
+   "position": "early",
+   "groups": [
+    0,
+    1,
+    2
+   ],
+   "plantedLines": [
+    "🔴 User stated they have a torn meniscus in the left knee.",
+    "🔴 User mentioned the torn meniscus in their left knee again.",
+    "🔴 User repeated that their left knee meniscus is torn."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "meniscus"
+     ],
+     [
+      "left"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log15-f1",
+   "type": 4,
+   "typeName": "relative date with anchor",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User stated their half marathon is six weeks from today, which is September 4, 2026."
+   ],
+   "check": {
+    "all": [
+     [
+      "09/04/2026",
+      "2026-09-04",
+      "4 sep",
+      "4 september",
+      "9/4/2026",
+      "sep 4",
+      "sep. 4",
+      "september 4"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log15-f2",
+   "type": 10,
+   "typeName": "stated negative (never)",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🔴 User stated they have never had a cardiac stress test."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "stress test"
+     ],
+     [
+      "never",
+      "not been",
+      "hasn't",
+      "has not",
+      "no prior",
+      "first time",
+      "first-time",
+      "not owned",
+      "not had",
+      "no experience",
+      "no history",
+      "no previous"
+     ]
+    ]
+   }
+  }
+ ]
+}

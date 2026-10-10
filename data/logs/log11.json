@@ -1,0 +1,95 @@
+{
+ "id": "log11",
+ "domain": "finance",
+ "dates": [
+  "2026-06-09",
+  "2026-06-12",
+  "2026-06-15",
+  "2026-06-18",
+  "2026-06-22",
+  "2026-06-26"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 83,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log11-f0",
+   "type": 12,
+   "typeName": "refused action",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🔴 User refused to share their bank login credentials with the assistant."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "credential",
+      "login",
+      "password"
+     ],
+     [
+      "refus",
+      "declin",
+      "won't",
+      "will not",
+      "not to ",
+      "doesn't want",
+      "does not want",
+      "do not",
+      "don't",
+      "rejected",
+      "not share",
+      "not interested",
+      "against",
+      "no supplement",
+      "opted out",
+      "never"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log11-f1",
+   "type": 18,
+   "typeName": "control: transient noise (pass = absent)",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🟡 Agent's spreadsheet export failed once with error code E_SHEET_429 and succeeded on retry."
+   ],
+   "check": {
+    "absent": [
+     "e_sheet_429"
+    ]
+   }
+  },
+  {
+   "id": "log11-f2",
+   "type": 6,
+   "typeName": "duration",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🔴 User stated their car loan has 38 months remaining."
+   ],
+   "check": {
+    "all": [
+     [
+      "38 months",
+      "38 more months",
+      "38-month",
+      "38 mo"
+     ]
+    ]
+   }
+  }
+ ]
+}

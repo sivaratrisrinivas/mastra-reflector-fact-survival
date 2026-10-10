@@ -1,0 +1,101 @@
+{
+ "id": "log10",
+ "domain": "finance",
+ "dates": [
+  "2026-05-31",
+  "2026-06-03",
+  "2026-06-06",
+  "2026-06-09",
+  "2026-06-13",
+  "2026-06-17"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 82,
+ "droppedFiller": [
+  [
+   "token",
+   "🟡 (08:20) Agent searched recent high-yield savings rates and found Ally at 2.15%, Chase at 1.90%, Capital One at 2.00%."
+  ],
+  [
+   "token",
+   "🟡 (10:05) Agent scheduled a recurring transfer of $250 monthly from checking to Ally Savings."
+  ]
+ ],
+ "facts": [
+  {
+   "id": "log10-f0",
+   "type": 11,
+   "typeName": "doesn't know X",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🟡 User stated they do not know their current credit score."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "credit score"
+     ],
+     [
+      "not know",
+      "doesn't know",
+      "does not know",
+      "don't know",
+      "unsure",
+      "not sure",
+      "unknown",
+      "uncertain",
+      "unclear",
+      "no idea",
+      "not aware",
+      "hasn't checked",
+      "has not checked"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log10-f1",
+   "type": 17,
+   "typeName": "fact buried in a long tool-result line",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🟡 Agent parsed the accounts export (11 rows): Chase checking ...1182 $3,410; Ally savings ...7741 $12,980; Fidelity 401(k) $48,200; Amex Gold statement $1,126 due on the 21st; Discover It $0; Vanguard Roth IRA $9,870; Capital One Quicksilver $412; Marcus CD $5,000 matures in March; PayPal $86; Venmo $40; HSA $2,215; note from user in the sheet: the Ally savings account is the one to use for the emergency fund."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "ally"
+     ],
+     [
+      "emergency"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log10-f2",
+   "type": 5,
+   "typeName": "version string",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🟢 User mentioned they track spending in the YNAB iOS app, version 3.12.1."
+   ],
+   "check": {
+    "all": [
+     [
+      "3.12.1"
+     ]
+    ]
+   }
+  }
+ ]
+}

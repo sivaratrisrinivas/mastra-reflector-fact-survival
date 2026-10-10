@@ -115,7 +115,7 @@ LOGS = [
              "check": {"all": [["4.9.2"]]}},
             {"type": 11, "lines": [(0, "14:40", "🟡 User stated they do not know whether their rail pass covers the Porto to Lisbon Alfa Pendular train.")],
              "check": {"sameLine": [["alfa pendular", "rail pass", "railpass"], UNKNOWN + ["check", "unconfirmed", "whether"]]}},
-            {"type": 17, "lines": [(0, "18:12", "🟡 Agent ran hotel_search for Lisbon Sep 22-25 and got 9 results: Hotel Avenida Palace €212/night no vacancy; Pestana Palace €340 waitlist; Memmo Alfama €189 two rooms left; Lumiares €205 available; Hotel Lisboa Plaza €158 sold out; Palacio Belmonte €610 available; Browns Central €171 available; Hotel Britania €199 one room; Casa do Principe €176 one room; user booked Casa do Principe from the list.")],
+            {"type": 17, "lines": [(0, "18:12", "🟡 Agent ran hotel_search for Lisbon Sep 15-18 and got 9 results: Hotel Avenida Palace €212/night no vacancy; Pestana Palace €340 waitlist; Memmo Alfama €189 two rooms left; Lumiares €205 available; Hotel Lisboa Plaza €158 sold out; Palacio Belmonte €610 available; Browns Central €171 available; Hotel Britania €199 one room; Casa do Principe €176 one room; user booked Casa do Principe from the list.")],
              "check": {"all": [["casa do principe"]]}},
         ],
     },

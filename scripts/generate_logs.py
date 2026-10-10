@@ -4,7 +4,8 @@ Step A (LLM, generate-synthetic-data skill steps 3-4): for each log, a model wri
 observation lines for 6 dated groups in Mastra's observation format, told which domain to use and
 which subjects to avoid. Step B (deterministic): the planted fact lines from facts.py are inserted
 at their positions and the check tokens are resolved (dates expanded into common formats).
-Step C (filter, skill step 5): filler lines that contain any check token are dropped, so a fact can
+Hand edits from data/filler_edits.json fix filler lines that contradicted a planted fact (found
+in a manual review). Step C (filter, skill step 5): filler lines that contain any check token are dropped, so a fact can
 only be found in the output if the Reflector kept the planted line.
 
 Usage: GROQ_API_KEY=... python3 scripts/generate_logs.py   (filler cached in data/filler/)
@@ -17,7 +18,7 @@ from facts import LOGS, DOMAINS, TYPES, POSITIONS, ANCHOR_GROUP
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FILLER = ROOT / "data" / "filler"; FILLER.mkdir(parents=True, exist_ok=True)
 OUT = ROOT / "data" / "logs"; OUT.mkdir(parents=True, exist_ok=True)
-GEN_MODEL = "openai/gpt-oss-120b"  # Groq free tier, used only to write filler lines
+GEN_MODEL = os.environ.get("GEN_MODEL", "openai/gpt-oss-120b")  # Groq free tier, used only to write filler lines
 OFFSETS = [0, 3, 6, 9, 13, 17]
 BASE = dt.date(2026, 3, 2)
 
@@ -80,7 +81,21 @@ def has_tok(text, tok):
     pat = r"(?<![a-z0-9])" + re.escape(tok) + (r"(?![0-9])" if tok[-1].isdigit() else "")
     return re.search(pat, norm(text)) is not None
 
+def gemini(prompt):
+    body = json.dumps({"contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                       "generationConfig": {"temperature": 0.9, "responseMimeType": "application/json"}}).encode()
+    for attempt in range(8):
+        req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{GEN_MODEL}:generateContent",
+                                     data=body, headers={"x-goog-api-key": os.environ["GEMINI_API_KEY"], "Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                return json.load(r)["candidates"][0]["content"]["parts"][0]["text"]
+        except urllib.error.HTTPError as e:
+            print("gemini", e.code, e.read()[:300], file=sys.stderr); time.sleep(20)
+    raise RuntimeError("gemini failed")
+
 def groq(prompt):
+    if GEN_MODEL.startswith("gemini"): return gemini(prompt)
     body = json.dumps({"model": GEN_MODEL, "temperature": 0.9, "messages": [{"role": "user", "content": prompt}],
                        "response_format": {"type": "json_object"}}).encode()
     for attempt in range(8):
@@ -153,6 +168,12 @@ def build(i, log):
         cached["groups"].append({"prompt": p, "response": resp})
         cache.write_text(json.dumps(cached, ensure_ascii=False, indent=1))
     data = {"groups": [grp["response"] for grp in cached["groups"]]}
+    edits = [e for e in json.loads((ROOT / "data" / "filler_edits.json").read_text()) if e["log"] == i]
+    for grp in data["groups"]:
+        for k, ln in enumerate(grp["lines"]):
+            for e in edits:
+                if e["find"] in ln: grp["lines"][k] = ln = ln.replace(e["find"], e["replace"]); e["applied"] = True
+    assert all(e.get("applied") for e in edits), ("edit not applied", i, edits)
     tokens = [t for mf in manifest_facts for t in key_tokens(mf["check"])]
     dropped = []
     out_lines, n_filler = [], 0

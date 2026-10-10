@@ -1,0 +1,115 @@
+{
+ "id": "log14",
+ "domain": "wedding",
+ "dates": [
+  "2026-07-06",
+  "2026-07-09",
+  "2026-07-12",
+  "2026-07-15",
+  "2026-07-19",
+  "2026-07-23"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log14-f0",
+   "type": 15,
+   "typeName": "who-said-what (assistant attribution)",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🟡 Assistant proposed a string quartet for the ceremony; user said they would think about it."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "quartet"
+     ],
+     [
+      "assistant",
+      "agent",
+      "ai suggested",
+      "ai recommended",
+      "ai proposed"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log14-f1",
+   "type": 3,
+   "typeName": "absolute date",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User stated the venue walkthrough is on August 26, 2026."
+   ],
+   "check": {
+    "all": [
+     [
+      "08/26/2026",
+      "2026-08-26",
+      "26 aug",
+      "26 august",
+      "8/26/2026",
+      "aug 26",
+      "aug. 26",
+      "august 26"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log14-f2",
+   "type": 9,
+   "typeName": "changed value: new marked current",
+   "position": "late",
+   "groups": [
+    3,
+    5
+   ],
+   "plantedLines": [
+    "🟡 User stated the cake flavor is lemon raspberry.",
+    "🔴 User stated the cake flavor is now pistachio."
+   ],
+   "check": {
+    "current": {
+     "new": [
+      "pistachio"
+     ],
+     "old": [
+      "lemon raspberry",
+      "lemon-raspberry"
+     ],
+     "markers": [
+      "now",
+      "current",
+      "switched",
+      "changed",
+      "updated",
+      "raised",
+      "increased",
+      "lowered",
+      "reduced",
+      "instead",
+      "replac",
+      "revised",
+      "latest",
+      "no longer",
+      "->",
+      "→",
+      "moved",
+      "new ",
+      "final"
+     ]
+    }
+   }
+  }
+ ]
+}

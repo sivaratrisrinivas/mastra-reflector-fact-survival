@@ -1,0 +1,97 @@
+{
+ "id": "log05",
+ "domain": "travel",
+ "dates": [
+  "2026-04-16",
+  "2026-04-19",
+  "2026-04-22",
+  "2026-04-25",
+  "2026-04-29",
+  "2026-05-03"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log05-f0",
+   "type": 6,
+   "typeName": "duration",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🟡 User stated the layover in Istanbul on the return flight is 7 hours 40 minutes."
+   ],
+   "check": {
+    "all": [
+     [
+      "7 hours 40",
+      "7h40",
+      "7h 40",
+      "7 hr 40",
+      "7hr 40",
+      "7:40",
+      "7 h 40",
+      "7-hour 40"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log05-f1",
+   "type": 12,
+   "typeName": "refused action",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User refused the airline's travel insurance add-on and told the assistant not to offer it again."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "insurance"
+     ],
+     [
+      "refus",
+      "declin",
+      "won't",
+      "will not",
+      "not to ",
+      "doesn't want",
+      "does not want",
+      "do not",
+      "don't",
+      "rejected",
+      "not share",
+      "not interested",
+      "against",
+      "no supplement",
+      "opted out",
+      "never"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log05-f2",
+   "type": 18,
+   "typeName": "control: transient noise (pass = absent)",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🟡 Agent retried the flight search API 3 times after a timeout; request id req_8fK2pQ."
+   ],
+   "check": {
+    "absent": [
+     "req_8fk2pq"
+    ]
+   }
+  }
+ ]
+}

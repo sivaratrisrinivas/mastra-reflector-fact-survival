@@ -1,0 +1,93 @@
+{
+ "id": "log17",
+ "domain": "fitness",
+ "dates": [
+  "2026-08-02",
+  "2026-08-05",
+  "2026-08-08",
+  "2026-08-11",
+  "2026-08-15",
+  "2026-08-19"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log17-f0",
+   "type": 18,
+   "typeName": "control: transient noise (pass = absent)",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🟡 Agent's call to the nutrition API timed out (trace id tr_55Zx91) and was retried."
+   ],
+   "check": {
+    "absent": [
+     "tr_55zx91"
+    ]
+   }
+  },
+  {
+   "id": "log17-f1",
+   "type": 6,
+   "typeName": "duration",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User stated they can train 45 minutes per day on weekdays."
+   ],
+   "check": {
+    "all": [
+     [
+      "45 minutes",
+      "45 min",
+      "45-minute",
+      "45 mins"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log17-f2",
+   "type": 12,
+   "typeName": "refused action",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🔴 User refused to take creatine and asked the assistant not to suggest supplements."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "creatine"
+     ],
+     [
+      "refus",
+      "declin",
+      "won't",
+      "will not",
+      "not to ",
+      "doesn't want",
+      "does not want",
+      "do not",
+      "don't",
+      "rejected",
+      "not share",
+      "not interested",
+      "against",
+      "no supplement",
+      "opted out",
+      "never"
+     ]
+    ]
+   }
+  }
+ ]
+}

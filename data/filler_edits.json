@@ -1,0 +1,6 @@
+[
+ {"log": 3, "find": "starting on April 5", "replace": "starting next Friday", "why": "filler trip start contradicted the planted fly-out date"},
+ {"log": 3, "find": "Lisbon for April 5", "replace": "Lisbon for the outbound date", "why": "same"},
+ {"log": 8, "find": "whether a quartz backsplash would match", "replace": "whether a quartz windowsill would match", "why": "filler suggested a backsplash change, muddying the planted tile change"},
+ {"log": 8, "find": "illustrating the quartz backsplash option", "replace": "illustrating the quartz windowsill option", "why": "same"}
+]

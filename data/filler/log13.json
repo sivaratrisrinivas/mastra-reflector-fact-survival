@@ -1,0 +1,137 @@
+{
+ "model": "openai/gpt-oss-20b",
+ "groups": [
+  {
+   "prompt": "We are generating synthetic memory logs for testing an AI assistant's memory compression.\nThe assistant serves a couple planning a 2026 wedding with an assistant that tracks vendors, budget and guest logistics.\nAn observer agent watches each conversation and writes dated observation lines. Write the filler\nobservations for one date: Jun 27, 2026. The dates of the whole log are Jun 27, 2026, Jun 30, 2026, Jul 3, 2026, Jul 6, 2026, Jul 10, 2026, Jul 14, 2026; this is date 1 of 6.\n\n\nFormat rules for every line:\n- Start with a priority emoji: 🔴 for facts the user stated about themselves or firm decisions,\n  🟡 for task progress, tool calls and assistant actions, 🟢 for minor or passing details.\n- Then a 24h time in parentheses, then one sentence, e.g. \"🟡 (14:05) Agent compared three quotes and found the cheapest was the local supplier.\"\n- Mix: things the user stated (\"User stated ...\"), questions the user asked (\"User asked ...\"),\n  assistant actions and tool calls (\"Agent searched ...\", \"Agent ran ...\"), and completed work (\"✅ ...\").\n- Use specific but invented details (names, numbers, places) so the log feels real.\n- Exactly 14 lines, times ascending, between 07:00 and 22:00. Move the story forward from earlier dates.\n\nThe log already contains these lines (written elsewhere). Do NOT repeat, rephrase, contradict, or mention\ntheir subjects, people, numbers, places, or dates at all:\n- User set a rule: every vendor contract goes to their partner Jonah for sign-off before any deposit is paid.\n- User stated the photographer's package costs $4,750.\n- User stated the guest count is 140.\n- User stated the guest count is now 112.\n\nReturn JSON: {\"date\": \"Jun 27, 2026\", \"lines\": [\"...\"]}",
+   "response": {
+    "date": "Jun 27, 2026",
+    "lines": [
+     "🔴 (07:15) User stated they want a floral theme featuring lavender and sage for the ceremony backdrop.",
+     "🟡 (07:45) Agent searched local florist catalogues and identified three suitable arrangements.",
+     "🟢 (08:20) Agent noted the florist's lead time of 5 business days for custom orders.",
+     "🔴 (09:00) User asked whether the venue can accommodate a garden-style seating layout.",
+     "🟡 (09:45) Agent checked venue floor plans and confirmed space for tiered lawn tables.",
+     "🟢 (10:30) Agent logged the venue capacity of 150 guests in the planning sheet.",
+     "🟡 (11:15) Agent ran a cost estimate for lawn seating rentals and projected $1,200.",
+     "🔴 (12:00) User stated they prefer a live acoustic band for the reception.",
+     "🟢 (13:00) Agent queued the band's availability calendar and found a slot on August 20.",
+     "🟡 (14:00) Agent called the band to confirm the date and requested a set list.",
+     "🔴 (15:30) User asked for a backup DJ option in case of technical issues.",
+     "🟢 (16:45) Agent added a local DJ to the vendor list and set a reminder for follow-up.",
+     "🟡 (18:00) Agent ran a budget reconciliation and flagged a $300 overage on décor.",
+     "🔴 (20:00) User stated they will adjust the floral budget to stay within limits."
+    ]
+   }
+  },
+  {
+   "prompt": "We are generating synthetic memory logs for testing an AI assistant's memory compression.\nThe assistant serves a couple planning a 2026 wedding with an assistant that tracks vendors, budget and guest logistics.\nAn observer agent watches each conversation and writes dated observation lines. Write the filler\nobservations for one date: Jun 30, 2026. The dates of the whole log are Jun 27, 2026, Jun 30, 2026, Jul 3, 2026, Jul 6, 2026, Jul 10, 2026, Jul 14, 2026; this is date 2 of 6.\nObservations from the previous date (for continuity, do not repeat them):\n🔴 (07:15) User stated they want a floral theme featuring lavender and sage for the ceremony backdrop.\n🟡 (07:45) Agent searched local florist catalogues and identified three suitable arrangements.\n🟢 (08:20) Agent noted the florist's lead time of 5 business days for custom orders.\n🔴 (09:00) User asked whether the venue can accommodate a garden-style seating layout.\n🟡 (09:45) Agent checked venue floor plans and confirmed space for tiered lawn tables.\n🟢 (10:30) Agent logged the venue capacity of 150 guests in the planning sheet.\n🟡 (11:15) Agent ran a cost estimate for lawn seating rentals and projected $1,200.\n🔴 (12:00) User stated they prefer a live acoustic band for the reception.\n🟢 (13:00) Agent queued the band's availability calendar and found a slot on August 20.\n🟡 (14:00) Agent called the band to confirm the date and requested a set list.\n🔴 (15:30) User asked for a backup DJ option in case of technical issues.\n🟢 (16:45) Agent added a local DJ to the vendor list and set a reminder for follow-up.\n🟡 (18:00) Agent ran a budget reconciliation and flagged a $300 overage on décor.\n🔴 (20:00) User stated they will adjust the floral budget to stay within limits.\n\nFormat rules for every line:\n- Start with a priority emoji: 🔴 for facts the user stated about themselves or firm decisions,\n  🟡 for task progress, tool calls and assistant actions, 🟢 for minor or passing details.\n- Then a 24h time in parentheses, then one sentence, e.g. \"🟡 (14:05) Agent compared three quotes and found the cheapest was the local supplier.\"\n- Mix: things the user stated (\"User stated ...\"), questions the user asked (\"User asked ...\"),\n  assistant actions and tool calls (\"Agent searched ...\", \"Agent ran ...\"), and completed work (\"✅ ...\").\n- Use specific but invented details (names, numbers, places) so the log feels real.\n- Exactly 14 lines, times ascending, between 07:00 and 22:00. Move the story forward from earlier dates.\n\nThe log already contains these lines (written elsewhere). Do NOT repeat, rephrase, contradict, or mention\ntheir subjects, people, numbers, places, or dates at all:\n- User set a rule: every vendor contract goes to their partner Jonah for sign-off before any deposit is paid.\n- User stated the photographer's package costs $4,750.\n- User stated the guest count is 140.\n- User stated the guest count is now 112.\n\nReturn JSON: {\"date\": \"Jun 30, 2026\", \"lines\": [\"...\"]}",
+   "response": {
+    "date": "Jun 30, 2026",
+    "lines": [
+     "🔴 (07:20) User stated they want a custom cake topper featuring a tiny silver monogram.",
+     "🟡 (07:45) Agent searched local bakeries and shortlisted two pastry chefs with monogram expertise.",
+     "🟢 (08:10) Agent noted the first baker's prep time is 6 weeks for a custom topper.",
+     "🟡 (09:00) Agent drafted a cake design brief and sent it to the chosen baker via email.",
+     "🔴 (09:30) User asked if the venue can accommodate an outdoor dessert bar.",
+     "🟡 (10:00) Agent reviewed the venue layout and confirmed a 10x15ft space in the backyard suitable for a dessert bar.",
+     "🟢 (10:30) Agent logged the dessert bar dimensions in the event plan.",
+     "🟡 (11:15) Agent checked catering options and found a vegan dessert menu for $45 per guest.",
+     "🟢 (12:00) Agent added the vegan dessert menu cost to the budget sheet.",
+     "🔴 (13:30) User requested a backup plan for inclement weather for the dessert bar.",
+     "🟡 (14:00) Agent arranged a tent rental quote and received a $1,800 estimate.",
+     "🟢 (15:00) Agent recorded the tent cost and updated the contingency budget.",
+     "🟡 (16:30) Agent set a reminder to follow up on the dessert bar permit from the city council.",
+     "🔴 (18:00) User stated they prefer a sunset-themed playlist for the cocktail hour."
+    ]
+   }
+  },
+  {
+   "prompt": "We are generating synthetic memory logs for testing an AI assistant's memory compression.\nThe assistant serves a couple planning a 2026 wedding with an assistant that tracks vendors, budget and guest logistics.\nAn observer agent watches each conversation and writes dated observation lines. Write the filler\nobservations for one date: Jul 3, 2026. The dates of the whole log are Jun 27, 2026, Jun 30, 2026, Jul 3, 2026, Jul 6, 2026, Jul 10, 2026, Jul 14, 2026; this is date 3 of 6.\nObservations from the previous date (for continuity, do not repeat them):\n🔴 (07:20) User stated they want a custom cake topper featuring a tiny silver monogram.\n🟡 (07:45) Agent searched local bakeries and shortlisted two pastry chefs with monogram expertise.\n🟢 (08:10) Agent noted the first baker's prep time is 6 weeks for a custom topper.\n🟡 (09:00) Agent drafted a cake design brief and sent it to the chosen baker via email.\n🔴 (09:30) User asked if the venue can accommodate an outdoor dessert bar.\n🟡 (10:00) Agent reviewed the venue layout and confirmed a 10x15ft space in the backyard suitable for a dessert bar.\n🟢 (10:30) Agent logged the dessert bar dimensions in the event plan.\n🟡 (11:15) Agent checked catering options and found a vegan dessert menu for $45 per guest.\n🟢 (12:00) Agent added the vegan dessert menu cost to the budget sheet.\n🔴 (13:30) User requested a backup plan for inclement weather for the dessert bar.\n🟡 (14:00) Agent arranged a tent rental quote and received a $1,800 estimate.\n🟢 (15:00) Agent recorded the tent cost and updated the contingency budget.\n🟡 (16:30) Agent set a reminder to follow up on the dessert bar permit from the city council.\n🔴 (18:00) User stated they prefer a sunset-themed playlist for the cocktail hour.\n\nFormat rules for every line:\n- Start with a priority emoji: 🔴 for facts the user stated about themselves or firm decisions,\n  🟡 for task progress, tool calls and assistant actions, 🟢 for minor or passing details.\n- Then a 24h time in parentheses, then one sentence, e.g. \"🟡 (14:05) Agent compared three quotes and found the cheapest was the local supplier.\"\n- Mix: things the user stated (\"User stated ...\"), questions the user asked (\"User asked ...\"),\n  assistant actions and tool calls (\"Agent searched ...\", \"Agent ran ...\"), and completed work (\"✅ ...\").\n- Use specific but invented details (names, numbers, places) so the log feels real.\n- Exactly 14 lines, times ascending, between 07:00 and 22:00. Move the story forward from earlier dates.\n\nThe log already contains these lines (written elsewhere). Do NOT repeat, rephrase, contradict, or mention\ntheir subjects, people, numbers, places, or dates at all:\n- User set a rule: every vendor contract goes to their partner Jonah for sign-off before any deposit is paid.\n- User stated the photographer's package costs $4,750.\n- User stated the guest count is 140.\n- User stated the guest count is now 112.\n\nReturn JSON: {\"date\": \"Jul 3, 2026\", \"lines\": [\"...\"]}",
+   "response": {
+    "date": "Jul 3, 2026",
+    "lines": [
+     "🔴 (07:05) User mentioned they'd like a floral arch with eucalyptus and white roses for the ceremony.",
+     "🟡 (07:45) Agent searched local florists and shortlisted three vendors with experience in eucalyptus arches.",
+     "🟢 (08:30) Agent noted that \"Blossom & Bloom\" offers same‑day delivery from their Seattle warehouse.",
+     "🟡 (09:20) Agent drafted an order form with 50 eucalyptus stems and 200 roses and sent it to the chosen florist.",
+     "🔴 (10:00) User requested a backup plan for the floral arch if the weather turns rainy.",
+     "🟡 (10:45) Agent booked a portable greenhouse tent and received a $1,200 quote for its rental.",
+     "🟢 (11:30) Agent logged the tent cost into the contingency budget sheet.",
+     "🟡 (12:15) Agent used the venue layout tool to verify the arch placement does not block the main entrance.",
+     "🔴 (13:00) User asked whether the lighting team could provide soft amber bulbs for the reception.",
+     "🟡 (13:45) Agent contacted \"Luminous Events\" and confirmed availability of 100 amber LED bulbs.",
+     "🟢 (14:30) Agent added the bulb rental cost of $650 to the lighting budget.",
+     "🟡 (15:15) Agent drafted a seating chart for the expected number of guests and shared it with the wedding planner for review.",
+     "🔴 (16:00) User requested a video recording of the vows as a gift to their parents.",
+     "🟡 (17:30) Agent scheduled a meeting with the videographer to discuss a 30‑minute highlight reel."
+    ]
+   }
+  },
+  {
+   "prompt": "We are generating synthetic memory logs for testing an AI assistant's memory compression.\nThe assistant serves a couple planning a 2026 wedding with an assistant that tracks vendors, budget and guest logistics.\nAn observer agent watches each conversation and writes dated observation lines. Write the filler\nobservations for one date: Jul 6, 2026. The dates of the whole log are Jun 27, 2026, Jun 30, 2026, Jul 3, 2026, Jul 6, 2026, Jul 10, 2026, Jul 14, 2026; this is date 4 of 6.\nObservations from the previous date (for continuity, do not repeat them):\n🔴 (07:05) User mentioned they'd like a floral arch with eucalyptus and white roses for the ceremony.\n🟡 (07:45) Agent searched local florists and shortlisted three vendors with experience in eucalyptus arches.\n🟢 (08:30) Agent noted that \"Blossom & Bloom\" offers same‑day delivery from their Seattle warehouse.\n🟡 (09:20) Agent drafted an order form with 50 eucalyptus stems and 200 roses and sent it to the chosen florist.\n🔴 (10:00) User requested a backup plan for the floral arch if the weather turns rainy.\n🟡 (10:45) Agent booked a portable greenhouse tent and received a $1,200 quote for its rental.\n🟢 (11:30) Agent logged the tent cost into the contingency budget sheet.\n🟡 (12:15) Agent used the venue layout tool to verify the arch placement does not block the main entrance.\n🔴 (13:00) User asked whether the lighting team could provide soft amber bulbs for the reception.\n🟡 (13:45) Agent contacted \"Luminous Events\" and confirmed availability of 100 amber LED bulbs.\n🟢 (14:30) Agent added the bulb rental cost of $650 to the lighting budget.\n🟡 (15:15) Agent drafted a seating chart for the expected number of guests and shared it with the wedding planner for review.\n🔴 (16:00) User requested a video recording of the vows as a gift to their parents.\n🟡 (17:30) Agent scheduled a meeting with the videographer to discuss a 30‑minute highlight reel.\n\nFormat rules for every line:\n- Start with a priority emoji: 🔴 for facts the user stated about themselves or firm decisions,\n  🟡 for task progress, tool calls and assistant actions, 🟢 for minor or passing details.\n- Then a 24h time in parentheses, then one sentence, e.g. \"🟡 (14:05) Agent compared three quotes and found the cheapest was the local supplier.\"\n- Mix: things the user stated (\"User stated ...\"), questions the user asked (\"User asked ...\"),\n  assistant actions and tool calls (\"Agent searched ...\", \"Agent ran ...\"), and completed work (\"✅ ...\").\n- Use specific but invented details (names, numbers, places) so the log feels real.\n- Exactly 14 lines, times ascending, between 07:00 and 22:00. Move the story forward from earlier dates.\n\nThe log already contains these lines (written elsewhere). Do NOT repeat, rephrase, contradict, or mention\ntheir subjects, people, numbers, places, or dates at all:\n- User set a rule: every vendor contract goes to their partner Jonah for sign-off before any deposit is paid.\n- User stated the photographer's package costs $4,750.\n- User stated the guest count is 140.\n- User stated the guest count is now 112.\n\nReturn JSON: {\"date\": \"Jul 6, 2026\", \"lines\": [\"...\"]}",
+   "response": {
+    "date": "Jul 6, 2026",
+    "lines": [
+     "🟡 (07:15) Agent drafted a catering menu proposal from \"Culinary Creations\" and sent it for review.",
+     "🔴 (08:00) User asked whether a vegan dessert option is available for the cake.",
+     "🟡 (08:45) Agent contacted \"Sweet Symphony Bakery\" and confirmed a vegan chocolate mousse cake can be prepared.",
+     "🟢 (09:30) Agent logged the cake vendor's quote of $950 into the dessert budget.",
+     "🔴 (10:15) User requested a backup DJ in case of a technical failure.",
+     "🟡 (11:00) Agent researched local DJs and shortlisted three performers with positive reviews.",
+     "🟢 (11:45) Agent noted that \"Rhythm & Beats DJ\" offers a 12‑hour set for $1,200.",
+     "🟡 (12:30) Agent sent a draft contract to \"Rhythm & Beats DJ\" for signature.",
+     "🟢 (13:15) Agent updated the event timeline to include a 2‑hour DJ intermission after dinner.",
+     "🔴 (14:00) User asked if transportation could accommodate a 12‑seat limbo car for the wedding party.",
+     "🟡 (15:30) Agent contacted \"City Shuttle\" and confirmed availability of a limbo car with a 12‑seat capacity.",
+     "🟢 (16:15) Agent added the limbo car rental cost of $300 to the transportation budget.",
+     "🟡 (18:00) Agent prepared a reminder email to guests about the dress code and sent it to the mailing list.",
+     "🟢 (20:45) Agent recorded the email dispatch time and marked the RSVP reminder as completed."
+    ]
+   }
+  },
+  {
+   "prompt": "We are generating synthetic memory logs for testing an AI assistant's memory compression.\nThe assistant serves a couple planning a 2026 wedding with an assistant that tracks vendors, budget and guest logistics.\nAn observer agent watches each conversation and writes dated observation lines. Write the filler\nobservations for one date: Jul 10, 2026. The dates of the whole log are Jun 27, 2026, Jun 30, 2026, Jul 3, 2026, Jul 6, 2026, Jul 10, 2026, Jul 14, 2026; this is date 5 of 6.\nObservations from the previous date (for continuity, do not repeat them):\n🟡 (07:15) Agent drafted a catering menu proposal from \"Culinary Creations\" and sent it for review.\n🔴 (08:00) User asked whether a vegan dessert option is available for the cake.\n🟡 (08:45) Agent contacted \"Sweet Symphony Bakery\" and confirmed a vegan chocolate mousse cake can be prepared.\n🟢 (09:30) Agent logged the cake vendor's quote of $950 into the dessert budget.\n🔴 (10:15) User requested a backup DJ in case of a technical failure.\n🟡 (11:00) Agent researched local DJs and shortlisted three performers with positive reviews.\n🟢 (11:45) Agent noted that \"Rhythm & Beats DJ\" offers a 12‑hour set for $1,200.\n🟡 (12:30) Agent sent a draft contract to \"Rhythm & Beats DJ\" for signature.\n🟢 (13:15) Agent updated the event timeline to include a 2‑hour DJ intermission after dinner.\n🔴 (14:00) User asked if transportation could accommodate a 12‑seat limbo car for the wedding party.\n🟡 (15:30) Agent contacted \"City Shuttle\" and confirmed availability of a limbo car with a 12‑seat capacity.\n🟢 (16:15) Agent added the limbo car rental cost of $300 to the transportation budget.\n🟡 (18:00) Agent prepared a reminder email to guests about the dress code and sent it to the mailing list.\n🟢 (20:45) Agent recorded the email dispatch time and marked the RSVP reminder as completed.\n\nFormat rules for every line:\n- Start with a priority emoji: 🔴 for facts the user stated about themselves or firm decisions,\n  🟡 for task progress, tool calls and assistant actions, 🟢 for minor or passing details.\n- Then a 24h time in parentheses, then one sentence, e.g. \"🟡 (14:05) Agent compared three quotes and found the cheapest was the local supplier.\"\n- Mix: things the user stated (\"User stated ...\"), questions the user asked (\"User asked ...\"),\n  assistant actions and tool calls (\"Agent searched ...\", \"Agent ran ...\"), and completed work (\"✅ ...\").\n- Use specific but invented details (names, numbers, places) so the log feels real.\n- Exactly 14 lines, times ascending, between 07:00 and 22:00. Move the story forward from earlier dates.\n\nThe log already contains these lines (written elsewhere). Do NOT repeat, rephrase, contradict, or mention\ntheir subjects, people, numbers, places, or dates at all:\n- User set a rule: every vendor contract goes to their partner Jonah for sign-off before any deposit is paid.\n- User stated the photographer's package costs $4,750.\n- User stated the guest count is 140.\n- User stated the guest count is now 112.\n\nReturn JSON: {\"date\": \"Jul 10, 2026\", \"lines\": [\"...\"]}",
+   "response": {
+    "date": "Jul 10, 2026",
+    "lines": [
+     "🟡 (07:30) Agent drafted a revised seating chart layout for the ceremony using the new guest list.",
+     "🔴 (08:00) User asked if the officiant can incorporate a bilingual ceremony.",
+     "🟡 (08:30) Agent contacted \"Global Ceremonies\" and confirmed bilingual officiant availability.",
+     "🟢 (09:00) Agent logged the officiant's fee of $1,500 into the ceremony budget.",
+     "🔴 (09:30) User stated they want a live acoustic string quartet for the reception.",
+     "🟡 (10:00) Agent researched local string ensembles and shortlisted \"Eternal Strings\" as a top candidate.",
+     "🟢 (10:30) Agent noted that \"Eternal Strings\" charges $2,200 for a 3‑hour performance.",
+     "🔴 (11:00) User asked if the string quartet can play a custom playlist requested by the couple.",
+     "🟡 (11:30) Agent emailed \"Eternal Strings\" to confirm playlist flexibility and received confirmation.",
+     "🟢 (12:00) Agent updated the event timeline to insert a 30‑minute interlude for the string quartet during the cocktail hour.",
+     "🔴 (12:30) User requested a backup florist in case the primary vendor cannot deliver fresh bouquets.",
+     "🟡 (13:00) Agent contacted \"Bloom & Grow Florist\" and secured a backup arrangement for the ceremony and reception.",
+     "🟢 (13:30) Agent recorded the backup florist's quote of $650 into the floral budget.",
+     "🔴 (14:00) User stated they would like the backup florist to use only locally sourced materials."
+    ]
+   }
+  },
+  {
+   "prompt": "We are generating synthetic memory logs for testing an AI assistant's memory compression.\nThe assistant serves a couple planning a 2026 wedding with an assistant that tracks vendors, budget and guest logistics.\nAn observer agent watches each conversation and writes dated observation lines. Write the filler\nobservations for one date: Jul 14, 2026. The dates of the whole log are Jun 27, 2026, Jun 30, 2026, Jul 3, 2026, Jul 6, 2026, Jul 10, 2026, Jul 14, 2026; this is date 6 of 6.\nObservations from the previous date (for continuity, do not repeat them):\n🟡 (07:30) Agent drafted a revised seating chart layout for the ceremony using the new guest list.\n🔴 (08:00) User asked if the officiant can incorporate a bilingual ceremony.\n🟡 (08:30) Agent contacted \"Global Ceremonies\" and confirmed bilingual officiant availability.\n🟢 (09:00) Agent logged the officiant's fee of $1,500 into the ceremony budget.\n🔴 (09:30) User stated they want a live acoustic string quartet for the reception.\n🟡 (10:00) Agent researched local string ensembles and shortlisted \"Eternal Strings\" as a top candidate.\n🟢 (10:30) Agent noted that \"Eternal Strings\" charges $2,200 for a 3‑hour performance.\n🔴 (11:00) User asked if the string quartet can play a custom playlist requested by the couple.\n🟡 (11:30) Agent emailed \"Eternal Strings\" to confirm playlist flexibility and received confirmation.\n🟢 (12:00) Agent updated the event timeline to insert a 30‑minute interlude for the string quartet during the cocktail hour.\n🔴 (12:30) User requested a backup florist in case the primary vendor cannot deliver fresh bouquets.\n🟡 (13:00) Agent contacted \"Bloom & Grow Florist\" and secured a backup arrangement for the ceremony and reception.\n🟢 (13:30) Agent recorded the backup florist's quote of $650 into the floral budget.\n🔴 (14:00) User stated they would like the backup florist to use only locally sourced materials.\n\nFormat rules for every line:\n- Start with a priority emoji: 🔴 for facts the user stated about themselves or firm decisions,\n  🟡 for task progress, tool calls and assistant actions, 🟢 for minor or passing details.\n- Then a 24h time in parentheses, then one sentence, e.g. \"🟡 (14:05) Agent compared three quotes and found the cheapest was the local supplier.\"\n- Mix: things the user stated (\"User stated ...\"), questions the user asked (\"User asked ...\"),\n  assistant actions and tool calls (\"Agent searched ...\", \"Agent ran ...\"), and completed work (\"✅ ...\").\n- Use specific but invented details (names, numbers, places) so the log feels real.\n- Exactly 14 lines, times ascending, between 07:00 and 22:00. Move the story forward from earlier dates.\n\nThe log already contains these lines (written elsewhere). Do NOT repeat, rephrase, contradict, or mention\ntheir subjects, people, numbers, places, or dates at all:\n- User set a rule: every vendor contract goes to their partner Jonah for sign-off before any deposit is paid.\n- User stated the photographer's package costs $4,750.\n- User stated the guest count is 140.\n- User stated the guest count is now 112.\n\nReturn JSON: {\"date\": \"Jul 14, 2026\", \"lines\": [\"...\"]}",
+   "response": {
+    "date": "Jul 14, 2026",
+    "lines": [
+     "🔴 (07:15) User requested a revised timeline to include a 20-minute dessert tasting session.",
+     "🟡 (07:45) Agent emailed \"Savor Catering\" to confirm availability for the dessert tasting and received confirmation.",
+     "🟢 (08:15) Agent noted the tasting will be held at 1:30 PM on the venue's patio.",
+     "🟡 (08:45) Agent searched local dessert menus and shortlisted \"Sweet Horizon\" as a candidate for the tasting.",
+     "🔴 (09:15) User asked if the dessert tasting could include vegan options.",
+     "🟡 (09:45) Agent contacted \"Sweet Horizon\" to verify vegan dessert availability and logged the response.",
+     "🟢 (10:15) Agent updated the event timeline to insert the dessert tasting at 4:00 PM on the day of the wedding.",
+     "🔴 (10:45) User requested a DJ who can mix contemporary pop and classic vinyl hits.",
+     "🟡 (11:15) Agent researched DJ services and shortlisted \"Nightfall DJ Collective\" for consideration.",
+     "🟢 (11:45) Agent recorded that \"Nightfall DJ Collective\" charges $2,800 for a 6-hour set.",
+     "🔴 (12:15) User stated they want a backup transport solution in case of vehicle breakdowns.",
+     "🟡 (12:45) Agent identified \"Aurora Transportation\" as a backup fleet and secured a quote of $1,200 for a shuttle service.",
+     "🟢 (13:15) Agent logged the backup transport cost into the logistics budget.",
+     "🔴 (14:00) User requested a venue that can accommodate a moonlit outdoor ceremony."
+    ]
+   }
+  }
+ ]
+}

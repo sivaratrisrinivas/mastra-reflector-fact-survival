@@ -1,0 +1,101 @@
+{
+ "id": "log03",
+ "domain": "travel",
+ "dates": [
+  "2026-03-29",
+  "2026-04-01",
+  "2026-04-04",
+  "2026-04-07",
+  "2026-04-11",
+  "2026-04-15"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log03-f0",
+   "type": 4,
+   "typeName": "relative date with anchor",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🔴 User stated they fly out next Friday, meaning April 3, 2026."
+   ],
+   "check": {
+    "all": [
+     [
+      "04/03/2026",
+      "2026-04-03",
+      "3 apr",
+      "3 april",
+      "4/3/2026",
+      "apr 3",
+      "apr. 3",
+      "april 3"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log03-f1",
+   "type": 10,
+   "typeName": "stated negative (never)",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User stated they have never been to Morocco and are nervous about the Tangier ferry day trip."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "morocco"
+     ],
+     [
+      "never",
+      "not been",
+      "hasn't",
+      "has not",
+      "no prior",
+      "first time",
+      "first-time",
+      "not owned",
+      "not had",
+      "no experience",
+      "no history",
+      "no previous"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log03-f2",
+   "type": 16,
+   "typeName": "fact repeated 3 times",
+   "position": "late",
+   "groups": [
+    1,
+    3,
+    5
+   ],
+   "plantedLines": [
+    "🟡 User shared the Seville hotel confirmation code QX7-4412.",
+    "🟡 User repeated that the Seville hotel confirmation code is QX7-4412.",
+    "🟡 User again gave the hotel confirmation code QX7-4412 for the Seville check-in."
+   ],
+   "check": {
+    "all": [
+     [
+      "qx7-4412",
+      "qx74412",
+      "qx7 4412"
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+ "id": "log13",
+ "domain": "wedding",
+ "dates": [
+  "2026-06-27",
+  "2026-06-30",
+  "2026-07-03",
+  "2026-07-06",
+  "2026-07-10",
+  "2026-07-14"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 84,
+ "droppedFiller": [],
+ "facts": [
+  {
+   "id": "log13-f0",
+   "type": 14,
+   "typeName": "standing instruction / rule",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🔴 User set a rule: every vendor contract goes to their partner Jonah for sign-off before any deposit is paid."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "jonah"
+     ],
+     [
+      "contract",
+      "sign-off",
+      "sign off",
+      "approv",
+      "deposit"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log13-f1",
+   "type": 2,
+   "typeName": "dollar amount",
+   "position": "middle",
+   "groups": [
+    3
+   ],
+   "plantedLines": [
+    "🔴 User stated the photographer's package costs $4,750."
+   ],
+   "check": {
+    "all": [
+     [
+      "4750",
+      "4.75k"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log13-f2",
+   "type": 8,
+   "typeName": "changed value: old and new both kept",
+   "position": "late",
+   "groups": [
+    3,
+    5
+   ],
+   "plantedLines": [
+    "🔴 User stated the guest count is 140.",
+    "🔴 User stated the guest count is now 112."
+   ],
+   "check": {
+    "all": [
+     [
+      "140"
+     ],
+     [
+      "112"
+     ]
+    ]
+   }
+  }
+ ]
+}

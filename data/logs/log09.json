@@ -1,0 +1,106 @@
+{
+ "id": "log09",
+ "domain": "finance",
+ "dates": [
+  "2026-05-22",
+  "2026-05-25",
+  "2026-05-28",
+  "2026-05-31",
+  "2026-06-04",
+  "2026-06-08"
+ ],
+ "fillerModel": "openai/gpt-oss-120b",
+ "fillerLines": 83,
+ "droppedFiller": [
+  [
+   "token",
+   "🟡 (13:00) Agent researched Vanguard Total Stock Market ETF and Fidelity ZERO Total Market Index Fund, noting expense ratios of 0.04% and 0.00% respectively."
+  ]
+ ],
+ "facts": [
+  {
+   "id": "log09-f0",
+   "type": 10,
+   "typeName": "stated negative (never)",
+   "position": "early",
+   "groups": [
+    0
+   ],
+   "plantedLines": [
+    "🔴 User stated they have never owned individual stocks, only index funds through a 401(k)."
+   ],
+   "check": {
+    "sameLine": [
+     [
+      "stock"
+     ],
+     [
+      "never",
+      "not been",
+      "hasn't",
+      "has not",
+      "no prior",
+      "first time",
+      "first-time",
+      "not owned",
+      "not had",
+      "no experience",
+      "no history",
+      "no previous",
+      "only index"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log09-f1",
+   "type": 16,
+   "typeName": "fact repeated 3 times",
+   "position": "middle",
+   "groups": [
+    1,
+    2,
+    3
+   ],
+   "plantedLines": [
+    "🟡 User stated their emergency fund target is $24,000.",
+    "🟡 User repeated the emergency fund target of $24,000.",
+    "🟡 User again confirmed the $24,000 emergency fund target."
+   ],
+   "check": {
+    "all": [
+     [
+      "24000",
+      "24k"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "log09-f2",
+   "type": 4,
+   "typeName": "relative date with anchor",
+   "position": "late",
+   "groups": [
+    5
+   ],
+   "plantedLines": [
+    "🔴 User stated their tax filing extension ends in ten days, which is June 18, 2026."
+   ],
+   "check": {
+    "all": [
+     [
+      "06/18/2026",
+      "18 jun",
+      "18 june",
+      "2026-06-18",
+      "6/18/2026",
+      "jun 18",
+      "jun. 18",
+      "june 18"
+     ]
+    ]
+   }
+  }
+ ]
+}
