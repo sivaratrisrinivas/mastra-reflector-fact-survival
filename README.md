@@ -1,6 +1,6 @@
 # Mastra Reflector fact-survival benchmark
 
-Mastra's Observational Memory has a Reflector that rewrites old observations into a shorter log when memory gets long. Anything it drops, the agent no longer knows. This is a small, opt-in check of which planted facts survive the Reflector at compression levels 1 to 4, on `main` and on [PR #26465](https://github.com/mastra-ai/mastra/pull/26465) (open, head `3781dc94`), where a benchmark run was asked for before rewording the level-1 guidance. 75 s video: https://mastra-reflector-fact-survival.onrender.com/demo.mp4
+Mastra's Observational Memory has a Reflector that rewrites old observations into a shorter log when memory gets long. Anything it drops, the agent no longer knows. This is a small, opt-in check of which planted facts survive the Reflector at compression levels 1 to 4, on `main` and on [PR #26465](https://github.com/mastra-ai/mastra/pull/26465) (open, head `3781dc94`), where a benchmark run was asked for before rewording the level-1 guidance. 82 s video (voiced): https://mastra-reflector-fact-survival.onrender.com/demo.mp4
 
 **Setup.** 18 synthetic memory logs in OM format (about 2.5k tokens each), 3 planted facts per log, 18 fact types x 3 ([data/logs](data/logs)). Mastra's own Reflector prompt code (system prompt, compression guidance, parser) is bundled unmodified from each ref ([vendor](vendor), [scripts/build-refs.sh](scripts/build-refs.sh)). One call per log, level and ref, temperature 0. Survival is scored by code only, no LLM judge ([src/fact-check.ts](src/fact-check.ts)).
 
